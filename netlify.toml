@@ -6,3 +6,4 @@ publish = "build"
 [build.environment]
 NODE_VERSION = "14.17.6"
 NPM_VERSION = "7.23.0"
+NODE_ENV = "development"
