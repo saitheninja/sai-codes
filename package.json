@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@netlify/build": "^18.13.6",
 		"@netlify/zip-it-and-ship-it": "^4.23.3"
 	}
 }
