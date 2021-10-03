@@ -1,96 +1,118 @@
 <svelte:head>
-  <title>Resume: Saien Govender</title>
+  <title>Resume: Sai</title>
 </svelte:head>
 
-<div class="max-w-prose mx-auto my-4 space-y-8">
-  <h1>Saien Govender</h1>
+<body class="dark">
+  <div class="max-w-prose mx-auto py-8 space-y-8">
+    <h1>Saien<br />Govender</h1>
 
-  <div id="code" class="space-y-2">
-    <h2>Code</h2>
+    <div id="code" class="space-y-2">
+      <h2 class="code">Code</h2>
 
-    <div>
-      <h3>
-        <a href="https://saitheninja.itch.io/spacejanitor" target="_blank">
-          Game: Space Janitor
-        </a>
-      </h3>
-      <p>2019</p>
+      <div>
+        <h3>
+          <a href="https://saitheninja.itch.io/spacejanitor" target="_blank">
+            Game: Space Janitor
+          </a>
+        </h3>
+        <p>2019</p>
+        <p>
+          Built for ShenaniJam 2019.
+          <a href="https://www.godotengine.org" target="_blank">Godot engine.</a
+          >
+        </p>
+      </div>
+
+      <div>
+        <h3>Marketing Agency: Creative Crew</h3>
+        <p>2019 - 2020</p>
+        <p>
+          HTML, CSS, JS. Managing WordPress deploys. Providing technical
+          support. Managing clients. Photography, videography, audio production,
+          design.
+        </p>
+      </div>
+
+      <div>
+        <h3>Freelance Web Developer</h3>
+        <p>2020 - current</p>
+        <p>Svelte, with the most up-to-date tools and practices.</p>
+      </div>
+    </div>
+
+    <div id="audio" class="space-y-2">
+      <h2 class="audio">Audio</h2>
+
+      <div>
+        <h3>Amateur Musician</h3>
+        <p>2010 - current</p>
+        <p>Guitar, synths.</p>
+      </div>
+
+      <div>
+        <h3><a href="https://youtu.be/uCf3EeQ1Htc">Videographer</a></h3>
+        <p>2015 - 2020</p>
+        <p>
+          Corporate advertising, educational courses, music videos, voiceover
+          recording.
+        </p>
+      </div>
+    </div>
+
+    <div class="space-y-2">
+      <h2 class="about">About</h2>
+
       <p>
-        ShenaniJam 2019.
-        <a href="https://www.godotengine.org" target="_blank">Godot engine.</a>
+        When I started using the internet, it took ~30 minutes to download an
+        .mp3. I have spent many hours of my life contemplating audio bitrates
+        and download sizes.
+      </p>
+
+      <p>
+        Pocket Casts says I've listened to podcasts for
+        <strong> 164 days, 13 hours </strong>
+        since 2017. (That's quite a lot.)
+      </p>
+
+      <p id="buzzwords">
+        I use modern IDEs
+        <span class="gray"> (VSCode, NeoVim) </span>
+
+        that have all the bells and whistles
+        <span class="gray"> (ESLint, Prettier, TypeScript) </span>
+
+        & run on Linux
+        <span class="gray"> (Arch, Ubuntu, Docker Compose) </span>
+
+        to build apps using JavaScript frameworks
+        <span class="gray"> (Node, Svelte, SvelteKit, Vue, Nuxt) </span>
+
+        & CSS frameworks
+        <span class="gray"> (Tailwind, PostCSS, SCSS) </span>
+
+        with CI/CD
+        <span class="gray"> (git, GitHub Actions) </span>
+
+        to bundle
+        <span class="gray"> (Webpack, Gulp, Parcel) </span>
+
+        & deploy
+        <span class="gray"> (Digitalocean, Netlify, JAMstack) </span>
+
+        pretty websites.
       </p>
     </div>
 
-    <div>
-      <h3>Marketing Agency: Creative Crew</h3>
-      <p>2019 - 2020</p>
-      <p>
-        HTML, CSS, JS. Managing WordPress deploys. Providing technical support.
-        Managing clients. Photography, videography, audio production, design.
-      </p>
-    </div>
-
-    <div>
-      <h3>Freelance Developer</h3>
-      <p>2020 - current</p>
-      <p>
-        Learning Svelte, with most up-to-date JavaScript tools and practices.
-      </p>
-    </div>
-  </div>
-
-  <div id="audio" class="space-y-2">
-    <h2>Audio</h2>
-
-    <div>
-      <h3>Amateur musician</h3>
-      <p>2010 - current</p>
-      <p>Guitar, synths.</p>
-    </div>
-
-    <div>
-      <h3>Photographer / Videographer</h3>
-      <p>2015 - 2020</p>
-      <p>Corporate advertising, educational courses, music videos.</p>
-    </div>
-  </div>
-
-  <div class="space-y-2">
-    <h2>About</h2>
-
-    <p>Hi.</p>
-
-    <p>I make art.</p>
-
-    <p>
-      When I started using the internet, it took ~30 minutes to download an
-      .mp3. I have spent many hours of my life contemplating audio bitrates and
-      download sizes.
-    </p>
-
-    <p>
-      Pocket Casts says I've listened to podcasts for
-      <em> 164 days, 13 hours </em>
-      since 2017. (That's quite a lot.)
-    </p>
-
-    <p id="buzzwords">
-      I use modern IDEs (VSCode, NeoVim) that have all the bells and whistles
-      (ESLint, Prettier, TypeScript) & run on Linux (Arch, Ubuntu, Docker
-      Compose) to build apps with JavaScript frameworks (Node, Svelte,
-      SvelteKit, Vue, Nuxt) & CSS frameworks (Tailwind + PostCSS, SCSS) that I
-      use CI/CD (git, GitHub Actions) to bundle (Webpack, Gulp, Parcel) & deploy
-      (JAMstack, Digitalocean, Netlify).
-    </p>
-
-    <p class="text-gray-400">
+    <p id="contact" class="gray">
+      <a href="mailto:saitheninja@gmail.com">email</a>
+      /
       <a href="https://github.com/saitheninja/resume" target="_blank">
-        GitHub repo.
+        GitHub
       </a>
+      /
+      <a href="https://twitter.com/sainotbot" target="_blank"> Twitter </a>
     </p>
-  </div>
-
-  <!-- <ul class="list-disc">
+    <!-- <ul class="list-disc">
     <li>Static web app development background</li>
     <li>Experience writing modern, conformant HTML5 code</li>
     <li>Experience with several modern CSS/SCSS frameworks</li>
@@ -98,28 +120,64 @@
     <li>Experience working with Jamstack</li>
     <li>Experience working on an audio, podcast, or other media platform</li>
   </ul> -->
-</div>
+  </div>
+</body>
 
 <style>
-  h1,
-  h2,
-  h3 {
-    @apply font-bold;
+  @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Fleur+De+Leah&family=Playfair+Display:ital,wght@1,600&display=swap&text=Code%20Audio%20About");
+
+  a {
+    @apply underline;
+  }
+
+  body {
+    @apply bg-blue-900;
+    @apply text-white;
   }
 
   h1 {
+    @apply font-bold;
     @apply text-6xl;
-  }
-
-  h2 {
-    @apply text-4xl;
   }
 
   h3 {
     @apply text-lg;
+    @apply font-bold;
   }
 
-  a {
-    @apply underline;
+  .code {
+    font-family: "Fira Code", monospace;
+    @apply text-4xl;
+  }
+
+  .about {
+    font-family: "Playfair Display", serif;
+    @apply text-4xl;
+    @apply pb-1;
+  }
+
+  .audio {
+    @apply text-5xl;
+    @apply max-w-max;
+    font-family: "Fleur De Leah", cursive;
+    animation: pulse 4s ease-in-out alternate infinite;
+  }
+
+  .gray {
+    @apply text-gray-300;
+    @apply italic;
+    @apply text-sm;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    100% {
+      opacity: 0.8;
+      transform: scale(0.95);
+    }
   }
 </style>
