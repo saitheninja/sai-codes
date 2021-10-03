@@ -5,4 +5,4 @@ publish = "build"
 # Netlify defaults to Node v12.16. SvelteKit requires Node v12.20 to build.
 [build.environment]
 NODE_VERSION = "14.17.6"
-#NPM_VERSION = "7.23.0"
+NPM_VERSION = "7.23.0"
