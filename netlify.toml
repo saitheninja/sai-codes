@@ -2,3 +2,7 @@
 command = "npm run build"
 publish = ".svelte-kit/"
 # functions = "functions/"
+
+[build.environment]
+NODE_VERSION = "14.17.6"
+NPM_VERSION = "7.23.0"
