@@ -2,8 +2,8 @@
   <title>Resume: Sai</title>
 </svelte:head>
 
-<body class="dark">
-  <div class="max-w-prose mx-auto py-8 space-y-8">
+<body>
+  <div class="max-w-prose mx-4 md:mx-auto py-8 space-y-8">
     <h1>Saien<br />Govender</h1>
 
     <div id="code" class="space-y-2">
@@ -46,7 +46,7 @@
       <div>
         <h3>Amateur Musician</h3>
         <p>2010 - current</p>
-        <p>Guitar, synths, Ardour.</p>
+        <p>Guitar, synths, harmonica, Ardour.</p>
       </div>
 
       <div>
@@ -59,18 +59,20 @@
       </div>
     </div>
 
-    <div class="space-y-2">
+    <div id="about" class="space-y-2">
       <h2 class="about">About</h2>
 
+      <p>I live in Johannesburg, South Africa. 🇿🇦</p>
+
       <p>
-        When I started using the internet, it took ~30 minutes to download an
-        .mp3. I have spent many hours of my life contemplating audio bitrates
-        and download sizes.
+        When I started using the internet, it took ~20 minutes to download an
+        mp3. I have spent many hours contemplating audio bitrates and download
+        sizes. 💿
       </p>
 
       <p>
-        Pocket Casts stats: listened to podcasts for
-        <strong>164 days, 13 hours</strong>.
+        Pocket Casts stats:
+        <br />listened to podcasts for <strong>164 days, 15 hours</strong>. ⌛
         <br />(That's quite a lot.)
       </p>
 
@@ -88,7 +90,7 @@
         <span class="gray"> (Node, Svelte, SvelteKit, Vue, Nuxt) </span>
 
         & CSS frameworks
-        <span class="gray"> (Tailwind, PostCSS, SASS, SCSS) </span>
+        <span class="gray"> (Tailwind CSS, PostCSS, SCSS) </span>
 
         with CI/CD
         <span class="gray"> (git, GitHub Actions) </span>
@@ -102,20 +104,20 @@
       </p>
     </div>
 
-    <p id="contact" class="gray">
+    <p id="contact" class="gray text-center">
+      <a href="https://github.com/saitheninja/resume" target="_blank">
+        site repo
+      </a>
+      /
       <a href="mailto:saitheninja@gmail.com"> email </a>
       /
       <a href="https://saitheninja.com" target="_blank"> photos </a>
       /
-      <a href="https://github.com/saitheninja/resume" target="_blank">
-        GitHub
-      </a>
-      /
-      <a href="https://twitter.com/sainotbot" target="_blank"> Twitter </a>
-      /
       <a href="https://www.instagram.com/saitheninja/" target="_blank">
         Instagram
       </a>
+      /
+      <a href="https://twitter.com/sainotbot" target="_blank"> Twitter </a>
     </p>
   </div>
 </body>
@@ -146,6 +148,12 @@
     @apply text-lg;
   }
 
+  .gray {
+    @apply text-gray-300;
+    @apply italic;
+    @apply text-sm;
+  }
+
   /* the h2s */
   .code {
     @apply text-4xl;
@@ -173,12 +181,6 @@
     animation-duration: 10s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
-  }
-
-  .gray {
-    @apply text-gray-300;
-    @apply italic;
-    @apply text-sm;
   }
 
   @keyframes slide {
@@ -231,7 +233,7 @@
 
   @keyframes wiggle {
     0% {
-      transform: rotate(3deg);
+      transform: rotate(0deg);
     }
 
     4% {
@@ -251,15 +253,15 @@
     }
 
     92% {
-      transform: rotate(3deg);
-    }
-
-    96% {
       transform: rotate(-3deg);
     }
 
-    100% {
+    96% {
       transform: rotate(3deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
     }
   }
 </style>
