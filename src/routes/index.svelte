@@ -191,7 +191,7 @@
     }
 
     95% {
-      transform: scale(0.9);
+      transform: scale(1.1);
     }
 
     100% {
