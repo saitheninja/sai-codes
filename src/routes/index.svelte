@@ -36,7 +36,7 @@
       <div>
         <h3>Freelance Web Developer</h3>
         <p>2020 - current</p>
-        <p>Svelte, with the most up-to-date tools and practices.</p>
+        <p>Svelte and Vue, with the most up-to-date tools and practices.</p>
       </div>
     </div>
 
