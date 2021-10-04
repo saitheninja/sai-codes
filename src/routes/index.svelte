@@ -16,7 +16,7 @@
             Game: Space Janitor
           </a>
         </h3>
-        <p>2019</p>
+        <p class="gray">2019</p>
         <p>
           Built for ShenaniJam 2019, with the
           <a href="https://www.godotengine.org" target="_blank">
@@ -27,7 +27,7 @@
 
       <div>
         <h3>Marketing Agency: Creative Crew</h3>
-        <p>2019 - 2020</p>
+        <p class="gray">2019 - 2020</p>
         <p>
           HTML, CSS, JS. Managing WordPress sites. Providing technical support.
           Managing clients. Photography, videography, audio production, design.
@@ -36,7 +36,7 @@
 
       <div>
         <h3>Freelance Web Developer</h3>
-        <p>2020 - current</p>
+        <p class="gray">2020 - current</p>
         <p>Svelte and Vue, with the most up-to-date tools and practices.</p>
       </div>
     </div>
@@ -46,13 +46,13 @@
 
       <div>
         <h3>Amateur Musician</h3>
-        <p>2010 - current</p>
+        <p class="gray">2010 - current</p>
         <p>Guitar, synths, harmonica, Ardour.</p>
       </div>
 
       <div>
         <h3><a href="https://youtu.be/uCf3EeQ1Htc">Videographer</a></h3>
-        <p>2015 - 2020</p>
+        <p class="gray">2015 - 2020</p>
         <p>
           Corporate advertising, educational courses, music videos, voiceover
           recording.
