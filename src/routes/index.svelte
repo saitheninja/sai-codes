@@ -1,5 +1,6 @@
 <svelte:head>
   <title>Resume: Sai</title>
+  <link rel="icon" href="https://fav.farm/⌨️" />
 </svelte:head>
 
 <body class="text-white bg-gradient-to-br from-blue-900 to-pink-900">
