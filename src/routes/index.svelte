@@ -17,9 +17,10 @@
         </h3>
         <p>2019</p>
         <p>
-          Built for ShenaniJam 2019.
-          <a href="https://www.godotengine.org" target="_blank">Godot engine.</a
-          >
+          Built for ShenaniJam 2019, with the
+          <a href="https://www.godotengine.org" target="_blank">
+            Godot engine.
+          </a>
         </p>
       </div>
 
@@ -27,9 +28,8 @@
         <h3>Marketing Agency: Creative Crew</h3>
         <p>2019 - 2020</p>
         <p>
-          HTML, CSS, JS. Managing WordPress deploys. Providing technical
-          support. Managing clients. Photography, videography, audio production,
-          design.
+          HTML, CSS, JS. Managing WordPress sites. Providing technical support.
+          Managing clients. Photography, videography, audio production, design.
         </p>
       </div>
 
@@ -46,7 +46,7 @@
       <div>
         <h3>Amateur Musician</h3>
         <p>2010 - current</p>
-        <p>Guitar, synths.</p>
+        <p>Guitar, synths, Ardour.</p>
       </div>
 
       <div>
@@ -69,9 +69,9 @@
       </p>
 
       <p>
-        Pocket Casts says I've listened to podcasts for
-        <strong> 164 days, 13 hours </strong>
-        since 2017. (That's quite a lot.)
+        Pocket Casts stats: listened to podcasts for
+        <strong>164 days, 13 hours</strong>.
+        <br />(That's quite a lot.)
       </p>
 
       <p id="buzzwords">
@@ -88,7 +88,7 @@
         <span class="gray"> (Node, Svelte, SvelteKit, Vue, Nuxt) </span>
 
         & CSS frameworks
-        <span class="gray"> (Tailwind, PostCSS, SCSS) </span>
+        <span class="gray"> (Tailwind, PostCSS, SASS, SCSS) </span>
 
         with CI/CD
         <span class="gray"> (git, GitHub Actions) </span>
@@ -98,33 +98,30 @@
 
         & deploy
         <span class="gray"> (Digitalocean, Netlify, JAMstack) </span>
-
         pretty websites.
       </p>
     </div>
 
     <p id="contact" class="gray">
-      <a href="mailto:saitheninja@gmail.com">email</a>
+      <a href="mailto:saitheninja@gmail.com"> email </a>
+      /
+      <a href="https://saitheninja.com" target="_blank"> photos </a>
       /
       <a href="https://github.com/saitheninja/resume" target="_blank">
         GitHub
       </a>
       /
       <a href="https://twitter.com/sainotbot" target="_blank"> Twitter </a>
+      /
+      <a href="https://www.instagram.com/saitheninja/" target="_blank">
+        Instagram
+      </a>
     </p>
-    <!-- <ul class="list-disc">
-    <li>Static web app development background</li>
-    <li>Experience writing modern, conformant HTML5 code</li>
-    <li>Experience with several modern CSS/SCSS frameworks</li>
-    <li>Familiarity with JavaScript unit testing & web browser developer tools</li>
-    <li>Experience working with Jamstack</li>
-    <li>Experience working on an audio, podcast, or other media platform</li>
-  </ul> -->
   </div>
 </body>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Fleur+De+Leah&family=Playfair+Display:ital,wght@1,600&display=swap&text=Code%20Audio%20About");
+  @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=Code%20Audio%20About");
 
   a {
     @apply underline;
@@ -140,27 +137,42 @@
     @apply text-6xl;
   }
 
+  h2 {
+    @apply max-w-max;
+  }
+
   h3 {
-    @apply text-lg;
     @apply font-bold;
+    @apply text-lg;
   }
 
+  /* the h2s */
   .code {
+    @apply text-4xl;
     font-family: "Fira Code", monospace;
-    @apply text-4xl;
-  }
-
-  .about {
-    font-family: "Playfair Display", serif;
-    @apply text-4xl;
-    @apply pb-1;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
 
   .audio {
     @apply text-5xl;
-    @apply max-w-max;
     font-family: "Fleur De Leah", cursive;
-    animation: pulse 4s ease-in-out alternate infinite;
+    animation-name: pulse;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  .about {
+    @apply text-4xl;
+    @apply pb-1;
+    font-family: "Playfair Display", serif;
+    animation-name: wiggle;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
   }
 
   .gray {
@@ -169,15 +181,85 @@
     @apply text-sm;
   }
 
-  @keyframes pulse {
+  @keyframes slide {
     0% {
+      opacity: 0;
+      transform: translateX(-10%);
+    }
+
+    10% {
       opacity: 1;
-      transform: scale(1);
+      transform: translateX(0%);
+    }
+
+    90% {
+      opacity: 1;
+      transform: translateX(0%);
     }
 
     100% {
-      opacity: 0.8;
-      transform: scale(0.95);
+      opacity: 0;
+      transform: translateX(10%);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+
+    5% {
+      transform: scale(1.1);
+    }
+
+    10% {
+      transform: scale(1);
+    }
+
+    90% {
+      transform: scale(1);
+    }
+
+    95% {
+      transform: scale(0.9);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes wiggle {
+    0% {
+      transform: rotate(3deg);
+    }
+
+    4% {
+      transform: rotate(-3deg);
+    }
+
+    8% {
+      transform: rotate(3deg);
+    }
+
+    10% {
+      transform: rotate(0deg);
+    }
+
+    90% {
+      transform: rotate(0deg);
+    }
+
+    92% {
+      transform: rotate(3deg);
+    }
+
+    96% {
+      transform: rotate(-3deg);
+    }
+
+    100% {
+      transform: rotate(3deg);
     }
   }
 </style>
