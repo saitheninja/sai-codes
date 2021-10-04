@@ -2,12 +2,12 @@
   <title>Resume: Sai</title>
 </svelte:head>
 
-<body>
+<body class="text-white bg-gradient-to-br from-blue-900 to-pink-900">
   <div class="max-w-prose mx-4 md:mx-auto py-8 space-y-8">
-    <h1>Saien<br />Govender</h1>
+    <h1 class="font-bold text-6xl">Saien<br />Govender</h1>
 
     <div id="code" class="space-y-2">
-      <h2 class="code">Code</h2>
+      <h2 class="text-4xl code">Code</h2>
 
       <div>
         <h3>
@@ -41,7 +41,7 @@
     </div>
 
     <div id="audio" class="space-y-2">
-      <h2 class="audio">Audio</h2>
+      <h2 class="text-5xl audio">Audio</h2>
 
       <div>
         <h3>Amateur Musician</h3>
@@ -60,7 +60,7 @@
     </div>
 
     <div id="about" class="space-y-2">
-      <h2 class="about">About</h2>
+      <h2 class="text-4xl pb-1 about">About</h2>
 
       <p>I live in Johannesburg, South Africa. 🇿🇦</p>
 
@@ -123,40 +123,10 @@
 </body>
 
 <style>
+  /* set h2 fonts & animations */
   @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=Code%20Audio%20About");
 
-  a {
-    @apply underline;
-  }
-
-  body {
-    @apply bg-blue-900;
-    @apply text-white;
-  }
-
-  h1 {
-    @apply font-bold;
-    @apply text-6xl;
-  }
-
-  h2 {
-    @apply max-w-max;
-  }
-
-  h3 {
-    @apply font-bold;
-    @apply text-lg;
-  }
-
-  .gray {
-    @apply text-gray-300;
-    @apply italic;
-    @apply text-sm;
-  }
-
-  /* the h2s */
   .code {
-    @apply text-4xl;
     font-family: "Fira Code", monospace;
     animation-name: slide;
     animation-duration: 10s;
@@ -165,7 +135,6 @@
   }
 
   .audio {
-    @apply text-5xl;
     font-family: "Fleur De Leah", cursive;
     animation-name: pulse;
     animation-duration: 10s;
@@ -174,8 +143,6 @@
   }
 
   .about {
-    @apply text-4xl;
-    @apply pb-1;
     font-family: "Playfair Display", serif;
     animation-name: wiggle;
     animation-duration: 10s;
