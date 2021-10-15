@@ -89,10 +89,10 @@
         <span class="gray"> (Tailwind CSS, PostCSS, SCSS) </span>
 
         with CI/CD
-        <span class="gray"> (git, GitHub Actions) </span>
+        <span class="gray"> (Git, GitHub Actions) </span>
 
         to bundle
-        <span class="gray"> (Webpack, Gulp, Parcel) </span>
+        <span class="gray"> (Vite, ESBuild, webpack) </span>
 
         & deploy
         <span class="gray"> (Digitalocean, Netlify, JAMstack) </span>
