@@ -1,8 +1,3 @@
-<svelte:head>
-  <title>Resume: Sai</title>
-  <link rel="icon" href="https://fav.farm/⌨️" />
-</svelte:head>
-
 <body class="text-white bg-gradient-to-br from-blue-900 to-pink-900 bg-fixed">
   <div class="max-w-prose mx-4 md:mx-auto py-8 space-y-8">
     <h1 class="font-bold text-6xl">Saien<br />Govender</h1>
