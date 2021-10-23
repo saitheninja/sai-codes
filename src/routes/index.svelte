@@ -30,7 +30,11 @@
       </div>
 
       <div>
-        <h3>Freelance Web Developer</h3>
+        <h3>
+          <a href="https://sanskara.co.za" target="_blank">
+            Freelance Web Developer
+          </a>
+        </h3>
         <p class="gray">2020 - current</p>
         <p>Svelte and Vue, with the most up-to-date tools and practices.</p>
       </div>
@@ -58,7 +62,7 @@
     <div id="about" class="space-y-2">
       <h2 class="text-4xl pb-1 about">About</h2>
 
-      <p>I live in Johannesburg, South Africa. 🇿🇦</p>
+      <p>I live in South Africa. 🇿🇦</p>
 
       <p>
         When I started using the internet, it took ~20 minutes to download an
