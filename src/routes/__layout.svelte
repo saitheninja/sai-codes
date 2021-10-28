@@ -7,8 +7,8 @@
   <link rel="icon" href="https://fav.farm/⌨️" />
 </svelte:head>
 
-<body class="min-h-screen max-w-prose mx-auto">
-  <header class="pt-4 pb-10 sticky top-0 text-right">
+<body class="min-h-screen max-w-prose mx-4 md:mx-auto pb-8">
+  <header class="pt-4 pb-12 sticky top-0 text-right">
     <h1><a href="/" class="text-4xl font-mono"> sai.codes </a></h1>
     <span id="links" class="space-x-2 text-sm">
       <a href="writing"> writing </a>
