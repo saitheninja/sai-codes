@@ -22,13 +22,14 @@
   </main>
 
   <footer class="my-4 space-x-4 gray text-center">
-    <a href="https://github.com/saitheninja/resume" target="_blank">site repo</a
-    >
+    <a href="https://github.com/saitheninja/resume" target="_blank">
+      site repo
+    </a>
     <a href="mailto:saitheninja@gmail.com">email</a>
     <a href="https://saitheninja.com" target="_blank">photos</a>
-    <a href="https://www.instagram.com/saitheninja/" target="_blank"
-      >Instagram</a
-    >
+    <a href="https://www.instagram.com/saitheninja/" target="_blank">
+      Instagram
+    </a>
     <a href="https://twitter.com/sainotbot" target="_blank">Twitter</a>
   </footer>
 </body>
