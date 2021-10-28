@@ -7,6 +7,10 @@
   <link rel="icon" href="https://fav.farm/⌨️" />
 </svelte:head>
 
+<header>
+  <h1>sai.codes</h1>
+</header>
+
 <body class="text-white bg-gradient-to-br from-blue-900 to-pink-900 bg-fixed">
   <slot />
 </body>
