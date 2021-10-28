@@ -9,6 +9,8 @@
 
 <header>
   <h1>sai.codes</h1>
+  <a href="resume">resume</a>
+  <a href="blog">blog</a>
 </header>
 
 <body class="text-white bg-gradient-to-br from-blue-900 to-pink-900 bg-fixed">
