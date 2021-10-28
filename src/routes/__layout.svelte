@@ -10,8 +10,8 @@
 <header class="m-4">
   <a href="/" class="text-4xl font-mono">sai.codes</a>
   <span class="float-right space-x-2">
-    <a href="resume">resume</a>
     <a href="blog">blog</a>
+    <a href="resume">for hire</a>
   </span>
 </header>
 
