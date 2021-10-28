@@ -4,8 +4,9 @@
 @tailwind utilities;
 
 @layer base {
-  html {
+  :root {
     @apply text-white;
+    @apply bg-gradient-to-br from-blue-900 to-pink-900 bg-fixed;
   }
 
   a {

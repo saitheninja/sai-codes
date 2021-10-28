@@ -7,15 +7,16 @@
   <link rel="icon" href="https://fav.farm/⌨️" />
 </svelte:head>
 
-<header class="m-4">
+<header class="m-4 flex">
   <a href="/" class="text-4xl font-mono">sai.codes</a>
-  <span class="float-right space-x-2">
+  <div class="flex-grow" />
+  <span id="links" class="space-x-2">
     <a href="blog">blog</a>
     <a href="resume">for hire</a>
   </span>
 </header>
 
-<body class="text-white bg-gradient-to-br from-blue-900 to-pink-900 bg-fixed">
+<body class="">
   <slot />
 </body>
 
