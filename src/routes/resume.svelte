@@ -106,10 +106,11 @@
 
 <style>
   /* set h2 fonts & animations */
-  @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=Code%20Audio%20About");
+  @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=AudioAbout");
 
   .code {
-    font-family: "Fira Code", monospace;
+    font-family: monospace;
+    font-weight: 700;
     animation-name: slide;
     animation-duration: 10s;
     animation-timing-function: linear;
