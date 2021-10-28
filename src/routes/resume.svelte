@@ -1,5 +1,5 @@
 <div class="max-w-prose mx-4 md:mx-auto py-8 space-y-8">
-  <h2 class="font-bold text-6xl">Saien<br />Govender</h2>
+  <h2 class="font-bold text-6xl">Saien Govender</h2>
 
   <div id="code" class="space-y-2">
     <h2 class="text-4xl code">Code</h2>
