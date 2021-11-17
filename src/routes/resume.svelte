@@ -14,7 +14,7 @@
           Game: Space Janitor
         </a>
       </h3>
-      <p class="gray">2019</p>
+      <p class="parentheses">2019</p>
       <p>
         Built for ShenaniJam 2019, with the
         <a href="https://www.godotengine.org" target="_blank">
@@ -25,7 +25,7 @@
 
     <div>
       <h3>Marketing Agency: Creative Crew</h3>
-      <p class="gray">2019 - 2020</p>
+      <p class="parentheses">2019 - 2020</p>
       <p>
         HTML, CSS, JS. Managing WordPress sites. Providing technical support.
         Managing clients. Photography, videography, audio production, design.
@@ -38,7 +38,7 @@
           Freelance Web Developer
         </a>
       </h3>
-      <p class="gray">2020 - current</p>
+      <p class="parentheses">2020 - current</p>
       <p>Svelte and Vue, with the most up-to-date tools and practices.</p>
     </div>
   </div>
@@ -48,13 +48,13 @@
 
     <div>
       <h3>Amateur Musician</h3>
-      <p class="gray">2010 - current</p>
+      <p class="parentheses">2010 - current</p>
       <p>Guitar, synths, harmonica, Ardour.</p>
     </div>
 
     <div>
       <h3><a href="https://youtu.be/uCf3EeQ1Htc">Videographer</a></h3>
-      <p class="gray">2015 - 2020</p>
+      <p class="parentheses">2015 - 2020</p>
       <p>
         Corporate advertising, educational courses, music videos, voiceover
         recording.
@@ -81,28 +81,28 @@
 
     <p id="buzzwords">
       I use modern IDEs
-      <span class="gray"> (VSCode, NeoVim) </span>
+      <span class="parentheses"> (VSCode, NeoVim) </span>
 
       that have all the bells and whistles
-      <span class="gray"> (ESLint, Prettier, TypeScript) </span>
+      <span class="parentheses"> (ESLint, Prettier, TypeScript) </span>
 
       & run on Linux
-      <span class="gray"> (Arch, Ubuntu, Docker Compose) </span>
+      <span class="parentheses"> (Arch, Ubuntu, Docker Compose) </span>
 
       to build apps using JavaScript frameworks
-      <span class="gray"> (Node, Svelte, SvelteKit, Vue, Nuxt) </span>
+      <span class="parentheses"> (Node, Svelte, SvelteKit, Vue, Nuxt) </span>
 
       & CSS frameworks
-      <span class="gray"> (Tailwind CSS, PostCSS, SCSS) </span>
+      <span class="parentheses"> (Tailwind CSS, PostCSS, SCSS) </span>
 
       with CI/CD
-      <span class="gray"> (Git, GitHub Actions) </span>
+      <span class="parentheses"> (Git, GitHub Actions) </span>
 
       to bundle
-      <span class="gray"> (Vite, ESBuild, webpack) </span>
+      <span class="parentheses"> (Vite, ESBuild, webpack) </span>
 
       & deploy
-      <span class="gray"> (Digitalocean, Netlify, JAMstack) </span>
+      <span class="parentheses"> (Digitalocean, Netlify, JAMstack) </span>
       pretty websites.
     </p>
   </div>
