@@ -1,13 +1,32 @@
 <script>
+  import { onMount } from "svelte";
+
   // When the user clicks on the button, scroll to the top of the document
   function scrollTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+  onMount(() => {
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    function myFunction() {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        document.getElementById("scrollTopButton").className = "sticky";
+      } else {
+        document.getElementById("scrollTopButton").className = "hidden";
+      }
+    }
+  });
 </script>
 
 <footer class="link-hover sticky text-right bottom-2 px-4">
-  <button id="scrollTopButton" on:click={scrollTop}>
+  <button id="scrollTopButton" class="hidden" on:click={scrollTop}>
     <svg
       width="24"
       height="24"
