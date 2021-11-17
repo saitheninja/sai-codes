@@ -22,11 +22,16 @@
     @apply text-lg;
   }
 }
-
 @layer components {
   .parentheses {
     @apply text-gray-300;
     @apply italic;
     @apply text-sm;
+  }
+
+  .link-hover {
+    @apply text-gray-300 hover:text-white;
+    @apply hover:font-semibold;
+    @apply hover:italic;
   }
 }
