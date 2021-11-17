@@ -1,6 +1,7 @@
 <script>
   import "../app.css";
   import Header from "$lib/Header.svelte";
+  import Footer from "$lib/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -13,3 +14,5 @@
 <main class="max-w-prose mx-4 sm:mx-auto pb-8">
   <slot />
 </main>
+
+<Footer />
