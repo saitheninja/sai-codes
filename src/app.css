@@ -12,6 +12,7 @@
 
   a {
     @apply underline;
+    @apply link-hover;
   }
 
   h2 {
@@ -31,8 +32,7 @@
   }
 
   .link-hover {
-    @apply text-gray-300 hover:text-white;
-    @apply hover:font-bold;
-    @apply hover:italic;
+    @apply focus:font-bold hover:font-bold;
+    @apply focus:italic hover:italic;
   }
 }
