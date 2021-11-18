@@ -32,7 +32,7 @@
 
   .link-hover {
     @apply text-gray-300 hover:text-white;
-    @apply hover:font-semibold;
+    @apply hover:font-bold;
     @apply hover:italic;
   }
 }
