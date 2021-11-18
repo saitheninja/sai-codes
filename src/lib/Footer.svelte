@@ -25,7 +25,9 @@
   });
 </script>
 
-<footer class="link-hover sticky text-right bottom-2 px-4">
+<footer
+  class="link-hover sticky text-right max-w-prose w-full mx-auto bottom-2 px-4"
+>
   <button id="scrollTopButton" class="hidden" on:click={scrollTop}>
     <svg
       width="24"
