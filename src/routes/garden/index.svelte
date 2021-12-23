@@ -1,3 +1,7 @@
+<h1>The Garden</h1>
+
+<p>This is what you should picture in your head while you read:</p>
+
 <iframe
   width="560"
   height="315"

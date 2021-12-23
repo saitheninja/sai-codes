@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div class="space-y-8">
-  <h2 class="font-bold text-6xl">Saien Govender</h2>
+  <h1 class="font-bold text-6xl pb-2">Saien Govender</h1>
 
   <div id="code" class="space-y-2">
     <h2 class="text-4xl code">Code</h2>
