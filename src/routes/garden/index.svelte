@@ -1,32 +1,29 @@
-<h1>The Garden</h1>
-<br />
+<h1 class="pb-8">The Garden</h1>
 
-<div id="on-gardening" class="space-y-2">
+<div id="on-gardening" class="space-y-2 pb-8">
   <p>
     This is a digital garden. Here is some context on Digital Gardening from
     <a href="https://maggieappleton.com/garden-history">Maggie Appleton</a>.
   </p>
 
   <p>
-    This is the place where I grow seeds of ideas into trees, flowers, bonsais,
-    succulents, bushes and vines. It is a place in constant need of pruning and
-    weeding.
+    This is the place where I grow seeds of ideas into colourful flowers and
+    towering trees. There are some carefully pruned bonsais amongst the wild
+    bushes. Be careful of strangling vines.
   </p>
 </div>
-<br />
 
 <div id="ranting-swede" class="space-y-2">
-  <p class="text-sm">
-    This is what you should picture in your head while you read a post:
+  <p class="italic text-sm text-center">
+    This is what you should picture in your head while reading a post:
   </p>
 
   <iframe
-    width="560"
-    height="315"
     src="https://www.youtube.com/embed/EbPOImtuw2Q"
     title="Ranting Swede"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
+    class="w-full aspect-video"
   />
 </div>
