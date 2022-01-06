@@ -29,3 +29,7 @@
     class="w-full aspect-video"
   />
 </div>
+
+<h2 class="py-8">Writing</h2>
+
+<a href="garden/why-discord">why Discord is better</a>
