@@ -3,9 +3,7 @@
 @tailwind base;
 
 :root {
-  @apply text-white bg-gradient-to-br from-blue-900 to-pink-900 bg-fixed;
-
-  scroll-behavior: smooth;
+  @apply scroll-smooth text-white bg-gradient-to-br from-blue-900 to-pink-900 bg-fixed;
 }
 
 a {
