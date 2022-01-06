@@ -6,7 +6,7 @@
   <h1 class="font-bold text-6xl">Saien Govender</h1>
 
   <div id="work" class="space-y-2">
-    <h2 class="text-4xl work">Work</h2>
+    <h2 class="work">Work</h2>
 
     <div>
       <h3>
@@ -84,9 +84,9 @@
   </div>
 
   <div id="about" class="space-y-2">
-    <h2 class="text-4xl pb-1 about">About</h2>
+    <h2 class="about">About</h2>
 
-    <p>🇿🇦</p>
+    <p class="pt-1">🇿🇦</p>
 
     <p id="buzzwords">
       I use modern IDEs
@@ -123,6 +123,10 @@
 <style>
   /* set h2 fonts & animations */
   @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=WorkArtAbout");
+
+  h2 {
+    @apply max-w-max font-medium;
+  }
 
   .parentheses {
     @apply text-gray-300 italic text-sm;
