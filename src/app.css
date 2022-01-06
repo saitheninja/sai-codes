@@ -1,44 +1,38 @@
 /* Write your global styles here, in PostCSS syntax */
+
 @tailwind base;
+
+:root {
+  @apply text-white bg-gradient-to-br from-blue-900 to-pink-900 bg-fixed;
+
+  scroll-behavior: smooth;
+}
+
+a {
+  @apply underline link-hover;
+}
+
+h1,
+h3 {
+  @apply font-bold text-lg;
+}
+
+h1 {
+  @apply text-6xl;
+}
+
+h2 {
+  @apply max-w-max;
+}
+
 @tailwind components;
+
+.parentheses {
+  @apply text-gray-300 italic text-sm;
+}
+
+.link-hover {
+  @apply focus:text-white hover:text-white focus:font-bold hover:font-bold focus:italic hover:italic;
+}
+
 @tailwind utilities;
-
-@layer base {
-  :root {
-    @apply text-white;
-    @apply bg-gradient-to-br from-blue-900 to-pink-900 bg-fixed;
-    scroll-behavior: smooth;
-  }
-
-  a {
-    @apply underline;
-    @apply link-hover;
-  }
-
-  h1, h3 {
-    @apply font-bold;
-    @apply text-lg;
-  }
-
-  h1 {
-    @apply text-6xl;
-  }
-
-  h2 {
-    @apply max-w-max;
-  }
-}
-
-@layer components {
-  .parentheses {
-    @apply text-gray-300;
-    @apply italic;
-    @apply text-sm;
-  }
-
-  .link-hover {
-    @apply focus:text-white hover:text-white;
-    @apply focus:font-bold hover:font-bold;
-    @apply focus:italic hover:italic;
-  }
-}
