@@ -1,4 +1,4 @@
-<h2>Hello!</h2>
+<h1 class="pb-8">Hello!</h1>
 
 <p>
   I'm currently planting
