@@ -29,10 +29,6 @@ h3 {
 
 @tailwind components;
 
-.parentheses {
-  @apply text-gray-300 italic text-sm;
-}
-
 .link-hover {
   @apply focus:text-white hover:text-white focus:font-bold hover:font-bold focus:italic hover:italic;
 }

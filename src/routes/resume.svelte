@@ -2,11 +2,60 @@
   <title>sai.codes a resume</title>
 </svelte:head>
 
-<div class="space-y-8">
-  <h1 class="font-bold text-6xl pb-2">Saien Govender</h1>
+<div class="space-y-10">
+  <h1 class="font-bold text-6xl">Saien Govender</h1>
 
-  <div id="code" class="space-y-2">
-    <h2 class="text-4xl code">Code</h2>
+  <div id="work" class="space-y-2">
+    <h2 class="text-4xl work">Work</h2>
+
+    <div>
+      <h3>
+        <a href="https://sanskara.co.za" target="_blank">
+          Freelance Web Developer
+        </a>
+      </h3>
+
+      <p class="parentheses">2020 - current</p>
+
+      <p>Svelte, with the most up-to-date tools and practices.</p>
+    </div>
+
+    <div>
+      <h3>
+        <a href="https://creativecrew.co.za/" target="_blank">
+          Marketing Agency: Creative Crew
+        </a>
+      </h3>
+
+      <p class="parentheses">2019 - 2020</p>
+
+      <p>
+        Project management. Administering client websites. Providing technical
+        support. Developing educational material. Camera operator. Video
+        production. Audio engineer. Salesman. Design. IT and networking. Any
+        other odd jobs.
+      </p>
+    </div>
+
+    <div>
+      <h3>
+        <a href="https://saitheninja.com" target="_blank">
+          Freelance Media Production
+        </a>
+      </h3>
+
+      <p class="parentheses">2015 - 2019</p>
+
+      <p>
+        Photography, videography & audio for weddings, engagements, graduations,
+        birthdays, corporate events, advertising, educational courses, music
+        videos, podcasts, voiceovers, etc.
+      </p>
+    </div>
+  </div>
+
+  <div id="art" class="space-y-2">
+    <h2 class="text-5xl art">Art</h2>
 
     <div>
       <h3>
@@ -14,7 +63,9 @@
           Game: Space Janitor
         </a>
       </h3>
+
       <p class="parentheses">2019</p>
+
       <p>
         Built for ShenaniJam 2019, with the
         <a href="https://www.godotengine.org" target="_blank">
@@ -24,85 +75,46 @@
     </div>
 
     <div>
-      <h3>Marketing Agency: Creative Crew</h3>
-      <p class="parentheses">2019 - 2020</p>
-      <p>
-        HTML, CSS, JS. Managing WordPress sites. Providing technical support.
-        Managing clients. Photography, videography, audio production, design.
-      </p>
-    </div>
+      <h3>Music</h3>
 
-    <div>
-      <h3>
-        <a href="https://sanskara.co.za" target="_blank">
-          Freelance Web Developer
-        </a>
-      </h3>
-      <p class="parentheses">2020 - current</p>
-      <p>Svelte and Vue, with the most up-to-date tools and practices.</p>
-    </div>
-  </div>
-
-  <div id="audio" class="space-y-2">
-    <h2 class="text-5xl audio">Audio</h2>
-
-    <div>
-      <h3>Amateur Musician</h3>
       <p class="parentheses">2010 - current</p>
-      <p>Guitar, synths, harmonica, Ardour.</p>
-    </div>
 
-    <div>
-      <h3><a href="https://youtu.be/uCf3EeQ1Htc">Videographer</a></h3>
-      <p class="parentheses">2015 - 2020</p>
-      <p>
-        Corporate advertising, educational courses, music videos, voiceover
-        recording.
-      </p>
+      <p>Guitar, piano, synths, harmonica.</p>
     </div>
   </div>
 
   <div id="about" class="space-y-2">
     <h2 class="text-4xl pb-1 about">About</h2>
 
-    <p>I live in South Africa. 🇿🇦</p>
-
-    <p>
-      When I started using the internet, it took ~20 minutes to download an mp3.
-      I have spent many hours contemplating audio bitrates and download sizes.
-      💿
-    </p>
-
-    <p>
-      Pocket Casts stats:
-      <br />listened to podcasts for <strong>164 days, 15 hours</strong>. ⌛
-      <br />(That's quite a lot.)
-    </p>
+    <p>🇿🇦</p>
 
     <p id="buzzwords">
       I use modern IDEs
       <span class="parentheses"> (VSCode, NeoVim) </span>
 
       that have all the bells and whistles
-      <span class="parentheses"> (ESLint, Prettier, TypeScript) </span>
+      <span class="parentheses"> (ESLint, Prettier) </span>
 
       & run on Linux
-      <span class="parentheses"> (Arch, Ubuntu, Docker Compose) </span>
+      <span class="parentheses"> (Ubuntu, Arch, Manjaro, Endeavour ) </span>
 
-      to build apps using JavaScript frameworks
-      <span class="parentheses"> (Node, Svelte, SvelteKit, Vue, Nuxt) </span>
-
-      & CSS frameworks
+      to write apps in HTML, CSS
       <span class="parentheses"> (Tailwind CSS, PostCSS, SCSS) </span>
 
-      with CI/CD
+      & JavaScript
+      <span class="parentheses"> (TypeScript, Node, Svelte, SvelteKit) </span>
+
+      with CI/CD pipelines
       <span class="parentheses"> (Git, GitHub Actions) </span>
 
       to bundle
-      <span class="parentheses"> (Vite, ESBuild, webpack) </span>
+      <span class="parentheses"> (Vite, Rollup, ESBuild, webpack) </span>
 
       & deploy
-      <span class="parentheses"> (Digitalocean, Netlify, JAMstack) </span>
+      <span class="parentheses">
+        (Docker Compose, Digitalocean, Netlify, JAMstack)
+      </span>
+
       pretty websites.
     </p>
   </div>
@@ -110,9 +122,13 @@
 
 <style>
   /* set h2 fonts & animations */
-  @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=AudioAbout");
+  @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=WorkArtAbout");
 
-  .code {
+  .parentheses {
+    @apply text-gray-300 italic text-sm;
+  }
+
+  .work {
     font-family: monospace;
     font-weight: 700;
     animation-name: slide;
@@ -121,7 +137,7 @@
     animation-iteration-count: infinite;
   }
 
-  .audio {
+  .art {
     font-family: "Fleur De Leah", cursive;
     animation-name: pulse;
     animation-duration: 10s;
