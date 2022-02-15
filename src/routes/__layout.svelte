@@ -9,7 +9,7 @@
   <link rel="icon" href="https://fav.farm/⌨️" />
 </svelte:head>
 
-<div class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen">
   <Header />
 
   <main class="max-w-prose mx-4 sm:mx-auto pb-8 flex-grow">
@@ -17,4 +17,4 @@
   </main>
 
   <Footer />
-</div>
+</body>
