@@ -10,7 +10,12 @@ body {
 }
 
 a {
-  @apply underline link-hover;
+  @apply underline underline-offset-2 decoration-1;
+}
+a:hover,
+a:focus {
+  @apply text-white;
+  @apply decoration-wavy;
 }
 
 h1,
@@ -32,10 +37,6 @@ h3 {
 }
 
 @tailwind components;
-
-.link-hover {
-  @apply focus:text-white hover:text-white focus:font-bold hover:font-bold focus:italic hover:italic;
-}
 
 .noise-bg {
   @apply min-h-screen min-w-full;
