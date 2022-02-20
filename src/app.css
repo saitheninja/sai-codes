@@ -1,9 +1,12 @@
-/* Write your global styles here, in PostCSS syntax */
-
 @tailwind base;
 
 :root {
-  @apply scroll-smooth text-white bg-gradient-to-br from-blue-900 to-pink-900 bg-fixed;
+  @apply scroll-smooth text-white;
+}
+
+body {
+  @apply bg-fixed;
+  @apply bg-gradient-to-br from-blue-900 to-pink-900;
 }
 
 a {
@@ -32,6 +35,15 @@ h3 {
 
 .link-hover {
   @apply focus:text-white hover:text-white focus:font-bold hover:font-bold focus:italic hover:italic;
+}
+
+.noise-bg {
+  @apply min-h-screen min-w-full;
+  @apply top-0 fixed;
+  background-image: url("./lib/noise.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  mix-blend-mode: color-dodge;
 }
 
 @tailwind utilities;

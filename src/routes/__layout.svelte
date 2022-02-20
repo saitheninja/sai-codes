@@ -9,10 +9,12 @@
   <link rel="icon" href="https://fav.farm/⌨️" />
 </svelte:head>
 
-<div class="flex flex-col min-h-screen">
+<div id="noise" class="noise-bg" />
+
+<div class="flex flex-col min-h-screen isolate">
   <Header />
 
-  <main class="max-w-prose mx-4 sm:mx-auto pb-8 flex-grow">
+  <main class="max-w-prose mx-4 sm:mx-auto pb-8 flex-grow my-8">
     <slot />
   </main>
 
