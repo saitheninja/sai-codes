@@ -18,7 +18,7 @@
 
     <div>
       <h3>
-        <a href="https://sanskara.co.za" target="_blank">
+        <a href="https://sanskara.co.za" target="_blank" rel="external">
           Freelance Web Developer
         </a>
       </h3>
@@ -33,7 +33,7 @@
 
     <div>
       <h3>
-        <a href="https://creativecrew.co.za/" target="_blank">
+        <a href="https://creativecrew.co.za/" target="_blank" rel="external">
           Creative Crew: Marketing Manager
         </a>
       </h3>
@@ -47,7 +47,7 @@
 
     <div>
       <h3>
-        <a href="https://saitheninja.com" target="_blank">
+        <a href="https://saitheninja.com" target="_blank" rel="external">
           Saitheninja Photography: Owner
         </a>
       </h3>
@@ -75,7 +75,11 @@
 
     <div>
       <h3>
-        <a href="https://www.instagram.com/saitheninja/" target="_blank">
+        <a
+          href="https://www.instagram.com/saitheninja/"
+          target="_blank"
+          rel="external"
+        >
           Photography
         </a>
       </h3>
@@ -84,7 +88,11 @@
 
       <p>
         Check out my
-        <a href="https://www.instagram.com/saitheninja/" target="_blank">
+        <a
+          href="https://www.instagram.com/saitheninja/"
+          target="_blank"
+          rel="external"
+        >
           Instagram.
         </a>
       </p>
@@ -92,7 +100,11 @@
 
     <div>
       <h3>
-        <a href="https://saitheninja.itch.io/spacejanitor" target="_blank">
+        <a
+          href="https://saitheninja.itch.io/spacejanitor"
+          target="_blank"
+          rel="external"
+        >
           Video Game: Space Janitor
         </a>
       </h3>
@@ -101,7 +113,7 @@
 
       <p>
         Built for ShenaniJam 2019, with the
-        <a href="https://www.godotengine.org" target="_blank">
+        <a href="https://www.godotengine.org" target="_blank" rel="external">
           Godot engine.
         </a>
       </p>

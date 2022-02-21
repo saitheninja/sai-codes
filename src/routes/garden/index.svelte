@@ -3,7 +3,11 @@
 <div id="on-gardening" class="space-y-4 pb-4">
   <p>
     Welcome to this digital garden. Here is some context from
-    <a href="https://maggieappleton.com/garden-history" target="_blank">
+    <a
+      href="https://maggieappleton.com/garden-history"
+      target="_blank"
+      rel="external"
+    >
       Maggie Appleton.
     </a>
   </p>
