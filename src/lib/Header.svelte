@@ -1,5 +1,5 @@
 <header
-  class="p-4 sticky top-0 backdrop-filter backdrop-hue-rotate-90 backdrop-blur-md z-10 text-gray-300"
+  class="p-4 sticky top-0 backdrop-filter backdrop-hue-rotate-90 backdrop-blur-md z-10 text-gray-300 print:hidden"
 >
   <nav>
     <ul class="leading-snug">
