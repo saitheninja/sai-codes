@@ -32,4 +32,6 @@
 
 <h2 class="pt-8 pb-2">Writing</h2>
 
-<a href="/garden/why-discord-is-better">why Discord is better</a>
+<a href="/garden/discord-is-better">
+  Discord is Better Than What We Had Before
+</a>

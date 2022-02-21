@@ -1,4 +1,4 @@
-<h1 class="mb-10">why Discord is better</h1>
+<h1 class="mb-10">Discord is Better Than What We Had Before</h1>
 
 <div class="space-y-4">
   <p>
