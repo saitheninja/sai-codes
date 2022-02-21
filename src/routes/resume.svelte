@@ -145,7 +145,7 @@
         (Docker Compose, DigitalOcean, Netlify, JAMstack)
       </span>
 
-      pretty websites.
+      good-looking websites.
     </p>
   </div>
 </div>
