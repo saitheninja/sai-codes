@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div class="space-y-10">
-  <div class="w-full">
+  <div id="main-header" class="w-full">
     <h1 class="text-6xl pb-1">
       <a href="/resume">Saien Govender</a>
     </h1>
@@ -156,6 +156,9 @@
 
   h2 {
     @apply max-w-max font-medium;
+  }
+  h3 {
+    @apply mb-1;
   }
 
   .parentheses {
