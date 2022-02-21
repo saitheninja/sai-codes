@@ -1,7 +1,7 @@
 @tailwind base;
 
 :root {
-  @apply scroll-smooth text-white print:text-black;
+  @apply scroll-smooth text-white print:text-black leading-relaxed;
 }
 
 body {
