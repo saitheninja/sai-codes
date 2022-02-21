@@ -5,7 +5,7 @@
 <div class="space-y-10">
   <div class="w-full">
     <h1 class="text-6xl pb-1">
-      <a href="resume">Saien Govender</a>
+      <a href="/resume">Saien Govender</a>
     </h1>
 
     <p class="text-gray-300 print:text-gray-600">

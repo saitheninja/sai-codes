@@ -10,9 +10,9 @@
     </a>
 
     <div class="space-x-2">
-      <a href="resume">resume</a>
-      <a href="garden">garden</a>
-      <a href="contact">contact</a>
+      <a href="/resume">resume</a>
+      <a href="/garden">garden</a>
+      <a href="/contact">contact</a>
     </div>
   </nav>
 </header>
