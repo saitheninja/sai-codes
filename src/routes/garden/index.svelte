@@ -21,6 +21,7 @@
   <p class="italic text-sm pb-1 text-gray-300">
     This is what you should picture in your head while reading a post:
   </p>
+
   <iframe
     src="https://www.youtube.com/embed/EbPOImtuw2Q"
     title="Ranting Swede"
@@ -31,10 +32,18 @@
   />
 </div>
 
-<ul class="list-disc pl-6">
+<ul id="writing-list" class="list-disc pl-6">
   <li>
     <a href="/garden/discord-is-better">
       Discord is Better Than What We Had Before
     </a>
+  </li>
+
+  <li>
+    <a href="/garden/on-visual-composition">On Visual Composition</a>
+  </li>
+
+  <li>
+    <a href="/garden/on-css">On CSS</a>
   </li>
 </ul>
