@@ -3,9 +3,17 @@
 </svelte:head>
 
 <div class="space-y-10">
-  <h1 class="font-bold text-6xl">Saien Govender</h1>
+  <div class="w-full">
+    <h1 class="text-6xl pb-1 text-center">
+      <a href="resume">Saien Govender</a>
+    </h1>
 
-  <div id="work" class="space-y-2">
+    <p class="text-gray-300 print:text-gray-600 text-center">
+      Full-stack developer with a frontend focus.
+    </p>
+  </div>
+
+  <div id="work" class="space-y-4">
     <h2 class="work">Work</h2>
 
     <div>
@@ -17,50 +25,75 @@
 
       <p class="parentheses">2020 - current</p>
 
-      <p>Svelte, with the most up-to-date tools and practices.</p>
-    </div>
-
-    <div>
-      <h3>
-        <a href="https://creativecrew.co.za/" target="_blank">
-          Marketing Agency: Creative Crew
-        </a>
-      </h3>
-
-      <p class="parentheses">2019 - 2020</p>
-
       <p>
-        Project management. Administering client websites. Providing technical
-        support. Developing educational material. Camera operator. Video
-        production. Audio engineer. Salesman. Design. IT and networking. Any
-        other odd jobs.
+        SvelteKit sites, focused on keeping up with modern design, tools and
+        practices.
       </p>
     </div>
 
     <div>
       <h3>
+        <a href="https://creativecrew.co.za/" target="_blank">
+          Creative Crew: Marketing Manager
+        </a>
+      </h3>
+
+      <p class="parentheses">2019 - 2020</p>
+
+      <p>Responsibilities included:</p>
+      project management, educational content development, video production, audio
+      production, design, website administration, technical support, sales.
+    </div>
+
+    <div>
+      <h3>
         <a href="https://saitheninja.com" target="_blank">
-          Freelance Media Production
+          Saitheninja Photography: Owner
         </a>
       </h3>
 
       <p class="parentheses">2015 - 2019</p>
 
       <p>
-        Photography, videography & audio for weddings, engagements, graduations,
-        birthdays, corporate events, advertising, educational courses, music
-        videos, podcasts, voiceovers, etc.
+        Photography, videography & audio production for events. Previous events
+        include: graduations, birthdays, corporate events, advertising,
+        engagements, weddings, educational courses, music videos, podcasts.
       </p>
     </div>
   </div>
 
-  <div id="art" class="space-y-2">
+  <div id="art" class="space-y-4">
     <h2 class="text-5xl art">Art</h2>
+
+    <div>
+      <h3>Music</h3>
+
+      <p class="parentheses">2010 - current</p>
+
+      <p>Guitar, harmonica and piano.</p>
+    </div>
+
+    <div>
+      <h3>
+        <a href="https://www.instagram.com/saitheninja/" target="_blank">
+          Photography
+        </a>
+      </h3>
+
+      <p class="parentheses">2013 - current</p>
+
+      <p>
+        Check out my
+        <a href="https://www.instagram.com/saitheninja/" target="_blank">
+          Instagram.
+        </a>
+      </p>
+    </div>
 
     <div>
       <h3>
         <a href="https://saitheninja.itch.io/spacejanitor" target="_blank">
-          Game: Space Janitor
+          Video Game: Space Janitor
         </a>
       </h3>
 
@@ -73,46 +106,43 @@
         </a>
       </p>
     </div>
-
-    <div>
-      <h3>Music</h3>
-
-      <p class="parentheses">2010 - current</p>
-
-      <p>Guitar, piano, synths, harmonica.</p>
-    </div>
   </div>
 
-  <div id="about" class="space-y-2">
+  <div id="about" class="space-y-4">
     <h2 class="about">About</h2>
 
-    <p class="pt-1">🇿🇦</p>
+    <p>I am located in Johannesburg, South Africa. 🇿🇦</p>
 
-    <p id="buzzwords">
+    <p>
+      Through many years of experimenting with computers, I've become an expert
+      troubleshooter.
+    </p>
+
+    <p id="web-buzzwords">
       I use modern IDEs
-      <span class="parentheses"> (VSCode, NeoVim) </span>
+      <span class="parentheses">(VSCode, NeoVim)</span>
 
       that have all the bells and whistles
-      <span class="parentheses"> (ESLint, Prettier) </span>
+      <span class="parentheses">(ESLint, Stylelint, Prettier)</span>
 
       & run on Linux
-      <span class="parentheses"> (Ubuntu, Arch, Manjaro, Endeavour ) </span>
+      <span class="parentheses">(Ubuntu, Arch)</span>
 
       to write apps in HTML, CSS
-      <span class="parentheses"> (Tailwind CSS, PostCSS, SCSS) </span>
+      <span class="parentheses">(Tailwind CSS, PostCSS, SCSS)</span>
 
       & JavaScript
-      <span class="parentheses"> (TypeScript, Node, Svelte, SvelteKit) </span>
+      <span class="parentheses">(TypeScript, Node, Svelte, SvelteKit)</span>
 
       with CI/CD pipelines
-      <span class="parentheses"> (Git, GitHub Actions) </span>
+      <span class="parentheses">(Git, GitHub Actions)</span>
 
       to bundle
-      <span class="parentheses"> (Vite, Rollup, ESBuild, webpack) </span>
+      <span class="parentheses">(Vite, Rollup, ESBuild)</span>
 
       & deploy
       <span class="parentheses">
-        (Docker Compose, Digitalocean, Netlify, JAMstack)
+        (Docker Compose, DigitalOcean, Netlify, JAMstack)
       </span>
 
       pretty websites.
@@ -129,7 +159,7 @@
   }
 
   .parentheses {
-    @apply text-gray-300 italic text-sm;
+    @apply text-gray-300 print:text-gray-600 italic text-sm;
   }
 
   .work {
