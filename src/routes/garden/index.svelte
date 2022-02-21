@@ -16,7 +16,7 @@
 </div>
 
 <div id="ranting-swede">
-  <p class="italic text-sm text-center pb-1">
+  <p class="italic text-sm text-center pb-1 text-gray-300">
     This is what you should picture in your head while reading a post:
   </p>
 
@@ -30,6 +30,6 @@
   />
 </div>
 
-<h2 class="py-8">Writing</h2>
+<h2 class="pt-8 pb-2">Writing</h2>
 
 <a href="garden/why-discord">why Discord is better</a>
