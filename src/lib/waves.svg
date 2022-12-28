@@ -1,0 +1,17 @@
+<!-- https://redstapler.co/realistic-water-effect-svg-turbulence-filter/ -->
+
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <filter id="wavesFilter">
+    <feTurbulence id="wavesTurbulence" stitchTiles="noStitch" type="turbulence" seed="2" numOctaves="7"
+      baseFrequency="0.02 0.06">
+      <animate attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06"
+        repeatCount="indefinite" />
+    </feTurbulence>
+
+    <!-- <feDisplacementMap in="SourceGraphic" in2="wavesTurbulence" scale="50" xChannelSelector="R" yChannelSelector="G"> -->
+    <feDisplacementMap scale="20" in="SourceGraphic" />
+  </filter>
+
+  <rect width="100" height="100" filter="url(#wavesFilter)" opacity="0.1" />
+</svg>
+

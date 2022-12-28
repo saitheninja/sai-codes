@@ -10,11 +10,12 @@
 </svelte:head>
 
 <div id="noise" class="noise-bg" />
+<div id="waves" class="waves-bg" />
 
-<div class="flex flex-col min-h-screen isolate">
+<div class="isolate flex min-h-screen flex-col">
   <Header />
 
-  <main class="max-w-prose mx-4 sm:mx-auto pb-8 flex-grow my-8">
+  <main class="mx-4 my-8 max-w-prose flex-grow pb-8 sm:mx-auto">
     <slot />
   </main>
 
