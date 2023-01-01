@@ -8,7 +8,7 @@
   <title>sai.codes</title>
   <link
     rel="icon"
-    href="https://fav.farm/⌨️"
+    href="https://fav.farm/🐧"
   />
   <meta
     name="description"
