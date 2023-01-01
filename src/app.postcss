@@ -51,10 +51,21 @@ a:focus {
 .waves-bg {
   @apply fixed top-0;
   @apply h-full w-full;
-  @apply print:bg-transparent;
+  @apply bg-cover bg-fixed print:bg-transparent;
 
   background-image: url("./lib/waves.svg");
   mix-blend-mode: color-burn;
+}
+
+.water-jpg {
+  @apply bg-cover bg-center bg-blend-multiply bg-opacity-50;
+
+  background-image: url("./lib/banner.jpg");
+  filter: url("#wavesFilter");
+
+  /* filter: url("./lib/waves.svg#wavesFilter"); */
+
+  /* @apply backdrop-hue-rotate-90 backdrop-blur-sm; */
 }
 
 @tailwind utilities;

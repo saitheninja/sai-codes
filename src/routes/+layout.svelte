@@ -12,22 +12,13 @@
   />
   <meta
     name="description"
-    content="Miscellaneous experiments and ranting."
+    content="Miscellaneous experiments and rants."
   />
   <meta
     name="keywords"
     content="Svelte, HTML, CSS, JavaScript"
   />
 </svelte:head>
-
-<div
-  id="noise"
-  class="noise-bg"
-/>
-<div
-  id="waves"
-  class="waves-bg"
-/>
 
 <div class="isolate flex min-h-screen flex-col">
   <Header />
