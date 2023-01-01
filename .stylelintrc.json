@@ -1,33 +1,17 @@
 {
-  "extends": ["stylelint-config-recommended", "stylelint-config-prettier"],
-  "plugins": [
-    "stylelint-high-performance-animation",
-    "stylelint-order",
-    "stylelint-declaration-block-no-ignored-properties",
-    "stylelint-csstree-validator"
-  ],
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "plugins": ["stylelint-high-performance-animation", "stylelint-csstree-validator"],
   "rules": {
-    "plugin/no-low-performance-animation-properties": [
-      true,
-      {
-        "ignoreProperties": ["color", "background-color", "box-shadow"]
-      }
-    ],
-    "indentation": 2,
-    "order/order": ["custom-properties", "declarations"],
-    "order/properties-alphabetical-order": null,
-    "declaration-block-no-duplicate-custom-properties": true,
-    "max-nesting-depth": 3,
-    "selector-pseudo-class-no-unknown": null,
     "at-rule-no-unknown": [
       true,
       {
         "ignoreAtRules": ["tailwind", "layer"]
       }
     ],
-    "plugin/declaration-block-no-ignored-properties": true,
+    "plugin/no-low-performance-animation-properties": true,
     "csstree/validator": {
-      "atrules": false
+      "syntaxExtensions": ["sass", "less"],
+      "ignoreAtrules": ["tailwind", "apply"]
     }
   }
 }

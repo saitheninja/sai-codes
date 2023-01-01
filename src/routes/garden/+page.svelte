@@ -6,7 +6,7 @@
     <a
       href="https://maggieappleton.com/garden-history"
       target="_blank"
-      rel="external"
+      rel="noreferrer external"
     >
       Maggie Appleton.
     </a>

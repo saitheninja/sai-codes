@@ -4,7 +4,7 @@
       <a
         href="https://github.com/saitheninja/resume"
         target="_blank"
-        rel="external"
+        rel="noreferrer external"
       >
         GitHub
       </a>
@@ -13,7 +13,7 @@
       <a
         href="https://www.instagram.com/saitheninja/"
         target="_blank"
-        rel="external"
+        rel="noreferrer external"
       >
         Instagram
       </a>

@@ -1,7 +1,7 @@
 @tailwind base;
 
 :root {
-  @apply scroll-smooth text-white print:text-black leading-relaxed;
+  @apply scroll-smooth leading-relaxed text-white print:text-black;
 }
 
 body {
@@ -14,19 +14,23 @@ h2,
 h3 {
   @apply font-bold;
 }
+
 h1 {
   @apply text-6xl;
 }
+
 h2 {
   @apply text-4xl;
 }
+
 h3 {
   @apply text-lg;
 }
 
 a {
-  @apply underline underline-offset-4 decoration-1;
+  @apply underline decoration-1 underline-offset-4;
 }
+
 a:hover,
 a:focus {
   @apply text-white;
@@ -36,16 +40,19 @@ a:focus {
 @tailwind components;
 
 .noise-bg {
-  @apply top-0 fixed;
+  @apply fixed top-0;
   @apply h-full w-full;
-  @apply bg-fixed bg-cover print:bg-transparent;
+  @apply bg-cover bg-fixed print:bg-transparent;
+
   background-image: url("./lib/noise.svg");
   mix-blend-mode: color-dodge;
 }
+
 .waves-bg {
-  @apply top-0 fixed;
+  @apply fixed top-0;
   @apply h-full w-full;
   @apply print:bg-transparent;
+
   background-image: url("./lib/waves.svg");
   mix-blend-mode: color-burn;
 }

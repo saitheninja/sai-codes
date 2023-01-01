@@ -18,7 +18,7 @@
 
     <div>
       <h3>
-        <a href="https://sanskara.co.za" target="_blank" rel="external">
+        <a href="https://sanskara.co.za" target="_blank" rel="noreferrer external">
           Freelance Web Developer
         </a>
       </h3>
@@ -33,7 +33,7 @@
 
     <div>
       <h3>
-        <a href="https://creativecrew.co.za/" target="_blank" rel="external">
+        <a href="https://creativecrew.co.za/" target="_blank" rel="noreferrer external">
           Creative Crew: Marketing Manager
         </a>
       </h3>
@@ -47,7 +47,7 @@
 
     <div>
       <h3>
-        <a href="https://saitheninja.com" target="_blank" rel="external">
+        <a href="https://saitheninja.com" target="_blank" rel="noreferrer external">
           Saitheninja Photography: Owner
         </a>
       </h3>
@@ -78,7 +78,7 @@
         <a
           href="https://www.instagram.com/saitheninja/"
           target="_blank"
-          rel="external"
+          rel="noreferrer external"
         >
           Photography
         </a>
@@ -91,7 +91,7 @@
         <a
           href="https://www.instagram.com/saitheninja/"
           target="_blank"
-          rel="external"
+          rel="noreferrer external"
         >
           Instagram.
         </a>
@@ -103,7 +103,7 @@
         <a
           href="https://saitheninja.itch.io/spacejanitor"
           target="_blank"
-          rel="external"
+          rel="noreferrer external"
         >
           Video Game: Space Janitor
         </a>
@@ -113,7 +113,7 @@
 
       <p>
         Built for ShenaniJam 2019, with the
-        <a href="https://www.godotengine.org" target="_blank" rel="external">
+        <a href="https://www.godotengine.org" target="_blank" rel="noreferrer external">
           Godot engine.
         </a>
       </p>
@@ -162,13 +162,14 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   /* set h2 fonts & animations */
   @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=WorkArtAbout");
 
   h2 {
     @apply max-w-max font-medium;
   }
+
   h3 {
     @apply mb-1;
   }

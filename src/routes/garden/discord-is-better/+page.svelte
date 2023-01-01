@@ -6,7 +6,7 @@
     <a
       href="https://www.youtube.com/watch?v=3nhQmUuPbBs&t=222s"
       target="_blank"
-      rel="external"
+      rel="noreferrer external"
     >
       a asshole.
     </a>
