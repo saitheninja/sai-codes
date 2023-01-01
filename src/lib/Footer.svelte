@@ -22,9 +22,13 @@
 </script>
 
 <footer
-  class="sticky text-right max-w-prose w-full mx-auto bottom-4 px-2 print-hidden"
+  class="print-hidden sticky bottom-4 mx-auto w-full max-w-prose px-2 text-right"
 >
-  <button id="scrollTopButton" class="hidden" on:click={scrollTop}>
+  <button
+    id="scrollTopButton"
+    class="hidden"
+    on:click={scrollTop}
+  >
     <svg
       width="24"
       height="24"

@@ -1,4 +1,4 @@
-<h1 class="leading-tight mb-10">On CSS</h1>
+<h1 class="mb-10 leading-tight">On CSS</h1>
 
 <div class="space-y-4">
   <p>

@@ -3,8 +3,11 @@
 </svelte:head>
 
 <div class="space-y-10">
-  <div id="main-header" class="w-full">
-    <h1 class="text-6xl pb-1">
+  <div
+    id="main-header"
+    class="w-full"
+  >
+    <h1 class="pb-1 text-6xl">
       <a href="/resume">Saien Govender</a>
     </h1>
 
@@ -13,12 +16,19 @@
     </p>
   </div>
 
-  <div id="work" class="space-y-4">
+  <div
+    id="work"
+    class="space-y-4"
+  >
     <h2 class="work">Work</h2>
 
     <div>
       <h3>
-        <a href="https://sanskara.co.za" target="_blank" rel="noreferrer external">
+        <a
+          href="https://sanskara.co.za"
+          target="_blank"
+          rel="noreferrer external"
+        >
           Freelance Web Developer
         </a>
       </h3>
@@ -33,7 +43,11 @@
 
     <div>
       <h3>
-        <a href="https://creativecrew.co.za/" target="_blank" rel="noreferrer external">
+        <a
+          href="https://creativecrew.co.za/"
+          target="_blank"
+          rel="noreferrer external"
+        >
           Creative Crew: Marketing Manager
         </a>
       </h3>
@@ -47,7 +61,11 @@
 
     <div>
       <h3>
-        <a href="https://saitheninja.com" target="_blank" rel="noreferrer external">
+        <a
+          href="https://saitheninja.com"
+          target="_blank"
+          rel="noreferrer external"
+        >
           Saitheninja Photography: Owner
         </a>
       </h3>
@@ -62,8 +80,11 @@
     </div>
   </div>
 
-  <div id="art" class="space-y-4">
-    <h2 class="text-5xl art">Art</h2>
+  <div
+    id="art"
+    class="space-y-4"
+  >
+    <h2 class="art text-5xl">Art</h2>
 
     <div>
       <h3>Music</h3>
@@ -113,14 +134,21 @@
 
       <p>
         Built for ShenaniJam 2019, with the
-        <a href="https://www.godotengine.org" target="_blank" rel="noreferrer external">
+        <a
+          href="https://www.godotengine.org"
+          target="_blank"
+          rel="noreferrer external"
+        >
           Godot engine.
         </a>
       </p>
     </div>
   </div>
 
-  <div id="about" class="space-y-4">
+  <div
+    id="about"
+    class="space-y-4"
+  >
     <h2 class="about">About</h2>
 
     <p>I am located in Johannesburg, South Africa. 🇿🇦</p>
@@ -175,7 +203,7 @@
   }
 
   .parentheses {
-    @apply text-gray-300 print:text-gray-600 italic text-sm;
+    @apply text-sm italic text-gray-300 print:text-gray-600;
   }
 
   .work {

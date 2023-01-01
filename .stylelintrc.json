@@ -1,6 +1,9 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
-  "plugins": ["stylelint-high-performance-animation", "stylelint-csstree-validator"],
+  "plugins": [
+    "stylelint-high-performance-animation",
+    "stylelint-csstree-validator"
+  ],
   "rules": {
     "at-rule-no-unknown": [
       true,
