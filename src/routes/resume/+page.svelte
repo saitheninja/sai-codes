@@ -3,16 +3,18 @@
 </svelte:head>
 
 <div class="space-y-10">
-  <div
-    id="main-header"
-    class="w-full"
-  >
-    <h1 class="pb-1 text-6xl">
-      <a href="/resume">Saien Govender</a>
+  <div id="name">
+    <h1>
+      <a
+        href="/resume"
+        class="underline-offset-8"
+      >
+        Saien Govender
+      </a>
     </h1>
 
-    <p class="text-colour-secondary">
-      Full-stack developer with a frontend focus.
+    <p class="text-minor pt-2">
+      Full-stack web developer focused on usability and good design.
     </p>
   </div>
 
@@ -33,12 +35,9 @@
         </a>
       </h3>
 
-      <p class="parentheses">2020 - current</p>
+      <p class="text-minor">2020 - current</p>
 
-      <p>
-        SvelteKit sites, focused on keeping up with modern design, tools and
-        practices.
-      </p>
+      <p>SvelteKit sites, focused on usability and good design practices.</p>
     </div>
 
     <div>
@@ -52,11 +51,13 @@
         </a>
       </h3>
 
-      <p class="parentheses">2019 - 2020</p>
+      <p class="text-minor">2019 - 2020</p>
 
-      <p>Responsibilities included:</p>
-      project management, educational content development, video production, audio
-      production, design, website administration, technical support, sales.
+      <p>
+        Responsibilities included: project management, content development,
+        audio & video production, design, website administration, technical
+        support, sales.
+      </p>
     </div>
 
     <div>
@@ -70,12 +71,12 @@
         </a>
       </h3>
 
-      <p class="parentheses">2015 - 2019</p>
+      <p class="text-minor">2015 - current</p>
 
       <p>
-        Photography, videography & audio production for events. Previous events
-        include: graduations, birthdays, corporate events, advertising,
-        engagements, weddings, educational courses, music videos, podcasts.
+        Photography, videography & audio production. Previous events include:
+        graduations, birthdays, corporate events, advertising, engagements,
+        weddings, educational courses, music videos, podcasts.
       </p>
     </div>
   </div>
@@ -89,57 +90,59 @@
     <div>
       <h3>Music</h3>
 
-      <p class="parentheses">2010 - current</p>
+      <p class="text-minor">2010 - current</p>
 
-      <p>Guitar, harmonica and piano.</p>
+      <p>
+        I'm not good, but I do like to jam out on my trumpet, guitar and piano.
+      </p>
     </div>
 
     <div>
-      <h3>
-        <a
-          href="https://www.instagram.com/saitheninja/"
-          target="_blank"
-          rel="noreferrer external"
-        >
-          Photography
-        </a>
-      </h3>
+      <h3>Photography</h3>
 
-      <p class="parentheses">2013 - current</p>
+      <p class="text-minor">2013 - current</p>
 
       <p>
-        Check out my
+        I'm pretty good at taking photos. Check out my
         <a
           href="https://www.instagram.com/saitheninja/"
           target="_blank"
           rel="noreferrer external"
         >
-          Instagram.
+          Instagram
+        </a>
+        or my
+        <a
+          href="https://saitheninja.com"
+          target="_blank"
+          rel="noreferrer external"
+        >
+          website.
         </a>
       </p>
     </div>
 
     <div>
-      <h3>
-        <a
-          href="https://saitheninja.itch.io/spacejanitor"
-          target="_blank"
-          rel="noreferrer external"
-        >
-          Video Game: Space Janitor
-        </a>
-      </h3>
+      <h3>Video Games</h3>
 
-      <p class="parentheses">2019</p>
+      <p class="text-minor">2019 - current</p>
 
       <p>
-        Built for ShenaniJam 2019, with the
+        I like to make games with the
         <a
           href="https://www.godotengine.org"
           target="_blank"
           rel="noreferrer external"
         >
           Godot engine.
+        </a>
+        Play some games I've made on
+        <a
+          href="https://saitheninja.itch.io/"
+          target="_blank"
+          rel="noreferrer external"
+        >
+          my itch.io page.
         </a>
       </p>
     </div>
@@ -151,10 +154,10 @@
   >
     <h2 class="about">About</h2>
 
-    <p>I am located in Johannesburg, South Africa. 🇿🇦</p>
+    <p>I live in Johannesburg, South Africa. 🇿🇦</p>
 
     <p>
-      Through many years of experimenting with computers, I've become an expert
+      Through many years of experimenting with technology, I've become an expert
       troubleshooter.
     </p>
 
@@ -182,7 +185,7 @@
 
       & deploy
       <span class="text-minor">
-        (Docker Compose, DigitalOcean, Netlify, JAMstack)
+        (Docker, DigitalOcean, Netlify, JAMstack)
       </span>
 
       good-looking websites.
