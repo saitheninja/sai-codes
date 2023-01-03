@@ -39,15 +39,17 @@ a:focus {
 
 @tailwind components;
 
-.waves-filter {
+.waves-jpg {
   @apply bg-cover bg-center;
 
   background-image: url("$lib/banner.jpg");
   filter: url("#wavesFilter");
-
-  /* background-blend-mode: darken; */
-
-  /* @apply backdrop-hue-rotate-90 backdrop-blur-sm; */
 }
 
+.waves-mask {
+  @apply -backdrop-hue-rotate-30 backdrop-blur-sm;
+
+  mask-image: url("$lib/banner-mask.png");
+  filter: url("#wavesFilter");
+}
 @tailwind utilities;
