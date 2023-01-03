@@ -39,31 +39,13 @@ a:focus {
 
 @tailwind components;
 
-.noise-bg {
-  @apply fixed top-0;
-  @apply h-full w-full;
-  @apply bg-cover bg-fixed print:bg-transparent;
+.waves-filter {
+  @apply bg-cover bg-center;
 
-  background-image: url("./lib/noise.svg");
-  mix-blend-mode: color-dodge;
-}
-
-.waves-bg {
-  @apply fixed top-0;
-  @apply h-full w-full;
-  @apply bg-cover bg-fixed print:bg-transparent;
-
-  background-image: url("./lib/waves.svg");
-  mix-blend-mode: color-burn;
-}
-
-.water-jpg {
-  @apply bg-cover bg-center bg-blend-multiply bg-opacity-50;
-
-  background-image: url("./lib/banner.jpg");
+  background-image: url("$lib/banner.jpg");
   filter: url("#wavesFilter");
 
-  /* filter: url("./lib/waves.svg#wavesFilter"); */
+  /* background-blend-mode: darken; */
 
   /* @apply backdrop-hue-rotate-90 backdrop-blur-sm; */
 }

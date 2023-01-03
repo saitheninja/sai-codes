@@ -1,20 +1,22 @@
-<header class="sticky top-0 z-10 p-4 text-gray-300 print:hidden">
-  <div class="water-jpg">
-    <nav>
-      <a
-        href="/"
-        class="font-mono text-4xl font-bold text-white underline-offset-4"
-      >
-        sai.codes
-      </a>
+<header
+  class="sticky top-0 z-10 grid grid-cols-1 grid-rows-1 pb-2 print:hidden"
+>
+  <div class="waves-filter col-span-full row-span-full mr-3 h-full" />
 
-      <div class="space-x-2">
-        <a href="/resume">resume</a>
-        <a href="/garden">garden</a>
-        <a href="/contact">contact</a>
-      </div>
-    </nav>
-  </div>
+  <nav class="z-10 col-span-full row-span-full p-4">
+    <a
+      href="/"
+      class="font-mono text-4xl font-bold text-white underline-offset-4"
+    >
+      sai.codes
+    </a>
+
+    <div class="space-x-2 text-gray-300">
+      <a href="/resume">resume</a>
+      <a href="/garden">garden</a>
+      <a href="/contact">contact</a>
+    </div>
+  </nav>
 </header>
 
 <svg
@@ -28,7 +30,7 @@
       stitchTiles="noStitch"
       type="turbulence"
       seed="200"
-      numOctaves="4"
+      numOctaves="2"
       baseFrequency="0.02 0.06"
     />
 
@@ -37,11 +39,12 @@
       attributeName="baseFrequency"
       dur="60s"
       keyTimes="0; 0.5; 1"
-      values="0.02 0.06; 0.02 0.18; 0.02 0.06"
+      values="0.04 0.18; 0.02 0.06; 0.04 0.18"
       repeatCount="indefinite"
     />
 
     <feDisplacementMap
+      in2="wavesTurbulence"
       in="SourceGraphic"
       scale="20"
     />
