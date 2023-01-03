@@ -1,7 +1,7 @@
 <header class="sticky top-0 z-10 grid grid-cols-1 grid-rows-1 print:hidden">
   <div class="waves-mask col-span-full row-span-full h-full" />
 
-  <nav class="z-20 col-span-full row-span-full p-4">
+  <nav class="header-text-shadow z-20 col-span-full row-span-full p-4">
     <a
       href="/"
       class="font-mono text-4xl font-bold underline-offset-4"
