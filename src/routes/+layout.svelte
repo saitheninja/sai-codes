@@ -23,7 +23,7 @@
 <div class="isolate flex min-h-screen flex-col">
   <Header />
 
-  <main class="mx-4 my-8 max-w-prose flex-grow pb-8 sm:mx-auto">
+  <main class="mx-4 mt-10 mb-6 max-w-prose flex-grow pb-8 sm:mx-auto sm:mt-14">
     <slot />
   </main>
 
