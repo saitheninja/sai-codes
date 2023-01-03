@@ -11,7 +11,7 @@
       <a href="/resume">Saien Govender</a>
     </h1>
 
-    <p class="text-gray-300 print:text-gray-600">
+    <p class="text-colour-secondary">
       Full-stack developer with a frontend focus.
     </p>
   </div>
@@ -160,28 +160,28 @@
 
     <p id="web-buzzwords">
       I use modern IDEs
-      <span class="parentheses">(VSCode, NeoVim)</span>
+      <span class="text-minor">(VSCode, NeoVim)</span>
 
       that have all the bells and whistles
-      <span class="parentheses">(ESLint, Stylelint, Prettier)</span>
+      <span class="text-minor">(ESLint, Stylelint, Prettier)</span>
 
       & run on Linux
-      <span class="parentheses">(Ubuntu, Arch)</span>
+      <span class="text-minor">(Ubuntu, Arch)</span>
 
       to write apps in HTML, CSS
-      <span class="parentheses">(Tailwind CSS, PostCSS, SCSS)</span>
+      <span class="text-minor">(Tailwind CSS, PostCSS, SCSS)</span>
 
       & JavaScript
-      <span class="parentheses">(TypeScript, Node, Svelte, SvelteKit)</span>
+      <span class="text-minor">(TypeScript, Node, Svelte, SvelteKit)</span>
 
       with CI/CD pipelines
-      <span class="parentheses">(Git, GitHub Actions)</span>
+      <span class="text-minor">(Git, GitHub Actions)</span>
 
       to bundle
-      <span class="parentheses">(Vite, Rollup, ESBuild)</span>
+      <span class="text-minor">(Vite, Rollup, ESBuild)</span>
 
       & deploy
-      <span class="parentheses">
+      <span class="text-minor">
         (Docker Compose, DigitalOcean, Netlify, JAMstack)
       </span>
 
@@ -191,7 +191,7 @@
 </div>
 
 <style lang="postcss">
-  /* set h2 fonts & animations */
+  /* custom fonts & animations */
   @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=WorkArtAbout");
 
   h2 {
@@ -202,14 +202,10 @@
     @apply mb-1;
   }
 
-  .parentheses {
-    @apply text-sm italic text-gray-300 print:text-gray-600;
-  }
-
   .work {
     font-family: monospace;
     font-weight: 700;
-    animation-name: slide;
+    animation-name: slide-right;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -231,7 +227,7 @@
     animation-iteration-count: infinite;
   }
 
-  @keyframes slide {
+  @keyframes slide-right {
     0% {
       opacity: 0;
       transform: translateX(-10%);

@@ -4,12 +4,12 @@
   <nav class="z-20 col-span-full row-span-full p-4">
     <a
       href="/"
-      class="font-mono text-4xl font-bold text-white underline-offset-4"
+      class="font-mono text-4xl font-bold underline-offset-4"
     >
       sai.codes
     </a>
 
-    <div class="space-x-2 text-gray-300">
+    <div class="text-color-secondary space-x-2">
       <a href="/resume">resume</a>
       <a href="/garden">garden</a>
       <a href="/contact">contact</a>

@@ -15,7 +15,7 @@
     </a>
   </p>
 
-  <p class="italic text-gray-300">
+  <p class="italic">
     This is a place where seeds of ideas grow into dazzling flowers, and sturdy,
     thick-limbed trees. There are some carefully pruned bonsai amongst the
     untamed bushes. Be careful of strangling vines.
@@ -28,10 +28,6 @@
   id="ranting-swede"
   class="pt-2 pb-4"
 >
-  <p class="pb-1 text-sm italic text-gray-300">
-    This is what you should picture in your head while reading a post:
-  </p>
-
   <iframe
     src="https://www.youtube.com/embed/EbPOImtuw2Q"
     title="Ranting Swede"
@@ -40,6 +36,9 @@
     allowfullscreen
     class="aspect-video w-full"
   />
+  <p class="text-minor pt-1 text-center">
+    This is what you should picture in your head while reading a post.
+  </p>
 </div>
 
 <ul

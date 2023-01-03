@@ -9,8 +9,7 @@
       They are not composition rules, they are composition examples.
     </p>
 
-    <p class="pb-1 text-sm italic text-gray-300">Or guidelines.</p>
-
+    <br />
     <iframe
       src="https://www.youtube.com/embed/jl0hMfqNQ-g"
       title="The Code - Guidelines"
@@ -19,6 +18,7 @@
       allowfullscreen
       class="aspect-video w-full"
     />
+    <p class="text-minor pt-1 text-center">Or guidelines.</p>
   </div>
 
   <p>Don't use triangles, use pyramids.</p>
