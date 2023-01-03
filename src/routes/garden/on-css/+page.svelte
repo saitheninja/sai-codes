@@ -35,10 +35,10 @@
 
   <p>
     Use margin for fine-tuning specific content, like text or logos. First use
-    `gap`, `space-x`, etc.
+    <code>gap</code>, <code>space-x</code>, etc.
   </p>
 
-  <p>`@apply` to use Tailwind classes in css files.</p>
+  <p><code>@apply</code> to use Tailwind classes in .css files.</p>
 
   <p>New coloured shadows are cool.</p>
 </div>
