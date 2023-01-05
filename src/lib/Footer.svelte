@@ -4,6 +4,11 @@
   // pixels
   let offset = 120;
   let scrollY: number;
+
+  function scrollFn() {
+    // document.body.scrollIntoView();
+    scrollY = 0;
+  }
 </script>
 
 <svelte:window bind:scrollY />
@@ -15,7 +20,7 @@
   >
     <button
       class="float-right sm:-mr-12"
-      on:click={() => (scrollY = 0)}
+      on:click={scrollFn}
     >
       <svg
         width="24"
