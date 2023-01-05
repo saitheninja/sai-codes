@@ -26,7 +26,10 @@
 <div class="text-color-main isolate flex min-h-screen flex-col">
   <Header />
 
-  <main class="mx-4 mt-10 mb-6 max-w-prose flex-grow pb-8 sm:mx-auto sm:mt-14">
+  <main
+    id="main"
+    class="mx-4 mt-10 mb-6 max-w-prose flex-grow scroll-mt-36 pb-8 sm:mx-auto sm:mt-14"
+  >
     <slot />
   </main>
 

@@ -1,6 +1,13 @@
 <header class="sticky top-0 z-10 grid grid-cols-1 grid-rows-1 print:hidden">
   <div class="waves-mask col-span-full row-span-full h-full" />
 
+  <a
+    class="skip-to-content-link"
+    href="#main"
+  >
+    skip to main content
+  </a>
+
   <nav class="header-text-shadow z-20 col-span-full row-span-full p-4">
     <a
       href="/"
@@ -55,3 +62,14 @@
     /> -->
   </filter>
 </svg>
+
+<style lang="postcss">
+  .skip-to-content-link {
+    @apply absolute z-30 m-4 bg-blue-900 p-4 pb-5;
+    transform: translateY(-140%);
+    transition: transform 0.2s;
+  }
+  .skip-to-content-link:focus {
+    transform: translateY(0%);
+  }
+</style>
