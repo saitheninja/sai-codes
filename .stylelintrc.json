@@ -11,6 +11,7 @@
         "ignoreAtRules": ["tailwind", "layer"]
       }
     ],
+    "length-zero-no-unit": null,
     "plugin/no-low-performance-animation-properties": true,
     "csstree/validator": {
       "syntaxExtensions": ["sass", "less"],
