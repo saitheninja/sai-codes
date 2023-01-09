@@ -67,7 +67,7 @@
   .skip-to-content-link {
     @apply absolute z-30 m-4 bg-blue-900 p-4 pb-5;
     transform: translateY(-140%);
-    transition: transform 0.2s;
+    transition: transform 0.05s;
   }
   .skip-to-content-link:focus {
     transform: translateY(0%);
