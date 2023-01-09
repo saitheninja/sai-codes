@@ -4,11 +4,6 @@
   // pixels
   let offset = 120;
   let scrollY: number;
-
-  function scrollFn() {
-    // document.body.scrollIntoView();
-    scrollY = 0;
-  }
 </script>
 
 <svelte:window bind:scrollY />
@@ -18,9 +13,9 @@
     class="sticky bottom-5 mx-auto w-full max-w-prose px-2 print:hidden"
     transition:fly={{ y: 10 }}
   >
-    <button
-      class="float-right sm:-mr-12"
-      on:click={scrollFn}
+    <a
+      href="#top"
+      class="float-right sm:-mr-16"
     >
       <svg
         width="24"
@@ -35,6 +30,6 @@
           fill="currentColor"
         />
       </svg>
-    </button>
+    </a>
   </footer>
 {/if}
