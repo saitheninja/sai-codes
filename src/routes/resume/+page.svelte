@@ -27,33 +27,34 @@
 
     <div>
       <h3>Freelance Web Developer</h3>
-
       <p class="text-minor">2020 - current</p>
 
-      <p>
-        Look at
-        <a
-          href="https://sanskara.co.za"
-          title="a client website"
-          target="_blank"
-          rel="noreferrer external"
-          class="-mr-1"
-        >
-          a client
-        </a>.
-      </p>
+      <div class="py-1">
+        <p>
+          Look at
+          <a
+            href="https://sanskara.co.za"
+            title="a client website"
+            target="_blank"
+            rel="noreferrer external"
+            class="-mr-1"
+          >
+            a client's website
+          </a>.
+        </p>
 
-      <p>
-        Also, look at
-        <a
-          href="https://github.com/saitheninja/"
-          target="_blank"
-          rel="noreferrer external"
-          class="-mr-1"
-        >
-          my GitHub page
-        </a>.
-      </p>
+        <p>
+          Also, look at
+          <a
+            href="https://github.com/saitheninja/"
+            target="_blank"
+            rel="noreferrer external"
+            class="-mr-1"
+          >
+            my GitHub profile
+          </a>.
+        </p>
+      </div>
     </div>
 
     <div>
@@ -62,18 +63,49 @@
           href="https://creativecrew.co.za/"
           target="_blank"
           rel="noreferrer external"
+          class="-mr-1"
         >
-          Creative Crew: Marketing Manager
+          Creative Crew
         </a>
+        : Marketing Manager
       </h3>
 
       <p class="text-minor">2019 - 2020</p>
 
-      <p>
-        Responsibilities included: project management, content development,
-        audio & video production, design, website administration, technical
-        support, sales.
-      </p>
+      <div class="py-1">
+        <p>Anything that was needed at the time.</p>
+
+        <p class="pt-1 italic">
+          Responsibilities included: project management, content development,
+          audio & video production, sales, website design, server
+          administration, technical support.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h3>
+        <a
+          href="https://saitheninja.com"
+          target="_blank"
+          rel="noreferrer external"
+          class="-mr-1"
+        >
+          Saitheninja Photography
+        </a>
+        : Owner
+      </h3>
+
+      <p class="text-minor">2015 - current</p>
+
+      <div class="py-1">
+        <p>Photography, videography & audio production.</p>
+
+        <p class="pt-1 italic">
+          Previous events include: birthdays, graduations, engagements,
+          weddings, music videos, podcasts, training courses, conferences.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -88,7 +120,7 @@
 
       <p class="text-minor">2013 - current</p>
 
-      <p>
+      <p class="py-1">
         I'm pretty good. Check out my
         <a
           href="https://www.instagram.com/saitheninja/"
@@ -115,7 +147,7 @@
 
       <p class="text-minor">2019 - current</p>
 
-      <p>
+      <p class="py-1">
         I like to make games. Play some games I've made on
         <a
           href="https://saitheninja.itch.io/"
@@ -124,6 +156,14 @@
           class="-mr-1"
         >
           my itch.io page
+        </a>, and look at the code on
+        <a
+          href="https://github.com/saitheninja/"
+          target="_blank"
+          rel="noreferrer external"
+          class="-mr-1"
+        >
+          GitHub
         </a>.
       </p>
     </div>
@@ -138,14 +178,8 @@
     <p>I live in Johannesburg, South Africa. 🇿🇦</p>
 
     <p>
-      Through many years of messing with technology, I've become an expert
-      troubleshooter.
-    </p>
-
-    <p>
-      I like to make websites that are intuitive to use, and easy to maintain. I
-      believe that simplicity plays a large role in both of these things. That
-      means websites that are mostly HTML and CSS.
+      I enjoy making websites that are intuitive to use, robust, and easy to
+      maintain.
     </p>
 
     <p id="buzzwords">
@@ -153,7 +187,7 @@
       <span class="text-minor">(VSCode, NeoVim)</span>
 
       that have all the bells and whistles
-      <span class="text-minor">(ESLint, Stylelint, Prettier)</span>
+      <span class="text-minor">(ESLint, Prettier, Stylelint)</span>
 
       & run on Linux
       <span class="text-minor">(Ubuntu, Arch, Nix)</span>
@@ -164,7 +198,7 @@
       & JavaScript
       <span class="text-minor">(TypeScript, Node, Svelte, SvelteKit)</span>
 
-      with CI/CD pipelines
+      with SCM & CI/CD
       <span class="text-minor">(Git, GitHub Actions)</span>
 
       to bundle
@@ -175,7 +209,7 @@
         (Docker, DigitalOcean, Netlify, JAMstack)
       </span>
 
-      good-looking websites.
+      good websites.
     </p>
   </section>
 </div>
