@@ -3,10 +3,11 @@
 </svelte:head>
 
 <div class="space-y-10">
-  <div id="name">
+  <section id="name">
     <h1>
       <a
         href="/resume"
+        title="my resume page"
         class="underline-offset-8"
       >
         Saien Govender
@@ -14,30 +15,45 @@
     </h1>
 
     <p class="text-minor pt-2">
-      Full-stack web developer focused on usability and good design.
+      Full-stack web developer focused on good design.
     </p>
-  </div>
+  </section>
 
-  <div
+  <section
     id="work"
     class="space-y-4"
   >
     <h2 class="work">Work</h2>
 
     <div>
-      <h3>
-        <a
-          href="https://sanskara.co.za"
-          target="_blank"
-          rel="noreferrer external"
-        >
-          Freelance Web Developer
-        </a>
-      </h3>
+      <h3>Freelance Web Developer</h3>
 
       <p class="text-minor">2020 - current</p>
 
-      <p>SvelteKit sites, focused on usability and good design practices.</p>
+      <p>
+        Look at
+        <a
+          href="https://sanskara.co.za"
+          title="a client website"
+          target="_blank"
+          rel="noreferrer external"
+          class="-mr-1"
+        >
+          a client
+        </a>.
+      </p>
+
+      <p>
+        Also, look at
+        <a
+          href="https://github.com/saitheninja/"
+          target="_blank"
+          rel="noreferrer external"
+          class="-mr-1"
+        >
+          my GitHub page
+        </a>.
+      </p>
     </div>
 
     <div>
@@ -59,43 +75,13 @@
         support, sales.
       </p>
     </div>
+  </section>
 
-    <div>
-      <h3>
-        <a
-          href="https://saitheninja.com"
-          target="_blank"
-          rel="noreferrer external"
-        >
-          Saitheninja Photography: Owner
-        </a>
-      </h3>
-
-      <p class="text-minor">2015 - current</p>
-
-      <p>
-        Photography, videography & audio production. Previous events include:
-        graduations, birthdays, corporate events, advertising, engagements,
-        weddings, educational courses, music videos, podcasts.
-      </p>
-    </div>
-  </div>
-
-  <div
+  <section
     id="art"
     class="space-y-4"
   >
     <h2 class="art text-5xl">Art</h2>
-
-    <div>
-      <h3>Music</h3>
-
-      <p class="text-minor">2010 - current</p>
-
-      <p>
-        I'm not good, but I do like to jam out on my trumpet, guitar and piano.
-      </p>
-    </div>
 
     <div>
       <h3>Photography</h3>
@@ -103,7 +89,7 @@
       <p class="text-minor">2013 - current</p>
 
       <p>
-        I'm pretty good at taking photos. Check out my
+        I'm pretty good. Check out my
         <a
           href="https://www.instagram.com/saitheninja/"
           target="_blank"
@@ -114,11 +100,13 @@
         or my
         <a
           href="https://saitheninja.com"
+          title="photography website"
           target="_blank"
           rel="noreferrer external"
+          class="-mr-1"
         >
-          website.
-        </a>
+          portfolio
+        </a>.
       </p>
     </div>
 
@@ -128,27 +116,20 @@
       <p class="text-minor">2019 - current</p>
 
       <p>
-        I like to make games with the
-        <a
-          href="https://www.godotengine.org"
-          target="_blank"
-          rel="noreferrer external"
-        >
-          Godot engine.
-        </a>
-        Play some games I've made on
+        I like to make games. Play some games I've made on
         <a
           href="https://saitheninja.itch.io/"
           target="_blank"
           rel="noreferrer external"
+          class="-mr-1"
         >
-          my itch.io page.
-        </a>
+          my itch.io page
+        </a>.
       </p>
     </div>
-  </div>
+  </section>
 
-  <div
+  <section
     id="about"
     class="space-y-4"
   >
@@ -157,11 +138,17 @@
     <p>I live in Johannesburg, South Africa. 🇿🇦</p>
 
     <p>
-      Through many years of experimenting with technology, I've become an expert
+      Through many years of messing with technology, I've become an expert
       troubleshooter.
     </p>
 
-    <p id="web-buzzwords">
+    <p>
+      I like to make websites that are intuitive to use, and easy to maintain. I
+      believe that simplicity plays a large role in both of these things. That
+      means websites that are mostly HTML and CSS.
+    </p>
+
+    <p id="buzzwords">
       I use modern IDEs
       <span class="text-minor">(VSCode, NeoVim)</span>
 
@@ -169,7 +156,7 @@
       <span class="text-minor">(ESLint, Stylelint, Prettier)</span>
 
       & run on Linux
-      <span class="text-minor">(Ubuntu, Arch)</span>
+      <span class="text-minor">(Ubuntu, Arch, Nix)</span>
 
       to write apps in HTML, CSS
       <span class="text-minor">(Tailwind CSS, PostCSS, SCSS)</span>
@@ -190,11 +177,12 @@
 
       good-looking websites.
     </p>
-  </div>
+  </section>
 </div>
 
 <style lang="postcss">
   /* custom fonts & animations */
+
   @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=WorkArtAbout");
 
   h2 {
