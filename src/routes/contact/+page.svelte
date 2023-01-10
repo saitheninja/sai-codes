@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>sai.codes, and also other things</title>
+</svelte:head>
+
 <div>
   <ul>
     <li>

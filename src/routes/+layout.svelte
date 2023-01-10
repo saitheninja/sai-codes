@@ -5,8 +5,6 @@
 </script>
 
 <svelte:head>
-  <title>sai.codes</title>
-
   <link
     rel="icon"
     href="https://fav.farm/🐧"

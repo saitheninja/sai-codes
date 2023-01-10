@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>sai.codes some rants</title>
+</svelte:head>
+
 <h1 class="pb-8">The Garden</h1>
 
 <div

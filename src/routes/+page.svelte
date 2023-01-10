@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>sai.codes</title>
+</svelte:head>
+
 <h1 class="pb-8">Hello!</h1>
 
 <p>
