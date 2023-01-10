@@ -34,7 +34,6 @@
           Look at
           <a
             href="https://sanskara.co.za"
-            title="a client website"
             target="_blank"
             rel="noreferrer external"
             class="-mr-1"
@@ -132,7 +131,7 @@
         or my
         <a
           href="https://saitheninja.com"
-          title="photography website"
+          title="my photography portfolio site"
           target="_blank"
           rel="noreferrer external"
           class="-mr-1"
