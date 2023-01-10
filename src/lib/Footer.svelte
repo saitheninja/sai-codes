@@ -8,14 +8,12 @@
 
 <svelte:window bind:scrollY />
 
-{#if scrollY > offset}
-  <footer
-    class="sticky bottom-5 mx-auto w-full max-w-prose px-2 print:hidden"
-    transition:fly={{ duration: 200 }}
-  >
+<footer class="sticky bottom-5 mx-auto h-6 w-full max-w-prose print:hidden">
+  {#if scrollY > offset}
     <a
       href="#top"
-      class="footer-drop-shadow float-right sm:-mr-16"
+      class="footer-drop-shadow float-right sm:-mr-14"
+      transition:fly={{ duration: 200 }}
     >
       <svg
         width="24"
@@ -31,5 +29,5 @@
         />
       </svg>
     </a>
-  </footer>
-{/if}
+  {/if}
+</footer>
