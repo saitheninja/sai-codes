@@ -5,10 +5,12 @@
     "stylelint-csstree-validator"
   ],
   "rules": {
-    "at-rule-no-unknown": [
-      true,
+    "at-rule-no-unknown": [true, { "ignoreAtRules": ["tailwind"] }],
+    "comment-empty-line-before": [
+      "always",
       {
-        "ignoreAtRules": ["tailwind", "layer"]
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
       }
     ],
     "length-zero-no-unit": null,

@@ -15,7 +15,7 @@
   h1,
   h2,
   h3 {
-    @apply font-bold -ml-1;
+    @apply -ml-1 font-bold;
   }
 
   h1 {
@@ -60,6 +60,7 @@
 }
 
 @layer utilities {
+  /* custom shadows */
   .header-text-shadow {
     text-shadow: -2px -1px 6px black;
   }
@@ -68,6 +69,7 @@
     filter: drop-shadow(-4px -0px 4px rgb(0 0 0 / 50%));
   }
 
+  /* waves filter */
   .waves-jpg {
     @apply bg-cover bg-center;
 
@@ -76,9 +78,24 @@
   }
 
   .waves-mask {
-    @apply -backdrop-hue-rotate-30 backdrop-blur-sm;
+    @apply backdrop-blur-sm -backdrop-hue-rotate-30;
 
     mask-image: url("$lib/banner-mask.png");
     filter: url("#wavesFilter");
+  }
+
+  /* scroll bar */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar */
+  body::-webkit-scrollbar {
+    @apply w-4;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-blue-900 to-rose-900;
+    @apply rounded-lg border-4 border-solid border-black;
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply bg-black;
   }
 }
