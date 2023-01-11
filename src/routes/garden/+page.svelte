@@ -14,9 +14,10 @@
       href="https://maggieappleton.com/garden-history"
       target="_blank"
       rel="noreferrer external"
+      class="-mr-1"
     >
-      Maggie Appleton.
-    </a>
+      Maggie Appleton
+    </a>.
   </p>
 
   <p class="italic">

@@ -7,13 +7,13 @@
       href="https://www.youtube.com/watch?v=3nhQmUuPbBs&t=222s"
       target="_blank"
       rel="noreferrer external"
+      class="-mr-1"
     >
-      a asshole.
-    </a>
-    Knowing my messages eventually get deleted relieves some of my posting anxiety.
-    Especially when I ask something obvious or dumb - that stuff is just clutter.
-    (Also memes go stale incredibly quickly). Discord vs forums is like texting vs
-    email.
+      a asshole
+    </a>. Knowing my messages eventually get deleted relieves some of my posting
+    anxiety. Especially when I ask something obvious or dumb - that stuff is
+    just clutter. (Also memes go stale incredibly quickly). Discord vs forums is
+    like texting vs email.
   </p>
 
   <p>
