@@ -1,5 +1,5 @@
 import { afterAll, afterEach, describe, test, expect, vi } from "vitest";
-import { render, screen } from "@testing-library/svelte";
+import { fireEvent, render, screen } from "@testing-library/svelte";
 
 import Footer from "$lib/Footer.svelte";
 
@@ -31,19 +31,26 @@ describe("Scroll to top arrow behaviour", () => {
   });
 
   test.todo("is hidden when page is at the top", () => {
+    render(Footer);
     // expect(1 + 2).toBe(3);
     // expect()
   });
 
-  test.todo("show button when scrolled below offset", () => {
+  test("show button when scrolled below offset", () => {
+    render(Footer);
     // expect()
   });
 
   test.todo("hide button when scrolled above offset", () => {
+    render(Footer);
     // expect()
   });
 
-  test.todo("scrolls to top when button is pressed", () => {
-    // expect()
+  test.todo("scrolls to top when button is pressed", async () => {
+    render(Footer);
+    const arrow = screen.getByTitle("scroll to top");
+    await fireEvent.click(arrow);
+
+    // expect(arrow);
   });
 });
