@@ -3,12 +3,15 @@
 
   // pixels
   let offset = 120;
-  let scrollY: number;
+  let scrollY = 0;
 </script>
 
 <svelte:window bind:scrollY />
 
-<footer class="sticky bottom-5 mx-auto h-6 w-full max-w-prose print:hidden">
+<footer
+  id="footer"
+  class="sticky bottom-5 mx-auto h-6 w-full max-w-prose print:hidden"
+>
   {#if scrollY > offset}
     <a
       href="#top"
