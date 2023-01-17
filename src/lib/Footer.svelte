@@ -12,7 +12,7 @@
   {#if scrollY > offset}
     <a
       href="#top"
-      class="footer-drop-shadow float-right mr-2 sm:-mr-14"
+      class="footer-drop-shadow float-right mr-4 md:-mr-16"
       transition:fly={{ duration: 200 }}
     >
       <svg
