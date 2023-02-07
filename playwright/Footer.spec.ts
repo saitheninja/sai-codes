@@ -8,26 +8,27 @@ test("should mount and render", async ({ mount }) => {
   await expect(component).toHaveId("footer");
 });
 
-// test("arrow should be hidden before offset", async ({ mount }) => {
-//   const component = await mount(Footer);
-//   await expect(component).toHaveId("footer");
-// });
+test.describe.fixme("to implement", () => {
+  test("arrow should be hidden before offset", async ({ mount }) => {
+    const component = await mount(Footer);
+    const arrow = page.locator("#scroll-to-top");
+    await expect(arrow).toBeHidden();
+  });
 
-// test("arrow should show after scroll past offset", async ({ mount }) => {
-//   const component = await mount(Footer);
-//   await expect(component).toHaveId("footer");
-// });
+  // test("arrow should show after scroll past offset", async ({ mount }) => {
+  //   const component = await mount(Footer);
+  //   await expect(component).toHaveId("footer");
+  // });
 
-// test("should scroll to top when clicked", async ({ mount }) => {
-//   const component = await mount(Footer);
-//   const arrow = component.getByTitle("scroll to top");
-//   await expect(arrow).toHaveTitle("scroll to top");
+  // test("should scroll to top when clicked", async ({ mount }) => {
+  //   const component = await mount(Footer);
+  //   const arrow = component.getByTitle("scroll to top");
+  //   await expect(arrow).toHaveTitle("scroll to top");
+  //   await component.click();
+  // });
 
-//   await component.click();
-// });
-
-// test("should be hidden after scrolled to top", async ({ mount }) => {
-//   const component = await mount(Footer);
-
-//   await component.click();
-// });
+  // test("should be hidden after scrolled to top", async ({ mount }) => {
+  //   const component = await mount(Footer);
+  //   await component.click();
+  // });
+});
