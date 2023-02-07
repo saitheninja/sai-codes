@@ -26,7 +26,15 @@
     <h2 class="work">Work</h2>
 
     <div>
-      <h3>Freelance Web Developer</h3>
+      <h3>
+        <a
+          href="/"
+          target="_blank"
+          title="my code garden"
+        >
+          Freelance Web Developer
+        </a>
+      </h3>
       <p class="text-minor">2020 - current</p>
 
       <div class="py-1">
@@ -75,9 +83,9 @@
         <p>Anything that was needed at the time.</p>
 
         <p class="pt-1 italic">
-          Responsibilities included: project management, content development,
-          audio & video production, sales, website design, server
-          administration, technical support.
+          Responsibilities included: website design & development, server
+          administration, technical support, content development, audio & video
+          production, sales.
         </p>
       </div>
     </div>
@@ -92,7 +100,6 @@
         >
           Saitheninja Photography
         </a>
-        : Owner
       </h3>
 
       <p class="text-minor">2015 - current</p>
@@ -102,7 +109,7 @@
 
         <p class="pt-1 italic">
           Previous events include: birthdays, graduations, engagements,
-          weddings, music videos, podcasts, training courses, conferences.
+          weddings, podcasts, music videos, training courses, conferences.
         </p>
       </div>
     </div>
@@ -112,7 +119,7 @@
     id="art"
     class="space-y-4"
   >
-    <h2 class="art text-5xl">Art</h2>
+    <h2 class="art">Art</h2>
 
     <div>
       <h3>Photography</h3>
@@ -120,23 +127,24 @@
       <p class="text-minor">2013 - current</p>
 
       <p class="py-1">
-        I'm pretty good. Check out my
-        <a
-          href="https://www.instagram.com/saitheninja/"
-          target="_blank"
-          rel="noreferrer external"
-        >
-          Instagram
-        </a>
-        or my
+        Check out my
         <a
           href="https://saitheninja.com"
           title="my photography portfolio site"
           target="_blank"
           rel="noreferrer external"
-          class="-mr-1"
         >
           portfolio
+        </a>
+        or my
+        <a
+          href="https://www.instagram.com/saitheninja/"
+          title="my instagram page"
+          target="_blank"
+          rel="noreferrer external"
+          class="-mr-1"
+        >
+          Instagram
         </a>.
       </p>
     </div>
@@ -146,25 +154,31 @@
 
       <p class="text-minor">2019 - current</p>
 
-      <p class="py-1">
-        I like to make games. Play some games I've made on
-        <a
-          href="https://saitheninja.itch.io/"
-          target="_blank"
-          rel="noreferrer external"
-          class="-mr-1"
-        >
-          my itch.io page
-        </a>, and look at the code on
-        <a
-          href="https://github.com/saitheninja/"
-          target="_blank"
-          rel="noreferrer external"
-          class="-mr-1"
-        >
-          GitHub
-        </a>.
-      </p>
+      <div class="py-1">
+        <p>
+          Play some of my games on
+          <a
+            href="https://saitheninja.itch.io/"
+            target="_blank"
+            rel="noreferrer external"
+            class="-mr-1"
+          >
+            my itch.io page
+          </a>.
+        </p>
+
+        <p>
+          Look at the code on
+          <a
+            href="https://github.com/saitheninja/"
+            target="_blank"
+            rel="noreferrer external"
+            class="-mr-1"
+          >
+            GitHub
+          </a>.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -204,9 +218,7 @@
       <span class="text-minor">(Vite, Rollup, ESBuild)</span>
 
       & deploy
-      <span class="text-minor">
-        (Docker, DigitalOcean, Netlify, JAMstack)
-      </span>
+      <span class="text-minor">(Docker, DigitalOcean, Netlify, JAMstack)</span>
 
       good websites.
     </p>
@@ -229,6 +241,7 @@
   .work {
     font-family: monospace;
     font-weight: 700;
+    font-size: 2.5rem;
     animation-name: slide-right;
     animation-duration: 10s;
     animation-timing-function: linear;
@@ -237,6 +250,7 @@
 
   .art {
     font-family: "Fleur De Leah", cursive;
+    font-size: 3rem;
     animation-name: pulse;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
