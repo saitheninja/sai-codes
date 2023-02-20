@@ -75,20 +75,27 @@
 </svelte:head>
 
 <div class="space-y-10">
-  <section id="name">
+  <section
+    id="name"
+    class="text-center"
+  >
     <h1>
       <a
         href="/resume"
         title="my resume page"
-        class="underline-offset-8"
+        class="name underline-offset-8"
       >
         Saien Govender
       </a>
     </h1>
 
-    <p class="text-minor pt-2">
-      Full-stack web developer focused on good design.
-    </p>
+    <div class="text-minor mt-4">
+      <p>
+        Full-stack developer making websites that are intuitive to use, robust,
+        and low-maintenance.
+      </p>
+      <p>Located in Johannesburg, South Africa. 🇿🇦</p>
+    </div>
   </section>
 
   <section
@@ -129,7 +136,7 @@
       <div slot="description">
         <p>Anything that was needed at the time.</p>
 
-        <p class="italic">
+        <p class="pt-1 italic">
           Responsibilities included: website design & development, server
           administration, technical support, content development, audio & video
           production, sales.
@@ -215,54 +222,12 @@
       </div>
     </div>
   </section>
-
-  <section
-    id="about"
-    class="space-y-4"
-  >
-    <h2 class="about">About</h2>
-
-    <p>I live in Johannesburg, South Africa. 🇿🇦</p>
-
-    <p>
-      I enjoy making websites that are intuitive to use, robust, and easy to
-      maintain.
-    </p>
-
-    <p id="buzzwords">
-      I use modern IDEs
-      <span class="text-minor">(VSCode, NeoVim)</span>
-
-      that have all the bells and whistles
-      <span class="text-minor">(ESLint, Prettier, Stylelint)</span>
-
-      & run on Linux
-      <span class="text-minor">(Ubuntu, Arch, Nix)</span>
-
-      to write apps in HTML, CSS
-      <span class="text-minor">(Tailwind CSS, PostCSS, SCSS)</span>
-
-      & JavaScript
-      <span class="text-minor">(TypeScript, Node, Svelte, SvelteKit)</span>
-
-      with SCM & CI/CD
-      <span class="text-minor">(Git, GitHub Actions)</span>
-
-      to bundle
-      <span class="text-minor">(Vite, Rollup, ESBuild)</span>
-
-      & deploy
-      <span class="text-minor">(Docker, DigitalOcean, Netlify, JAMstack)</span>
-
-      good websites.
-    </p>
-  </section>
 </div>
 
 <style lang="postcss">
   /* custom fonts & animations */
 
-  @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=WorkArtAbout");
+  @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=SaienGovenderWorkArt");
 
   h2 {
     @apply max-w-max font-medium;
@@ -287,7 +252,7 @@
     animation-iteration-count: infinite;
   }
 
-  .about {
+  .name {
     font-family: "Playfair Display", serif;
     animation-name: wiggle;
     animation-duration: 10s;
