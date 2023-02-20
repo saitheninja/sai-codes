@@ -14,8 +14,8 @@
   $: ({ heading, years, tools } = entry);
 </script>
 
-<div class="space-y-1">
-  <h3>
+<div>
+  <h3 class="mb-2">
     <a
       href={heading.href}
       title={heading.hrefTitle}
@@ -31,16 +31,16 @@
     {/if}
   </h3>
 
-  <p class="text-minor">{years}</p>
-
   <ul
     id="tools"
-    class="flex flex-row flex-wrap font-mono text-sm"
+    class="flex flex-row flex-wrap text-sm"
   >
     {#each tools as tool}
       <li class="mb-1 mr-2 bg-gray-700 px-1">{tool}</li>
     {/each}
   </ul>
+
+  <p class="text-minor mb-1">{years}</p>
 
   <slot name="description" />
 </div>
