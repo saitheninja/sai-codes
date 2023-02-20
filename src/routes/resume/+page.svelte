@@ -2,10 +2,10 @@
   import ResumeEntry from "$lib/ResumeEntry.svelte";
 
   let workDev = {
-    heading: {
+    headingLink: {
       href: "/",
-      hrefTitle: "my code garden",
-      companyName: "Freelance Web Developer",
+      title: "my code garden",
+      text: "Freelance Web Developer",
     },
     years: "2020 - current",
     tools: [
@@ -29,13 +29,13 @@
     ],
   };
   let workCCrew = {
-    heading: {
+    headingLink: {
       href: "https://creativecrew.co.za/",
-      hrefRel: "noreferrer external",
-      hrefTitle: "Creative Crew website",
-      companyName: "Creative Crew",
-      jobTitle: "Marketing Manager",
+      rel: "noreferrer external",
+      title: "Creative Crew website",
+      text: "Creative Crew",
     },
+    headingText: ": Marketing Manager",
     years: "2019 - 2020",
     tools: [
       "WordPress",
@@ -52,11 +52,11 @@
     ],
   };
   let workPhoto = {
-    heading: {
+    headingLink: {
       href: "https://saitheninja.com",
-      hrefRel: "noreferrer external",
-      hrefTitle: "my photography portfolio site",
-      companyName: "Saitheninja Photography",
+      rel: "noreferrer external",
+      title: "my photography portfolio site",
+      text: "Saitheninja Photography",
     },
     years: "2015 - current",
     tools: [
@@ -67,6 +67,15 @@
       "Premiere Pro",
       "After Effects",
     ],
+  };
+
+  let artPhoto = {
+    headingText: "Photography",
+    years: "2013 - current",
+  };
+  let artGames = {
+    headingText: "Video Games",
+    years: "2019 - current",
   };
 </script>
 
@@ -94,6 +103,7 @@
         Full-stack developer making websites that are intuitive to use, robust,
         and low-maintenance.
       </p>
+
       <p>Located in Johannesburg, South Africa. 🇿🇦</p>
     </div>
   </section>
@@ -104,7 +114,7 @@
   >
     <h2 class="work">Work</h2>
 
-    <ResumeEntry entry={workDev}>
+    <ResumeEntry {...workDev}>
       <div slot="description">
         <p>
           Look at
@@ -132,7 +142,7 @@
       </div>
     </ResumeEntry>
 
-    <ResumeEntry entry={workCCrew}>
+    <ResumeEntry {...workCCrew}>
       <div slot="description">
         <p>Anything that was needed at the time.</p>
 
@@ -144,7 +154,7 @@
       </div>
     </ResumeEntry>
 
-    <ResumeEntry entry={workPhoto}>
+    <ResumeEntry {...workPhoto}>
       <div slot="description">
         <p>Photography, videography & audio production.</p>
 
@@ -162,40 +172,34 @@
   >
     <h2 class="art">Art</h2>
 
-    <div>
-      <h3>Photography</h3>
+    <ResumeEntry {...artPhoto}>
+      <div slot="description">
+        <p>
+          Check out my
+          <a
+            href="https://saitheninja.com"
+            title="my photography portfolio site"
+            target="_blank"
+            rel="noreferrer external"
+          >
+            portfolio
+          </a>
+          or my
+          <a
+            href="https://www.instagram.com/saitheninja/"
+            title="my instagram page"
+            target="_blank"
+            rel="noreferrer external"
+            class="-mr-1"
+          >
+            Instagram
+          </a>.
+        </p>
+      </div>
+    </ResumeEntry>
 
-      <p class="text-minor">2013 - current</p>
-
-      <p class="py-1">
-        Check out my
-        <a
-          href="https://saitheninja.com"
-          title="my photography portfolio site"
-          target="_blank"
-          rel="noreferrer external"
-        >
-          portfolio
-        </a>
-        or my
-        <a
-          href="https://www.instagram.com/saitheninja/"
-          title="my instagram page"
-          target="_blank"
-          rel="noreferrer external"
-          class="-mr-1"
-        >
-          Instagram
-        </a>.
-      </p>
-    </div>
-
-    <div>
-      <h3>Video Games</h3>
-
-      <p class="text-minor">2019 - current</p>
-
-      <div class="py-1">
+    <ResumeEntry {...artGames}>
+      <div slot="description">
         <p>
           Play some of my games on
           <a
@@ -220,7 +224,7 @@
           </a>.
         </p>
       </div>
-    </div>
+    </ResumeEntry>
   </section>
 </div>
 

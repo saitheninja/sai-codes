@@ -1,44 +1,46 @@
 <script lang="ts">
-  export let entry: {
-    heading: {
-      href: string;
-      hrefRel?: string;
-      hrefTitle: string;
-      companyName: string;
-      jobTitle?: string;
-    };
-    years: string;
-    tools: string[];
+  export let headingLink: {
+    href: string;
+    rel?: string;
+    title: string;
+    text: string;
+  } = {
+    href: "",
+    title: "",
+    text: "",
   };
-
-  $: ({ heading, years, tools } = entry);
+  export let headingText: string = "";
+  export let years: string = "";
+  export let tools: string[] = [];
 </script>
 
 <div>
-  <h3 class="mb-2">
-    <a
-      href={heading.href}
-      title={heading.hrefTitle}
-      rel={heading.hrefRel}
-      target="_blank"
-      class="-mr-1"
-    >
-      {heading.companyName}
-    </a>
-
-    {#if heading.jobTitle}
-      : {heading.jobTitle}
+  <h3>
+    {#if headingLink.href}
+      <a
+        href={headingLink.href}
+        title={headingLink.title}
+        rel={headingLink.rel}
+        target="_blank"
+        class="-mr-1"
+      >
+        {headingLink.text}
+      </a>
     {/if}
+
+    {headingText}
   </h3>
 
-  <ul
-    id="tools"
-    class="flex flex-row flex-wrap text-sm"
-  >
-    {#each tools as tool}
-      <li class="mb-1 mr-2 bg-gray-700 px-1">{tool}</li>
-    {/each}
-  </ul>
+  {#if tools.length > 0}
+    <ul
+      id="tools"
+      class="mt-2 flex flex-row flex-wrap text-sm"
+    >
+      {#each tools as tool}
+        <li class="mb-1 mr-2 bg-gray-700 px-1">{tool}</li>
+      {/each}
+    </ul>
+  {/if}
 
   <p class="text-minor mb-1">{years}</p>
 
