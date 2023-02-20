@@ -79,11 +79,11 @@
     id="name"
     class="text-center"
   >
-    <h1>
+    <h1 class="name">
       <a
         href="/resume"
         title="my resume page"
-        class="name underline-offset-8"
+        class="underline-offset-8"
       >
         Saien Govender
       </a>
