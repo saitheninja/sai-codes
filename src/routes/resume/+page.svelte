@@ -250,7 +250,7 @@
   .art {
     font-family: "Fleur De Leah", cursive;
     font-size: 3rem;
-    animation-name: pulse;
+    animation-name: wiggle;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -258,7 +258,7 @@
 
   .name {
     font-family: "Playfair Display", serif;
-    animation-name: wiggle;
+    animation-name: pulse;
     animation-duration: 10s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
