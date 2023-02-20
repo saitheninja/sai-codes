@@ -1,3 +1,75 @@
+<script lang="ts">
+  import ResumeEntry from "$lib/ResumeEntry.svelte";
+
+  let workDev = {
+    heading: {
+      href: "/",
+      hrefTitle: "my code garden",
+      companyName: "Freelance Web Developer",
+    },
+    years: "2020 - current",
+    tools: [
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "PostCSS",
+      "SCSS",
+
+      "JavaScript",
+      "TypeScript",
+      "Node",
+      "Svelte",
+      "SvelteKit",
+
+      "Git",
+      "GitHub Actions",
+      "Linux",
+      "Docker",
+      "JAMstack",
+    ],
+  };
+  let workCCrew = {
+    heading: {
+      href: "https://creativecrew.co.za/",
+      hrefRel: "noreferrer external",
+      hrefTitle: "Creative Crew website",
+      companyName: "Creative Crew",
+      jobTitle: "Marketing Manager",
+    },
+    years: "2019 - 2020",
+    tools: [
+      "WordPress",
+      "PHP",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Linux",
+
+      "Photoshop",
+      "Illustrator",
+      "Premiere Pro",
+      "After Effects",
+    ],
+  };
+  let workPhoto = {
+    heading: {
+      href: "https://saitheninja.com",
+      hrefRel: "noreferrer external",
+      hrefTitle: "my photography portfolio site",
+      companyName: "Saitheninja Photography",
+    },
+    years: "2015 - current",
+    tools: [
+      "Linux",
+
+      "Photoshop",
+      "Illustrator",
+      "Premiere Pro",
+      "After Effects",
+    ],
+  };
+</script>
+
 <svelte:head>
   <title>sai.codes a resume</title>
 </svelte:head>
@@ -25,19 +97,8 @@
   >
     <h2 class="work">Work</h2>
 
-    <div>
-      <h3>
-        <a
-          href="/"
-          target="_blank"
-          title="my code garden"
-        >
-          Freelance Web Developer
-        </a>
-      </h3>
-      <p class="text-minor">2020 - current</p>
-
-      <div class="py-1">
+    <ResumeEntry entry={workDev}>
+      <div slot="description">
         <p>
           Look at
           <a
@@ -62,49 +123,22 @@
           </a>.
         </p>
       </div>
-    </div>
+    </ResumeEntry>
 
-    <div>
-      <h3>
-        <a
-          href="https://creativecrew.co.za/"
-          target="_blank"
-          rel="noreferrer external"
-          class="-mr-1"
-        >
-          Creative Crew
-        </a>
-        : Marketing Manager
-      </h3>
-
-      <p class="text-minor">2019 - 2020</p>
-
-      <div class="py-1">
+    <ResumeEntry entry={workCCrew}>
+      <div slot="description">
         <p>Anything that was needed at the time.</p>
 
-        <p class="pt-1 italic">
+        <p class="italic">
           Responsibilities included: website design & development, server
           administration, technical support, content development, audio & video
           production, sales.
         </p>
       </div>
-    </div>
+    </ResumeEntry>
 
-    <div>
-      <h3>
-        <a
-          href="https://saitheninja.com"
-          target="_blank"
-          rel="noreferrer external"
-          class="-mr-1"
-        >
-          Saitheninja Photography
-        </a>
-      </h3>
-
-      <p class="text-minor">2015 - current</p>
-
-      <div class="py-1">
+    <ResumeEntry entry={workPhoto}>
+      <div slot="description">
         <p>Photography, videography & audio production.</p>
 
         <p class="pt-1 italic">
@@ -112,7 +146,7 @@
           weddings, podcasts, music videos, training courses, conferences.
         </p>
       </div>
-    </div>
+    </ResumeEntry>
   </section>
 
   <section
@@ -232,10 +266,6 @@
 
   h2 {
     @apply max-w-max font-medium;
-  }
-
-  h3 {
-    @apply mb-1;
   }
 
   .work {
