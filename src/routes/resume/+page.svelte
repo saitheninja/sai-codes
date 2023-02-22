@@ -83,7 +83,7 @@
   <title>sai.codes a resume</title>
 </svelte:head>
 
-<div class="space-y-10">
+<div class="space-y-12">
   <section
     id="name"
     class="text-center"

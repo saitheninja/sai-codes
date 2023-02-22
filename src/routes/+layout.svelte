@@ -26,7 +26,7 @@
 
   <main
     id="main"
-    class="mx-6 mt-10 mb-12 max-w-prose flex-grow scroll-mt-36 print:my-0 print:mx-auto sm:mx-auto sm:mt-14"
+    class="mx-6 mt-10 mb-16 max-w-prose flex-grow scroll-mt-36 print:my-0 print:mx-auto sm:mx-auto sm:mt-14"
   >
     <slot />
   </main>
