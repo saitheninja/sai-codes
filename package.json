@@ -47,7 +47,7 @@
   },
   "type": "module",
   "volta": {
-    "node": "18.12.1",
-    "playwright": "1.29.2"
+    "node": "18.14.2",
+    "playwright": "1.31.0"
   }
 }
