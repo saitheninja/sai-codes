@@ -34,15 +34,21 @@
   {#if tools.length > 0}
     <ul
       id="tools"
-      class="flex flex-row flex-wrap pt-1 text-sm"
+      class="-ml-1 flex flex-row flex-wrap text-sm"
     >
       {#each tools as tool}
-        <li class="mb-1 mr-2 bg-gray-700 px-1">{tool}</li>
+        <li class="tools">{tool}</li>
       {/each}
     </ul>
   {/if}
 
-  <p class="text-minor">{years}</p>
-
   <slot name="description" />
 </div>
+
+<style lang="postcss">
+  .tools {
+    @apply mb-1 mr-2 bg-gray-700 px-1 print:bg-gray-200;
+
+    print-color-adjust: exact;
+  }
+</style>
