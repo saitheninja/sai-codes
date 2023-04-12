@@ -77,6 +77,17 @@
     headingText: "Video Games",
     years: "2019 - current",
   };
+
+  let educationUni = {
+    headingLink: {
+      href: "https://en.wikipedia.org/wiki/Rhodes_Must_Fall",
+      rel: "noreferrer external",
+      title: "#RhodesMustFall protests",
+      text: "University of Cape Town",
+    },
+    headingText: ": BSc (Eng) Mechanical Engineering",
+    years: "2012 - 2015",
+  };
 </script>
 
 <svelte:head>
@@ -226,12 +237,25 @@
       </div>
     </ResumeEntry>
   </section>
+
+  <section
+    id="education"
+    class="space-y-4"
+  >
+    <h2 class="education">Education</h2>
+
+    <ResumeEntry {...educationUni}>
+      <div slot="description">
+        <p>I dropped out about half way through.</p>
+      </div>
+    </ResumeEntry>
+  </section>
 </div>
 
 <style lang="postcss">
   /* custom fonts & animations */
 
-  @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=SaienGovenderWorkArt");
+  @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=WorkArtEducation");
 
   h2 {
     @apply max-w-max font-medium;
@@ -256,8 +280,9 @@
     animation-iteration-count: infinite;
   }
 
-  .name {
+  .education {
     font-family: "Playfair Display", serif;
+    font-size: 2.25rem;
     animation-name: pulse;
     animation-duration: 10s;
     animation-timing-function: ease-in;

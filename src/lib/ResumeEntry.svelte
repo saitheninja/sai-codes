@@ -14,7 +14,7 @@
   export let tools: string[] = [];
 </script>
 
-<div>
+<div class="space-y-1">
   <h3>
     {#if headingLink.href}
       <a
@@ -34,7 +34,7 @@
   {#if tools.length > 0}
     <ul
       id="tools"
-      class="mt-2 flex flex-row flex-wrap text-sm"
+      class="flex flex-row flex-wrap pt-1 text-sm"
     >
       {#each tools as tool}
         <li class="mb-1 mr-2 bg-gray-700 px-1">{tool}</li>
@@ -42,7 +42,7 @@
     </ul>
   {/if}
 
-  <p class="text-minor mb-1">{years}</p>
+  <p class="text-minor">{years}</p>
 
   <slot name="description" />
 </div>
