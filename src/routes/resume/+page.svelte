@@ -2,11 +2,12 @@
   import ResumeEntry from "$lib/ResumeEntry.svelte";
 
   let workDev = {
-    headingLink: {
+    hLink: {
       href: "/",
       title: "my code garden",
-      text: "Freelance Web Developer",
+      text: "SaiTheNinja Studio",
     },
+    subhText: "Freelancer",
     years: "2020 - current",
     tools: [
       "HTML",
@@ -29,13 +30,13 @@
     ],
   };
   let workCCrew = {
-    headingLink: {
+    hLink: {
       href: "https://creativecrew.co.za/",
       rel: "noreferrer external",
       title: "Creative Crew website",
       text: "Creative Crew",
     },
-    headingText: ": Marketing Manager",
+    subhText: "Marketing Manager",
     years: "2019 - 2020",
     tools: [
       "WordPress",
@@ -52,13 +53,14 @@
     ],
   };
   let workPhoto = {
-    headingLink: {
+    hLink: {
       href: "https://saitheninja.com",
       rel: "noreferrer external",
       title: "my photography portfolio site",
-      text: "Saitheninja Photography",
+      text: "SaiTheNinja Photography",
     },
-    years: "2015 - current",
+    subhText: "Freelancer",
+    years: "2015 - 2019",
     tools: [
       "Linux",
 
@@ -70,22 +72,22 @@
   };
 
   let artPhoto = {
-    headingText: "Photography",
+    hText: "Photography",
     years: "2013 - current",
   };
   let artGames = {
-    headingText: "Video Games",
+    hText: "Video Games",
     years: "2019 - current",
   };
 
   let educationUni = {
-    headingLink: {
+    hLink: {
       href: "https://en.wikipedia.org/wiki/Rhodes_Must_Fall",
       rel: "noreferrer external",
       title: "#RhodesMustFall protests",
       text: "University of Cape Town",
     },
-    headingText: ": BSc (Eng) Mechanical Engineering",
+    subhText: "BSc (Eng) Mechanical Engineering",
     years: "2012 - 2015",
   };
 </script>
@@ -94,7 +96,7 @@
   <title>sai.codes a resume</title>
 </svelte:head>
 
-<div class="space-y-12">
+<div class="space-y-16">
   <section
     id="name"
     class="text-center"
@@ -121,7 +123,7 @@
 
   <section
     id="work"
-    class="space-y-4"
+    class="space-y-8"
   >
     <h2 class="work">Work</h2>
 
@@ -179,7 +181,7 @@
 
   <section
     id="art"
-    class="space-y-4"
+    class="space-y-6"
   >
     <h2 class="art">Art</h2>
 
@@ -240,13 +242,13 @@
 
   <section
     id="education"
-    class="space-y-4"
+    class="space-y-6"
   >
     <h2 class="education">Education</h2>
 
     <ResumeEntry {...educationUni}>
       <div slot="description">
-        <p>I dropped out about half way through.</p>
+        <p>I dropped out.</p>
       </div>
     </ResumeEntry>
   </section>
@@ -257,6 +259,10 @@
 
   @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=WorkArtEducation");
 
+  :root {
+    --animDuration: 10s;
+  }
+
   h2 {
     @apply max-w-max font-medium;
   }
@@ -266,7 +272,7 @@
     font-weight: 700;
     font-size: 2.5rem;
     animation-name: slide-right;
-    animation-duration: 10s;
+    animation-duration: var(--animDuration);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
@@ -275,7 +281,7 @@
     font-family: "Fleur De Leah", cursive;
     font-size: 3rem;
     animation-name: wiggle;
-    animation-duration: 10s;
+    animation-duration: var(--animDuration);
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
@@ -284,7 +290,7 @@
     font-family: "Playfair Display", serif;
     font-size: 2.25rem;
     animation-name: pulse;
-    animation-duration: 10s;
+    animation-duration: var(--animDuration);
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
   }
