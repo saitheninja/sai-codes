@@ -19,7 +19,6 @@
       ];
 
       shellHook = ''
-        echo "${pkgs.nodejs_20}"
 	      exec zsh
       '';
     };
