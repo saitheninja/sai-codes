@@ -16,7 +16,7 @@
     <a
       href="#top"
       class="footer-drop-shadow float-right mr-4 md:-mr-16"
-      transition:fly={{ duration: 200 }}
+      transition:fly|global={{ duration: 200 }}
     >
       <svg
         width="24"
