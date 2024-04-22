@@ -1,5 +1,5 @@
-<header class="sticky top-0 z-10 grid grid-cols-1 grid-rows-1 print:hidden">
-  <div class="waves-mask col-span-full row-span-full h-full" />
+<header class="sticky top-0 z-10 grid grid-cols-1 print:hidden">
+  <div class="waves-mask col-span-full row-span-full" />
 
   <a
     class="skip-to-content-link"
@@ -26,7 +26,7 @@
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  class="hidden"
+  class="h-0 w-0"
 >
   <!-- https://redstapler.co/realistic-water-effect-svg-turbulence-filter/ -->
   <filter id="wavesFilter">
@@ -53,23 +53,5 @@
       in="SourceGraphic"
       scale="20"
     />
-    <!-- <feDisplacementMap
-      in2="wavesTurbulence"
-      in="SourceGraphic"
-      scale="20"
-      xChannelSelector="R"
-      yChannelSelector="G"
-    /> -->
   </filter>
 </svg>
-
-<style lang="postcss">
-  .skip-to-content-link {
-    @apply absolute z-30 m-4 bg-green-900 p-4 pb-5;
-    transform: translateY(-140%);
-    transition: transform 0.05s;
-  }
-  .skip-to-content-link:focus {
-    transform: translateY(0%);
-  }
-</style>

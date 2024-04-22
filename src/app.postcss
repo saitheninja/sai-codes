@@ -48,6 +48,7 @@
   }
 }
 
+/* text classes */
 @layer components {
   .text-color-main {
     @apply text-white print:text-black;
@@ -62,8 +63,22 @@
   }
 }
 
+/* skip to content link */
+@layer components {
+  .skip-to-content-link {
+    @apply absolute z-30 m-4 bg-green-900 p-4 pb-5;
+
+    transform: translateY(-140%);
+    transition: transform 0.05s;
+  }
+
+  .skip-to-content-link:focus {
+    transform: translateY(0%);
+  }
+}
+
+/* custom shadows */
 @layer utilities {
-  /* custom shadows */
   .header-text-shadow {
     /* offset-x | offset-y | blur-radius | color */
     text-shadow: 3px 2px 8px black;
@@ -72,23 +87,20 @@
   .footer-drop-shadow {
     filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 50%));
   }
+}
 
-  /* waves filter */
-  .waves-jpg {
-    @apply bg-cover bg-center;
-
-    background-image: url("$lib/banner.jpg");
-    filter: url("#wavesFilter");
-  }
-
+/* waves filter */
+@layer utilities {
   .waves-mask {
     @apply backdrop-blur-sm -backdrop-hue-rotate-30;
 
     mask-image: url("$lib/banner-mask.png");
     filter: url("#wavesFilter");
   }
+}
 
-  /* scroll bar */
+/* scroll bar */
+@layer utilities {
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar */
   body::-webkit-scrollbar {
     @apply w-6;
