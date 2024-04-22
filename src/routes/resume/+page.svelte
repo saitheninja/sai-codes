@@ -12,21 +12,20 @@
     tools: [
       "HTML",
       "CSS",
-      "Tailwind CSS",
-      "PostCSS",
-      "SCSS",
+      "Tailwind",
 
       "JavaScript",
       "TypeScript",
-      "Node",
-      "Svelte",
       "SvelteKit",
 
+      "Playwright",
+
+      "Postgres",
+
       "Git",
-      "GitHub Actions",
       "Linux",
       "Docker",
-      "JAMstack",
+      "Nix",
     ],
   };
   let workCCrew = {
@@ -39,11 +38,14 @@
     subhText: "Marketing Manager",
     years: "2019 - 2020",
     tools: [
-      "WordPress",
-      "PHP",
       "HTML",
       "CSS",
+
+      "PHP",
+      "WordPress",
+
       "JavaScript",
+
       "Linux",
 
       "Photoshop",
@@ -96,34 +98,41 @@
   <title>sai.codes a resume</title>
 </svelte:head>
 
-<div class="space-y-16">
-  <section
-    id="name"
-    class="text-center"
-  >
+<div class="space-y-12">
+  <section id="name">
     <h1 class="name">
       <a
         href="/resume"
-        title="my resume page"
+        title="my resume"
         class="underline-offset-8"
       >
         Saien Govender
       </a>
     </h1>
+    <div
+      id="contact"
+      class="text-minor my-2 space-x-2"
+    >
+      <span><a href="/">sai.codes</a></span>
+      <span><a href="mailto:sai@saitheninja.com">sai@saitheninja.com</a></span>
+    </div>
 
-    <div class="text-minor mt-4">
-      <p>
-        Full-stack developer making websites that are intuitive to use, robust,
-        and low-maintenance.
-      </p>
+    <div class="mt-2 text-sm">
+      <div class="mb-1 space-x-2">
+        <span>Full-stack developer 📚</span>
+        <span>Expert troubleshooter 🎯</span>
+        <span>Open source enthusiast 🐧</span>
+      </div>
+    </div>
 
-      <p>Located in Johannesburg, South Africa. 🇿🇦</p>
+    <div class="text-sm">
+      <span>Johannesburg, South Africa 🇿🇦</span>
     </div>
   </section>
 
   <section
     id="work"
-    class="space-y-8"
+    class="space-y-6"
   >
     <h2 class="work">Work</h2>
 
