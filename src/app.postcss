@@ -9,7 +9,7 @@
 
   body {
     @apply bg-fixed print:bg-transparent;
-    @apply bg-gradient-to-br from-blue-900 to-rose-900;
+    @apply bg-gradient-to-br from-cyan-800 to-cyan-950;
   }
 
   h1,
@@ -65,11 +65,12 @@
 @layer utilities {
   /* custom shadows */
   .header-text-shadow {
-    text-shadow: -2px -1px 6px black;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 3px 2px 8px black;
   }
 
   .footer-drop-shadow {
-    filter: drop-shadow(-4px -0px 4px rgb(0 0 0 / 50%));
+    filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 50%));
   }
 
   /* waves filter */
@@ -94,7 +95,7 @@
   }
 
   body::-webkit-scrollbar-thumb {
-    @apply bg-gradient-to-b from-blue-900 to-rose-900;
+    @apply bg-gradient-to-b from-cyan-800 to-cyan-950;
     @apply rounded-lg border-8 border-solid border-black;
   }
 

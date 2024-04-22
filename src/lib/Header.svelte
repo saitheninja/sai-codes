@@ -65,7 +65,7 @@
 
 <style lang="postcss">
   .skip-to-content-link {
-    @apply absolute z-30 m-4 bg-blue-900 p-4 pb-5;
+    @apply absolute z-30 m-4 bg-green-900 p-4 pb-5;
     transform: translateY(-140%);
     transition: transform 0.05s;
   }

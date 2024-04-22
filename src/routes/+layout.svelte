@@ -17,7 +17,7 @@
 
   <meta
     name="keywords"
-    content="Svelte, HTML, CSS, JavaScript"
+    content="Svelte, HTML, CSS, JavaScript, TypeScript"
   />
 </svelte:head>
 
@@ -26,7 +26,7 @@
 
   <main
     id="main"
-    class="mx-6 mt-10 mb-16 max-w-prose flex-grow scroll-mt-36 print:my-0 print:mx-auto sm:mx-auto sm:mt-14"
+    class="mx-6 mb-16 mt-10 max-w-prose flex-grow scroll-mt-36 sm:mx-auto sm:mt-14 print:mx-auto print:my-0"
   >
     <slot />
   </main>
