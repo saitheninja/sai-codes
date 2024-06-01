@@ -13,6 +13,16 @@
     than before.
   </p>
 
+  <p>
+    Get feedback as fast as possible, so you can fix it before things are built
+    on top of it. I like to build things directly in the browser so I can
+    immediately see where ideas don't work. (Especially fancy layering things,
+    like the <a
+      href="https://github.com/saitheninja/sai.codes/blob/main/src/lib/Header.svelte"
+      >header</a
+    > of this site.)
+  </p>
+
   <h2 class="pt-4">Tailwind Specific</h2>
 
   <p>
@@ -23,10 +33,7 @@
 
   <p>Tailwind sets useful media queries.</p>
 
-  <p>
-    Design all layouts for a component at the same time, from smallest screen to
-    biggest screen.
-  </p>
+  <p>Design all layouts from smallest screen to biggest screen.</p>
 
   <p>
     Build everything in one page and then abstract into components once the
