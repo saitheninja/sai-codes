@@ -29,14 +29,13 @@
 <h2 class="pt-8 pb-2">Writing</h2>
 
 <div
-  id="ranting-swede"
+  id="yt-ranting-swede"
   class="pt-2 pb-4"
 >
   <iframe
     src="https://www.youtube.com/embed/EbPOImtuw2Q"
     title="Ranting Swede"
     frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
     class="aspect-video w-full"
   />

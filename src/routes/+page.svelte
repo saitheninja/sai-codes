@@ -2,12 +2,30 @@
   <title>sai.codes</title>
 </svelte:head>
 
-<h1 class="pb-6">Hello!</h1>
+<h1>Hello!</h1>
 
-<p>
-  I'm currently planting
-  <a href="/garden">a garden</a>.
-</p>
+<div
+  id="yt-money-please"
+  class="pb-4 pt-2"
+>
+  <p class="pb-2 pt-4">
+    <a
+      href="/resume"
+      class="-mr-1 italic"
+    >
+      I need a job
+    </a>.
+  </p>
+
+  <iframe
+    src="https://www.youtube.com/embed/NGvWbsTDPHU"
+    title="Money please"
+    frameborder="0"
+    allowfullscreen
+    class="aspect-video w-full"
+  />
+  <p class="text-minor pt-1 text-center">Money please.</p>
+</div>
 
 <p>
   Also, play some games I've made on
@@ -21,12 +39,7 @@
   </a>.
 </p>
 
-<p class="pt-4">
-  Lastly, but most importantly,
-  <a
-    href="/resume"
-    class="-mr-1 italic"
-  >
-    I need a job
-  </a>.
+<p>
+  Or wander the
+  <a href="/garden">garden</a>.
 </p>
