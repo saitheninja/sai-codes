@@ -54,6 +54,10 @@
     </a>
   </li> -->
   <li>
+    <a href="/garden/catchphrases">Catchphrases</a>
+  </li>
+
+  <li>
     <a href="/garden/music-theory-notes">Music Theory Notes</a>
   </li>
 
