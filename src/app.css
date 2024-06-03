@@ -5,6 +5,7 @@
 @layer base {
   :root {
     @apply scroll-smooth;
+    @apply scroll-pt-28;
   }
 
   body {
