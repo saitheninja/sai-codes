@@ -48,7 +48,14 @@
 
   code {
     @apply p-1;
-    @apply bg-gray-700 print:bg-gray-200;
+    @apply bg-cyan-950 print:bg-gray-200;
+
+    print-color-adjust: exact;
+  }
+
+  pre {
+    @apply px-3 py-2 max-w-max;
+    @apply bg-cyan-950 print:bg-gray-200;
 
     print-color-adjust: exact;
   }
