@@ -48,10 +48,13 @@
   id="writing-list"
   class="list-disc pl-6"
 >
-  <li>
+  <!-- <li>
     <a href="/garden/discord-is-better">
       Discord is Better Than What We Had Before
     </a>
+  </li> -->
+  <li>
+    <a href="/garden/music-theory-notes">Music Theory Notes</a>
   </li>
 
   <li>
