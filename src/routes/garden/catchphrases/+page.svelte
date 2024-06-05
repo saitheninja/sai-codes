@@ -16,4 +16,6 @@
   <p>Slow is smooth, and smooth is fast.</p>
   <p>Don't Panic</p>
   <p class="font-bold">MEAT IS MEAT</p>
+  <p>Don't feed the trolls.</p>
+  <p>No good deed goes unpunished.</p>
 </div>
