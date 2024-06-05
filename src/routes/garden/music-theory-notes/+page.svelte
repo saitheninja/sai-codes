@@ -85,62 +85,66 @@
 
 <article
   bind:this={articleEl}
-  class="space-y-8"
+  class="space-y-10"
 >
   <section class="space-y-4">
     <h2 id="scales">Scales</h2>
 
-    <div>
-      <p>Each note letter is only used once in a scale.</p>
-      <p>
-        (This convention sometimes leads to notes being described with
-        unexpected sharps and flats, e.g. C Minor Scale has a Bb instead of A.)
-      </p>
-    </div>
-
-    <p>
-      a diatonic scale is any heptatonic scale (scale with 7 notes per octave)
-      that includes five whole steps and two half steps in each octave, in which
-      the two half steps are separated from each other by either two or three
-      whole steps. This pattern ensures that all the half steps are maximally
-      separated from each other (i.e. separated by at least two whole steps).
-    </p>
-
-    <p>
-      The seven pitches of any diatonic scale can also be obtained by using a
-      chain of six perfect fifths.
-    </p>
-
-    <div>
-      <p>
-        if one of the two versions is a perfect interval, the other is called
-        either diminished (i.e. narrowed by one semitone) or augmented (i.e.
-        widened by one semitone).
-      </p>
-      <p>
-        Otherwise, the larger version is called major, the smaller one minor.
-      </p>
-    </div>
-
-    <div>
-      <p>
-        Within a diatonic scale, unisons and octaves are always qualified as
-        perfect,
-      </p>
-      <p>fourths as either perfect or augmented,</p>
-      <p>fifths as perfect or diminished,</p>
-      <p>
-        and all the other intervals (seconds, thirds, sixths, sevenths) as major
-        or minor.
-      </p>
-    </div>
-
     <section class="space-y-4">
-      <h3 id="major-scale">Major Scale</h3>
+      <h3 id="diatonic-scales">Diatonic Scales</h3>
+      <div>
+        <p>Each note letter is only used once in a scale.</p>
+        <p>
+          (This convention sometimes leads to notes being described with
+          unexpected sharps and flats, e.g. C Minor Scale has a Bb instead of
+          A.)
+        </p>
+      </div>
 
-      <p>Also known as the Ionian Mode.</p>
+      <p>
+        a diatonic scale is any heptatonic scale (scale with 7 notes per octave)
+        that includes five whole steps and two half steps in each octave, in
+        which the two half steps are separated from each other by either two or
+        three whole steps. This pattern ensures that all the half steps are
+        maximally separated from each other (i.e. separated by at least two
+        whole steps).
+      </p>
 
-      <pre>
+      <p>
+        The seven pitches of any diatonic scale can also be obtained by using a
+        chain of six perfect fifths.
+      </p>
+
+      <div>
+        <p>
+          if one of the two versions is a perfect interval, the other is called
+          either diminished (i.e. narrowed by one semitone) or augmented (i.e.
+          widened by one semitone).
+        </p>
+        <p>
+          Otherwise, the larger version is called major, the smaller one minor.
+        </p>
+      </div>
+
+      <div>
+        <p>
+          Within a diatonic scale, unisons and octaves are always qualified as
+          perfect,
+        </p>
+        <p>fourths as either perfect or augmented,</p>
+        <p>fifths as perfect or diminished,</p>
+        <p>
+          and all the other intervals (seconds, thirds, sixths, sevenths) as
+          major or minor.
+        </p>
+      </div>
+
+      <section class="space-y-4">
+        <h4 id="major-scale">Major Scale</h4>
+
+        <p>Also known as the Ionian Mode.</p>
+
+        <pre>
 (whole step or half step)
 (semitone steps)
 (total semitones)
@@ -155,145 +159,150 @@
 C--D--E-F--G--A--B-C
 C Major, Ionian Mode</pre>
 
-      <p>
-        C Major (and its relative minor scale, A Minor) doesn't have any sharps
-        or flats.
-      </p>
-    </section>
-
-    <section class="space-y-4">
-      <h3 id="minor-scales">Minor Scales</h3>
-
-      <div>
-        <p>There are 3 types of minor scale:</p>
-
-        <ul class="list-disc pl-6">
-          <li>natural</li>
-          <li>harmonic</li>
-          <li>melodic</li>
-        </ul>
-      </div>
-
-      <section class="space-y-2">
-        <h4 id="natural-minor-scale">Natural Minor Scale</h4>
-
         <p>
-          The default minor scale. Assume this minor scale if the type of minor
-          scale is not specified.
+          C Major (and its relative minor scale, A Minor) doesn't have any
+          sharps or flats.
         </p>
+      </section>
 
-        <pre>
+      <section class="space-y-4">
+        <h4 id="minor-scales">Minor Scales</h4>
+
+        <div>
+          <p>There are 3 types of minor scale:</p>
+
+          <ul class="list-disc pl-6">
+            <li>natural</li>
+            <li>harmonic</li>
+            <li>melodic</li>
+          </ul>
+        </div>
+
+        <section class="space-y-2">
+          <h5 id="natural-minor-scale">Natural Minor Scale</h5>
+
+          <p>
+            The default minor scale. Assume this minor scale if the type of
+            minor scale is not specified.
+          </p>
+
+          <pre>
  --W-H --W--W-H --W --W
  --2-1 --2--2-1 --2 --2
 0--2-3 --5--7-8 --10--12
 1--2-b3--4--5-b6--b7--1
 C--D-Eb--F--G-Ab--Bb--C
 C Natural Minor, C Minor, Aeolian Mode</pre>
-      </section>
+        </section>
 
-      <section class="space-y-2">
-        <h4 id="harmonic-minor-scale">Harmonic Minor Scale</h4>
+        <section class="space-y-2">
+          <h5 id="harmonic-minor-scale">Harmonic Minor Scale</h5>
 
-        <p>
-          The seventh scale degree is raised by a half step (back to how it was
-          in the Major Scale, because that interval sounds good).
-        </p>
+          <p>
+            The seventh scale degree is raised by a half step (back to how it
+            was in the Major Scale, because that interval sounds good).
+          </p>
 
-        <pre>
+          <pre>
  --W-H --W--W-H ---WH-H
  --2-1 --2--2-1 ---3 -1
 0--2-3 --5--7-8 ---11-12
 1--2-b3--4--5-b6---7 -1
 C--D-Eb--F--G-Ab---B -C
 C Harmonic Minor</pre>
-      </section>
+        </section>
 
-      <section class="space-y-2">
-        <h4 id="melodic-minor-scale">Melodic Minor Scale</h4>
+        <section class="space-y-2">
+          <h5 id="melodic-minor-scale">Melodic Minor Scale</h5>
 
-        <p>Descending: identical to natural minor.</p>
+          <p>Descending: identical to natural minor.</p>
 
-        <p>
-          Ascending: raised sixth and seventh scale degrees (so that there isn't
-          a 3 semitone jump).
-        </p>
+          <p>
+            Ascending: raised sixth and seventh scale degrees (so that there
+            isn't a 3 semitone jump).
+          </p>
 
-        <pre>
+          <pre>
  --W-H --W--W--W--W-H
  --2-1 --2--2--2--2-1
 0--2-3 --5--7--9--11-12
 1--2-b3--4--5--6--7-1
 C--D-Eb--F--G--A--B-C
 C Melodic Minor</pre>
+        </section>
+
+        <div>
+          <p>They share the flat third scale degree (b3).</p>
+
+          <p>Major -> Natural Minor</p>
+          <p>1 2 b3 4 5 b6 b7 1</p>
+
+          <p>Major -> Harmonic Minor</p>
+          <p>1 2 b3 4 5 b6 7 1</p>
+
+          <p>Major -> Melodic Minor</p>
+          <p>1 2 b3 4 5 6 7 1</p>
+        </div>
+
+        <div>
+          <p>A Major to A Minor is the parallel minor.</p>
+          <p>C Major to A Minor is the relative minor.</p>
+
+          <p>C Major</p>
+          <p>C D E F G A B C</p>
+
+          <p>C Minor</p>
+          <p>C D Eb F G Ab Bb C</p>
+
+          <p>A Major</p>
+          <p>A B C# D E F# G# A</p>
+
+          <p>A Minor (same notes as C Major)</p>
+          <p>A B C D E F G A</p>
+        </div>
+
+        <div>
+          <p>Relative minor starts from the 6th note of the major scale.</p>
+          <p>Or, relative major starts from the 3rd note of the minor scale.</p>
+          <p>
+            In other words, the relative minor is 3 semitones below, or 9
+            semitones above, the major.
+          </p>
+
+          <p>relative minor is a natural minor scale.</p>
+          <p>
+            Natural minor scales share a key signature with a relative major
+            key.
+          </p>
+
+          <p>
+            The primary difference between major scales and minor scales is the
+            third scale degree. A major scale always has a natural third (or
+            major third). A minor scale never has a major third.
+          </p>
+          <p>
+            In practice, you can add any note as a tension to a minor scale
+            except for a major third.
+          </p>
+          <p>
+            For example, if you are playing a D minor scale, almost any note can
+            arguably sound good in this scale except for F♯. If you play an F♯,
+            the scale instantly takes on a major tonality.
+          </p>
+        </div>
       </section>
-
-      <div>
-        <p>They share the flat third scale degree (b3).</p>
-
-        <p>Major -> Natural Minor</p>
-        <p>1 2 b3 4 5 b6 b7 1</p>
-
-        <p>Major -> Harmonic Minor</p>
-        <p>1 2 b3 4 5 b6 7 1</p>
-
-        <p>Major -> Melodic Minor</p>
-        <p>1 2 b3 4 5 6 7 1</p>
-      </div>
-
-      <div>
-        <p>A Major to A Minor is the parallel minor.</p>
-        <p>C Major to A Minor is the relative minor.</p>
-
-        <p>C Major</p>
-        <p>C D E F G A B C</p>
-
-        <p>C Minor</p>
-        <p>C D Eb F G Ab Bb C</p>
-
-        <p>A Major</p>
-        <p>A B C# D E F# G# A</p>
-
-        <p>A Minor (same notes as C Major)</p>
-        <p>A B C D E F G A</p>
-      </div>
-
-      <div>
-        <p>Relative minor starts from the 6th note of the major scale.</p>
-        <p>Or, relative major starts from the 3rd note of the minor scale.</p>
-        <p>
-          In other words, the relative minor is 3 semitones below, or 9
-          semitones above, the major.
-        </p>
-
-        <p>relative minor is a natural minor scale.</p>
-        <p>
-          Natural minor scales share a key signature with a relative major key.
-        </p>
-
-        <p>
-          The primary difference between major scales and minor scales is the
-          third scale degree. A major scale always has a natural third (or major
-          third). A minor scale never has a major third.
-        </p>
-        <p>
-          In practice, you can add any note as a tension to a minor scale except
-          for a major third.
-        </p>
-        <p>
-          For example, if you are playing a D minor scale, almost any note can
-          arguably sound good in this scale except for F♯. If you play an F♯,
-          the scale instantly takes on a major tonality.
-        </p>
-      </div>
     </section>
 
-    <section class="space-y-2">
-      <h3 id="chromatic-scale">Chromatic Scale</h3>
+    <section class="space-y-4">
+      <h3 id="other-scales">Other Scales</h3>
 
-      <p>All possible notes.</p>
-      <p>12 notes, then repeat.</p>
+      <section class="space-y-2">
+        <h4 id="chromatic-scale">Chromatic Scale</h4>
 
-      <pre>
+        <p>All possible notes.</p>
+        <p>12 notes, then repeat.</p>
+
+        <pre>
 -H-H-H-...-H- (whole step or half step)
 1-2-3-...-12-1 (note number)
 0-1-2-...-12-13 (total semitones)
@@ -301,36 +310,93 @@ C, C#, D, D#, E, F, F#, G, G#, A, A#, B, C
 (note name, from C for piano)
 E, F, F#, G, G#, A, A#, B, C, C#, D, D#, E
 (note name, from E for guitar)</pre>
+      </section>
+
+      <section class="space-y-2">
+        <h4 id="pentatonic-scale">Pentatonic Scale</h4>
+
+        <p>
+          5 notes. Remove the notes that are only a semitone away, so that none
+          of the notes clash and you can play them in any order.
+        </p>
+
+        <div>
+          <p>Major -> Pentatonic</p>
+          <p>1 2 3 5 6 (1)</p>
+        </div>
+
+        <div>
+          <p>Major -> Minor Pentatonic</p>
+          <p>1 b3 4 5 b7 (1)</p>
+        </div>
+      </section>
+
+      <section class="space-y-2">
+        <h4 id="blues-scale">Blues Scale</h4>
+
+        <p>Minor Pentatonic + b5.</p>
+
+        <div>
+          <p>Major -> Blues</p>
+          <p>1 b3 4 b5 6 b7 (1)</p>
+        </div>
+      </section>
     </section>
 
-    <section class="space-y-2">
-      <h3 id="pentatonic-scale">Pentatonic Scale</h3>
+    <section class="space-y-4">
+      <h3 id="scale-degrees">Scale Degrees</h3>
+
+      <p>Scale degree: the position of a note relative to the tonic.</p>
+
+      <pre>I  ii  iii  IV  V  vi  vii° I</pre>
+
+      <div>
+        <p>Uppercase: major</p>
+        <p>Lowercase: minor</p>
+        <p>Lowercase°: diminished</p>
+        <p>Uppercase+: augmented</p>
+      </div>
+
+      <div>
+        <p>I: major</p>
+        <p>ii: minor</p>
+        <p>iii: minor</p>
+        <p>IV: major</p>
+        <p>V: major</p>
+        <p>vi: minor</p>
+        <p>vii° (a.k.a. vii_b5): diminished (a.k.a. minor b5)</p>
+        <p>I: major</p>
+      </div>
+
+      <div>
+        <p>
+          The eight degrees of the scale are also known by traditional names:
+        </p>
+        <p>1st: Tonic (key note)</p>
+        <p>2nd: Supertonic</p>
+        <p>3rd: Mediant</p>
+        <p>4th: Subdominant</p>
+        <p>5th: Dominant</p>
+        <p>6th: Submediant</p>
+        <p>7th: Leading Note/Tone OR Subtonic</p>
+        <p>8th: Tonic (octave)</p>
+      </div>
 
       <p>
-        5 notes. Remove the notes that are only a semitone away, so that none of
-        the notes clash and you can play them in any order.
+        "subtonic" is used when the interval between it and the tonic in the
+        upper octave is a whole step (i.e. natural minor scale).
       </p>
 
-      <div>
-        <p>Major -> Pentatonic</p>
-        <p>1 2 3 5 6 (1)</p>
-      </div>
+      <p>
+        "leading note" is used when that interval is a half-step (i.e. major
+        scale).
+      </p>
 
-      <div>
-        <p>Major -> Minor Pentatonic</p>
-        <p>1 b3 4 5 b7 (1)</p>
-      </div>
-    </section>
-
-    <section class="space-y-2">
-      <h3 id="blues-scale">Blues Scale</h3>
-
-      <p>Minor Pentatonic + b5.</p>
-
-      <div>
-        <p>Major -> Blues</p>
-        <p>1 b3 4 b5 6 b7 (1)</p>
-      </div>
+      <pre>
+                      Tonic
+      (-2nd) Subtonic --|-- (+2nd) Supertonic
+   (-3rd) Submediant ---|--- (+3rd) Mediant
+(-5th) Subdominant -----|----- (+5th) Dominant</pre>
     </section>
   </section>
 
@@ -356,165 +422,115 @@ I--II--III-IV--V--VI--VII-I
   </section>
 
   <section class="space-y-4">
-    <h3 id="scale-degrees">Scale Degrees</h3>
+    <h2>Chords</h2>
 
-    <p>Scale degree: the position of a note relative to the tonic.</p>
+    <section class="space-y-4">
+      <h3 id="building-chords">Building Chords</h3>
 
-    <pre>I  ii  iii  IV  V  vi  vii° I</pre>
+      <section class="space-y-2">
+        <h4 id="major-chord">Major Chord</h4>
 
-    <div>
-      <p>Uppercase: major</p>
-      <p>Lowercase: minor</p>
-      <p>Lowercase°: diminished</p>
-      <p>Uppercase+: augmented</p>
-    </div>
-
-    <div>
-      <p>I: major</p>
-      <p>ii: minor</p>
-      <p>iii: minor</p>
-      <p>IV: major</p>
-      <p>V: major</p>
-      <p>vi: minor</p>
-      <p>vii° (a.k.a. vii_b5): diminished (a.k.a. minor b5)</p>
-      <p>I: major</p>
-    </div>
-
-    <div>
-      <p>The eight degrees of the scale are also known by traditional names:</p>
-      <p>1st: Tonic (key note)</p>
-      <p>2nd: Supertonic</p>
-      <p>3rd: Mediant</p>
-      <p>4th: Subdominant</p>
-      <p>5th: Dominant</p>
-      <p>6th: Submediant</p>
-      <p>7th: Leading Note/Tone OR Subtonic</p>
-      <p>8th: Tonic (octave)</p>
-    </div>
-
-    <p>
-      "subtonic" is used when the interval between it and the tonic in the upper
-      octave is a whole step (i.e. natural minor scale).
-    </p>
-
-    <p>
-      "leading note" is used when that interval is a half-step (i.e. major
-      scale).
-    </p>
-
-    <pre>
-                      Tonic
-      (-2nd) Subtonic --|-- (+2nd) Supertonic
-   (-3rd) Submediant ---|--- (+3rd) Mediant
-(-5th) Subdominant -----|----- (+5th) Dominant</pre>
-  </section>
-
-  <section class="space-y-4">
-    <h2 id="building-chords">Building Chords</h2>
-
-    <div>
-      <h3>Major</h3>
-
-      <pre>
+        <pre>
 1, 3, 5 (scale degree of major scale)
 -4-3- (steps in semitones)
 0, 4, 7 (total semitones)</pre>
-    </div>
+      </section>
 
-    <div>
-      <h3>Minor</h3>
+      <section class="space-y-2">
+        <h4 id="minor-chord">Minor Chord</h4>
 
-      <pre>
+        <pre>
 1, b3, 5
 -3-4-
 0, 3, 7</pre>
-    </div>
+      </section>
 
-    <div>
-      <h3>Augmented</h3>
+      <section class="space-y-2">
+        <h4 id="augmented-chord">Augmented Chord</h4>
 
-      <pre>
+        <pre>
 1, 3, 5#
 -4-4-
 0, 4, 8</pre>
-    </div>
+      </section>
 
-    <div>
-      <h3>Diminished</h3>
+      <section class="space-y-2">
+        <h4 id="diminished-chord">Diminished Chord</h4>
 
-      <pre>
+        <pre>
 1, b3, b5
 -3-3-
 0, 3, 6</pre>
-    </div>
+      </section>
 
-    <div>
-      <h3>(Dominant) Seventh</h3>
+      <section class="space-y-2">
+        <h4 id="seventh-chord">(Dominant) Seventh Chord</h4>
 
-      <pre>
+        <pre>
 1, 3, 5, b7
 -4-3-3-
 0, 4, 7, 10</pre>
-    </div>
+      </section>
 
-    <div>
-      <h3>Suspended 2nd</h3>
+      <section class="space-y-2">
+        <h4 id="suspended-2nd-chord">Suspended 2nd Chord</h4>
 
-      <pre>
+        <pre>
 1, 2, 5
 -2-5-
 0, 2, 7</pre>
-    </div>
+      </section>
 
-    <div>
-      <h3>Sus 4</h3>
+      <section class="space-y-2">
+        <h4 id="sus-4-chord">Sus 4 Chord</h4>
 
-      <pre>
+        <pre>
 1, 4, 5
 -5-2-
 0, 5, 7</pre>
-    </div>
+      </section>
 
-    <div>
-      <h3>Major 7 Sus 2</h3>
+      <section class="space-y-2">
+        <h4 id="major-7-sus-2-chord">Major 7 Sus 2 Chord</h4>
 
-      <pre>
+        <pre>
 1, 2, 5, 7
 -2-5-2-
 0, 2, 7, 11</pre>
 
-      <p>(Dmaj7sus2 sounds good)</p>
-    </div>
-  </section>
+        <p>(Dmaj7sus2 sounds good)</p>
+      </section>
+    </section>
 
-  <section class="space-y-4">
-    <h3 id="chord-progressions">Chord Progressions</h3>
+    <section class="space-y-4">
+      <h3 id="chord-progressions">Chord Progressions</h3>
 
-    <p>These are some common chord progressions.</p>
+      <p>These are some common chord progressions.</p>
 
-    <pre>I-V-vi-IV (0-7-9m-5)</pre>
-    <pre>I-IV-V-IV (0-5-7-5)</pre>
-    <pre>ii-V-I (2m-7-0)</pre>
-    <pre>I-vi-IV-V (0-9m-5-7)</pre>
-    <pre>I-bVII-I (0-10-0)</pre>
-    <div>
-      <p>12 Bar Blues</p>
-      <pre>
+      <pre>I-V-vi-IV (0-7-9m-5)</pre>
+      <pre>I-IV-V-IV (0-5-7-5)</pre>
+      <pre>ii-V-I (2m-7-0)</pre>
+      <pre>I-vi-IV-V (0-9m-5-7)</pre>
+      <pre>I-bVII-I (0-10-0)</pre>
+      <div>
+        <p>12 Bar Blues</p>
+        <pre>
 I-I-I-I (0-0-0-0)
 IV-IV-I-I (5-5-0-0)
 V-IV-I-I (7-5-0-0)</pre>
-    </div>
+      </div>
 
-    <div>
-      <p>Canon</p>
-      <pre>
+      <div>
+        <p>Canon</p>
+        <pre>
 I-V-vi-iii (0-7-9m-4m)
 IV-I-IV-V (5-0-5-7)</pre>
-    </div>
+      </div>
+    </section>
   </section>
 
   <section class="space-y-4">
-    <h2>Guitar Notes Math</h2>
+    <h2 id="guitar-notes-math">Guitar Notes Math</h2>
 
     <div>
       <p>E-A-D-G-B-E</p>
@@ -538,7 +554,7 @@ IV-I-IV-V (5-0-5-7)</pre>
     </div>
 
     <section class="space-y-4">
-      <h3>Make the C Major Scale</h3>
+      <h3 id="make-the-c-major-scale">Make the C Major Scale</h3>
 
       <p>Barre on fret 1 for 1st and 2nd string.</p>
 
