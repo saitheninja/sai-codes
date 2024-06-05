@@ -2,23 +2,10 @@
   import { onMount } from "svelte";
 
   let articleEl: HTMLElement;
-  let headingsList: Element[] = [];
-
-  function getHeadings(el: HTMLElement) {
-    const headingsNodeList = el.querySelectorAll("h2, h3, h4, h5, h6");
-
-    if (headingsNodeList.length === 0) {
-      return [];
-    }
-
-    const headingsElList = Array.from(headingsNodeList); // convert NodeList to array
-    console.log(headingsElList);
-
-    return headingsElList;
-  }
+  let headings2: Element[] = [];
 
   onMount(() => {
-    headingsList = getHeadings(articleEl);
+    headings2 = Array.from(articleEl.querySelectorAll("h2"));
   });
 </script>
 
@@ -27,14 +14,72 @@
 <section class="mb-10 space-y-4">
   <h2 id="table-of-contents">Table of Contents</h2>
 
-  <div>
-    {#each headingsList as { id, nodeName, textContent }}
-      <ul class="list-disc pl-6">
+  <div class="space-y-1">
+    <ol class="list-disc pl-6">
+      {#each headings2 as heading2}
         <li>
-          <a href="#{id}">{nodeName} {textContent}</a>
+          <a href="#{heading2.id}">{heading2.textContent}</a>
         </li>
-      </ul>
-    {/each}
+
+        {@const headings3 = heading2.parentElement
+          ? heading2.parentElement.querySelectorAll("h3")
+          : []}
+
+        {#if headings3.length > 0}
+          <ol class="list-disc pl-6">
+            {#each headings3 as heading3}
+              <li>
+                <a href="#{heading3.id}">{heading3.textContent}</a>
+              </li>
+
+              {@const headings4 = heading3.parentElement
+                ? heading3.parentElement.querySelectorAll("h4")
+                : []}
+
+              {#if headings4.length > 0}
+                <ol class="list-disc pl-6">
+                  {#each headings4 as heading4}
+                    <li>
+                      <a href="#{heading4.id}">{heading4.textContent}</a>
+                    </li>
+
+                    {@const headings5 = heading4.parentElement
+                      ? heading4.parentElement.querySelectorAll("h5")
+                      : []}
+
+                    {#if headings5.length > 0}
+                      <ol class="list-disc pl-6">
+                        {#each headings5 as heading5}
+                          <li>
+                            <a href="#{heading5.id}">{heading5.textContent}</a>
+                          </li>
+
+                          {@const headings6 = heading5.parentElement
+                            ? heading5.parentElement.querySelectorAll("h6")
+                            : []}
+
+                          {#if headings6.length > 0}
+                            <ol class="list-disc pl-6">
+                              {#each headings6 as heading6}
+                                <li>
+                                  <a href="#{heading6.id}">
+                                    {heading6.textContent}</a
+                                  >
+                                </li>
+                              {/each}
+                            </ol>
+                          {/if}
+                        {/each}
+                      </ol>
+                    {/if}
+                  {/each}
+                </ol>
+              {/if}
+            {/each}
+          </ol>
+        {/if}
+      {/each}
+    </ol>
   </div>
 </section>
 
