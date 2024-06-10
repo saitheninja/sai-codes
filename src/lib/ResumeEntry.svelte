@@ -15,15 +15,14 @@
   export let tools: string[] = [];
 </script>
 
-<div>
-  <h3 class="heading-size-3 mb-1">
+<div class="space-y-2">
+  <h3 class="heading-size-3">
     {#if hLink.href}
       <a
         href={hLink.href}
         title={hLink.title}
         rel={hLink.rel}
         target="_blank"
-        class="-mr-1"
       >
         {hLink.text}
       </a>
@@ -32,16 +31,18 @@
     {hText}
   </h3>
 
-  {#if subhText}
-    <p class="italic">{subhText}</p>
-  {/if}
+  <div>
+    {#if subhText}
+      <p class="italic">{subhText}</p>
+    {/if}
 
-  <p class="text-minor mb-1">{years}</p>
+    <p class="text-minor">{years}</p>
+  </div>
 
   {#if tools.length > 0}
     <ul
       id="tools"
-      class="my-2 -ml-1 flex flex-row flex-wrap text-sm"
+      class="-ml-1 flex flex-row flex-wrap text-sm"
     >
       {#each tools as tool}
         <li class="my-1 mr-2">
