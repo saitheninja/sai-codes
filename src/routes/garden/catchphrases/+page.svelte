@@ -1,5 +1,5 @@
 <hgroup class="mb-10">
-  <h1 class="leading-tight mb-2">Catchphrases</h1>
+  <h1 class="mb-2 leading-tight">Catchphrases</h1>
 
   <p class="italic">
     Things I say all the time, because they are relevant to so many things.
@@ -18,4 +18,11 @@
   <p class="font-bold">MEAT IS MEAT</p>
   <p>Don't feed the trolls.</p>
   <p>No good deed goes unpunished.</p>
+
+  <div>
+    <p>The Serenity Prayer</p>
+    <p>Grant me the serenity to accept the things I cannot change,</p>
+    <p>Courage to change the things I can,</p>
+    <p>and Wisdom to know the difference.</p>
+  </div>
 </div>
