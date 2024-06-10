@@ -24,7 +24,7 @@
   a:hover,
   a:focus {
     @apply text-white;
-    @apply decoration-wavy;
+    @apply decoration-double;
   }
 
   code {
