@@ -2,17 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* scrolling */
 @layer base {
   :root {
     @apply scroll-smooth;
     @apply scroll-pt-28;
   }
+}
 
-  body {
-    @apply bg-fixed print:bg-transparent;
-    @apply bg-gradient-to-br from-cyan-800 to-cyan-950;
-  }
-
+/* headings */
+@layer base {
   h1,
   h2,
   h3,
@@ -45,6 +44,14 @@
   h6 {
     @apply text-lg;
   }
+}
+
+/* colours and decorations */
+@layer base {
+  body {
+    @apply bg-fixed print:bg-transparent;
+    @apply bg-gradient-to-br from-cyan-800 to-cyan-950;
+  }
 
   a {
     @apply underline decoration-1 underline-offset-4;
@@ -64,7 +71,7 @@
   }
 
   pre {
-    @apply px-3 py-2 max-w-max;
+    @apply max-w-max px-3 py-2;
     @apply bg-cyan-950 print:bg-gray-200;
 
     print-color-adjust: exact;
