@@ -1,4 +1,4 @@
-<h1 class="mb-10 leading-tight">On CSS</h1>
+<h1 class="heading-size-1 mb-10 leading-tight">On CSS</h1>
 
 <div class="space-y-4">
   <p>
@@ -23,7 +23,7 @@
     > of this site.)
   </p>
 
-  <h2 class="pt-4">Tailwind Specific</h2>
+  <h2 class="heading-size-2 pt-4">Tailwind Specific</h2>
 
   <p>
     It's fast to play with designs, and you know you aren't fucking up the rest

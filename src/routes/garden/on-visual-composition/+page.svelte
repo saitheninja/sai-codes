@@ -1,4 +1,4 @@
-<h1 class="mb-10">On Visual Composition</h1>
+<h1 class="heading-size-1 mb-10">On Visual Composition</h1>
 
 <div class="space-y-4">
   <div
@@ -14,7 +14,6 @@
       src="https://www.youtube.com/embed/jl0hMfqNQ-g"
       title="The Code - Guidelines"
       frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
       class="aspect-video w-full"
     />

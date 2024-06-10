@@ -9,10 +9,15 @@
   });
 </script>
 
-<h1 class="mb-10 leading-tight">Music Theory Notes</h1>
+<h1 class="heading-size-1 mb-10 leading-tight">Music Theory Notes</h1>
 
 <section class="mb-10 space-y-4">
-  <h2 id="table-of-contents">Table of Contents</h2>
+  <h2
+    id="table-of-contents"
+    class="heading-size-2"
+  >
+    Table of Contents
+  </h2>
 
   <div class="space-y-1">
     <ol class="list-disc pl-6">
@@ -88,10 +93,20 @@
   class="space-y-10"
 >
   <section class="space-y-4">
-    <h2 id="scales">Scales</h2>
+    <h2
+      id="scales"
+      class="heading-size-2"
+    >
+      Scales
+    </h2>
 
     <section class="space-y-4">
-      <h3 id="diatonic-scales">Diatonic Scales</h3>
+      <h3
+        id="diatonic-scales"
+        class="heading-size-3"
+      >
+        Diatonic Scales
+      </h3>
       <div>
         <p>Each note letter is only used once in a scale.</p>
         <p>
@@ -140,7 +155,12 @@
       </div>
 
       <section class="space-y-4">
-        <h4 id="major-scale">Major Scale</h4>
+        <h4
+          id="major-scale"
+          class="heading-size-4"
+        >
+          Major Scale
+        </h4>
 
         <p>Also known as the Ionian Mode.</p>
 
@@ -166,7 +186,12 @@ C Major, Ionian Mode</pre>
       </section>
 
       <section class="space-y-4">
-        <h4 id="minor-scales">Minor Scales</h4>
+        <h4
+          id="minor-scales"
+          class="heading-size-4"
+        >
+          Minor Scales
+        </h4>
 
         <div>
           <p>There are 3 types of minor scale:</p>
@@ -179,7 +204,12 @@ C Major, Ionian Mode</pre>
         </div>
 
         <section class="space-y-2">
-          <h5 id="natural-minor-scale">Natural Minor Scale</h5>
+          <h5
+            id="natural-minor-scale"
+            class="heading-size-5"
+          >
+            Natural Minor Scale
+          </h5>
 
           <p>
             The default minor scale. Assume this minor scale if the type of
@@ -196,7 +226,12 @@ C Natural Minor, C Minor, Aeolian Mode</pre>
         </section>
 
         <section class="space-y-2">
-          <h5 id="harmonic-minor-scale">Harmonic Minor Scale</h5>
+          <h5
+            id="harmonic-minor-scale"
+            class="heading-size-5"
+          >
+            Harmonic Minor Scale
+          </h5>
 
           <p>
             The seventh scale degree is raised by a half step (back to how it
@@ -213,7 +248,12 @@ C Harmonic Minor</pre>
         </section>
 
         <section class="space-y-2">
-          <h5 id="melodic-minor-scale">Melodic Minor Scale</h5>
+          <h5
+            id="melodic-minor-scale"
+            class="heading-size-5"
+          >
+            Melodic Minor Scale
+          </h5>
 
           <p>Descending: identical to natural minor.</p>
 
@@ -294,10 +334,20 @@ C Melodic Minor</pre>
     </section>
 
     <section class="space-y-4">
-      <h3 id="other-scales">Other Scales</h3>
+      <h3
+        id="other-scales"
+        class="heading-size-3"
+      >
+        Other Scales
+      </h3>
 
       <section class="space-y-2">
-        <h4 id="chromatic-scale">Chromatic Scale</h4>
+        <h4
+          id="chromatic-scale"
+          class="heading-size-4"
+        >
+          Chromatic Scale
+        </h4>
 
         <p>All possible notes.</p>
         <p>12 notes, then repeat.</p>
@@ -313,7 +363,12 @@ E, F, F#, G, G#, A, A#, B, C, C#, D, D#, E
       </section>
 
       <section class="space-y-2">
-        <h4 id="pentatonic-scale">Pentatonic Scale</h4>
+        <h4
+          id="pentatonic-scale"
+          class="heading-size-4"
+        >
+          Pentatonic Scale
+        </h4>
 
         <p>
           5 notes. Remove the notes that are only a semitone away, so that none
@@ -332,7 +387,12 @@ E, F, F#, G, G#, A, A#, B, C, C#, D, D#, E
       </section>
 
       <section class="space-y-2">
-        <h4 id="blues-scale">Blues Scale</h4>
+        <h4
+          id="blues-scale"
+          class="heading-size-4"
+        >
+          Blues Scale
+        </h4>
 
         <p>Minor Pentatonic + b5.</p>
 
@@ -344,7 +404,12 @@ E, F, F#, G, G#, A, A#, B, C, C#, D, D#, E
     </section>
 
     <section class="space-y-4">
-      <h3 id="scale-degrees">Scale Degrees</h3>
+      <h3
+        id="scale-degrees"
+        class="heading-size-3"
+      >
+        Scale Degrees
+      </h3>
 
       <p>Scale degree: the position of a note relative to the tonic.</p>
 
@@ -401,7 +466,12 @@ E, F, F#, G, G#, A, A#, B, C, C#, D, D#, E
   </section>
 
   <section class="space-y-4">
-    <h2 id="modes">Modes</h2>
+    <h2
+      id="modes"
+      class="heading-size-2"
+    >
+      Modes
+    </h2>
 
     <pre>
 I--II--III-IV--V--VI--VII-I
@@ -422,13 +492,28 @@ I--II--III-IV--V--VI--VII-I
   </section>
 
   <section class="space-y-4">
-    <h2>Chords</h2>
+    <h2
+      id="chords"
+      class="heading-size-2"
+    >
+      Chords
+    </h2>
 
     <section class="space-y-4">
-      <h3 id="building-chords">Building Chords</h3>
+      <h3
+        id="building-chords"
+        class="heading-size-3"
+      >
+        Building Chords
+      </h3>
 
       <section class="space-y-2">
-        <h4 id="major-chord">Major Chord</h4>
+        <h4
+          id="major-chord"
+          class="heading-size-4"
+        >
+          Major Chord
+        </h4>
 
         <pre>
 1, 3, 5 (scale degree of major scale)
@@ -437,7 +522,12 @@ I--II--III-IV--V--VI--VII-I
       </section>
 
       <section class="space-y-2">
-        <h4 id="minor-chord">Minor Chord</h4>
+        <h4
+          id="minor-chord"
+          class="heading-size-4"
+        >
+          Minor Chord
+        </h4>
 
         <pre>
 1, b3, 5
@@ -446,7 +536,12 @@ I--II--III-IV--V--VI--VII-I
       </section>
 
       <section class="space-y-2">
-        <h4 id="augmented-chord">Augmented Chord</h4>
+        <h4
+          id="augmented-chord"
+          class="heading-size-4"
+        >
+          Augmented Chord
+        </h4>
 
         <pre>
 1, 3, 5#
@@ -455,7 +550,12 @@ I--II--III-IV--V--VI--VII-I
       </section>
 
       <section class="space-y-2">
-        <h4 id="diminished-chord">Diminished Chord</h4>
+        <h4
+          id="diminished-chord"
+          class="heading-size-4"
+        >
+          Diminished Chord
+        </h4>
 
         <pre>
 1, b3, b5
@@ -464,7 +564,12 @@ I--II--III-IV--V--VI--VII-I
       </section>
 
       <section class="space-y-2">
-        <h4 id="seventh-chord">(Dominant) Seventh Chord</h4>
+        <h4
+          id="seventh-chord"
+          class="heading-size-4"
+        >
+          (Dominant) Seventh Chord
+        </h4>
 
         <pre>
 1, 3, 5, b7
@@ -473,7 +578,12 @@ I--II--III-IV--V--VI--VII-I
       </section>
 
       <section class="space-y-2">
-        <h4 id="suspended-2nd-chord">Suspended 2nd Chord</h4>
+        <h4
+          id="suspended-2nd-chord"
+          class="heading-size-4"
+        >
+          Suspended 2nd Chord
+        </h4>
 
         <pre>
 1, 2, 5
@@ -482,7 +592,12 @@ I--II--III-IV--V--VI--VII-I
       </section>
 
       <section class="space-y-2">
-        <h4 id="sus-4-chord">Sus 4 Chord</h4>
+        <h4
+          id="sus-4-chord"
+          class="heading-size-4"
+        >
+          Sus 4 Chord
+        </h4>
 
         <pre>
 1, 4, 5
@@ -491,7 +606,12 @@ I--II--III-IV--V--VI--VII-I
       </section>
 
       <section class="space-y-2">
-        <h4 id="major-7-sus-2-chord">Major 7 Sus 2 Chord</h4>
+        <h4
+          id="major-7-sus-2-chord"
+          class="heading-size-4"
+        >
+          Major 7 Sus 2 Chord
+        </h4>
 
         <pre>
 1, 2, 5, 7
@@ -503,7 +623,12 @@ I--II--III-IV--V--VI--VII-I
     </section>
 
     <section class="space-y-4">
-      <h3 id="chord-progressions">Chord Progressions</h3>
+      <h3
+        id="chord-progressions"
+        class="heading-size-3"
+      >
+        Chord Progressions
+      </h3>
 
       <p>These are some common chord progressions.</p>
 
@@ -530,7 +655,12 @@ IV-I-IV-V (5-0-5-7)</pre>
   </section>
 
   <section class="space-y-4">
-    <h2 id="guitar-notes-math">Guitar Notes Math</h2>
+    <h2
+      id="guitar-notes-math"
+      class="heading-size-2"
+    >
+      Guitar Notes Math
+    </h2>
 
     <div>
       <p>E-A-D-G-B-E</p>
@@ -554,7 +684,12 @@ IV-I-IV-V (5-0-5-7)</pre>
     </div>
 
     <section class="space-y-4">
-      <h3 id="make-the-c-major-scale">Make the C Major Scale</h3>
+      <h3
+        id="make-the-c-major-scale"
+        class="heading-size-3"
+      >
+        Make the C Major Scale
+      </h3>
 
       <p>Barre on fret 1 for 1st and 2nd string.</p>
 

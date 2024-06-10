@@ -16,7 +16,7 @@
 </script>
 
 <div>
-  <h3>
+  <h3 class="heading-size-3 mb-1">
     {#if hLink.href}
       <a
         href={hLink.href}

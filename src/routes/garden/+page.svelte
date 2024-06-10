@@ -2,7 +2,7 @@
   <title>sai.codes some rants</title>
 </svelte:head>
 
-<h1 class="pb-8">The Garden</h1>
+<h1 class="heading-size-1 pb-8">The Garden</h1>
 
 <div
   id="on-gardening"
@@ -26,7 +26,7 @@
   </p>
 </div>
 
-<h2 class="pt-8 pb-2">Writing</h2>
+<h2 class="heading-size-2 pt-8 pb-2">Writing</h2>
 
 <div
   id="yt-ranting-swede"

@@ -2,11 +2,12 @@
   <title>sai.codes, and also other things</title>
 </svelte:head>
 
-<h1 class="pb-8">Contact</h1>
+<h1 class="heading-size-1 pb-8">Contact</h1>
 
 <div class="space-y-6">
   <section>
-    <h2 class="mb-2">Code</h2>
+    <h2 class="heading-size-2 mb-2">Code</h2>
+
     <ul>
       <li>
         <a
@@ -21,7 +22,7 @@
   </section>
 
   <section>
-    <h2 class="mb-2">Art</h2>
+    <h2 class="heading-size-2 mb-2">Art</h2>
 
     <ul>
       <li>

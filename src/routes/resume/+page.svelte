@@ -100,7 +100,7 @@
 
 <div class="space-y-12">
   <section id="name">
-    <h1 class="name">
+    <h1 class="heading-size-1 name">
       <a
         href="/resume"
         title="my resume"
@@ -109,6 +109,7 @@
         Saien Govender
       </a>
     </h1>
+
     <div
       id="contact"
       class="text-minor my-2 space-x-2"
@@ -134,7 +135,7 @@
     id="work"
     class="space-y-6"
   >
-    <h2 class="work">Work</h2>
+    <h2 class="heading-size-2 work">Work</h2>
 
     <ResumeEntry {...workDev}>
       <div slot="description">
@@ -192,7 +193,7 @@
     id="art"
     class="space-y-6"
   >
-    <h2 class="art">Art</h2>
+    <h2 class="heading-size-2 art">Art</h2>
 
     <ResumeEntry {...artPhoto}>
       <div slot="description">
@@ -253,7 +254,7 @@
     id="education"
     class="space-y-6"
   >
-    <h2 class="education">Education</h2>
+    <h2 class="heading-size-2 education">Education</h2>
 
     <ResumeEntry {...educationUni}>
       <div slot="description">

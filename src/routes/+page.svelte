@@ -2,7 +2,7 @@
   <title>sai.codes</title>
 </svelte:head>
 
-<h1>Hello!</h1>
+<h1 class="heading-size-1">Hello!</h1>
 
 <div
   id="yt-money-please"

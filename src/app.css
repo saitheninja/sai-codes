@@ -10,42 +10,6 @@
   }
 }
 
-/* headings */
-@layer base {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold;
-  }
-
-  h1 {
-    @apply text-5xl sm:text-6xl;
-  }
-
-  h2 {
-    @apply text-4xl;
-  }
-
-  h3 {
-    @apply text-2xl;
-  }
-
-  h4 {
-    @apply text-xl;
-  }
-
-  h5 {
-    @apply text-lg;
-  }
-
-  h6 {
-    @apply text-lg;
-  }
-}
-
 /* colours and decorations */
 @layer base {
   body {
@@ -75,6 +39,39 @@
     @apply bg-cyan-950 print:bg-gray-200;
 
     print-color-adjust: exact;
+  }
+}
+
+/* heading classes */
+@layer components {
+  .heading-size-1 {
+    @apply font-bold;
+    @apply text-5xl sm:text-6xl;
+  }
+
+  .heading-size-2 {
+    @apply font-bold;
+    @apply text-4xl;
+  }
+
+  .heading-size-3 {
+    @apply font-bold;
+    @apply text-2xl;
+  }
+
+  .heading-size-4 {
+    @apply font-bold;
+    @apply text-xl;
+  }
+
+  .heading-size-5 {
+    @apply font-bold;
+    @apply text-lg;
+  }
+
+  .heading-size-6 {
+    @apply font-bold;
+    @apply text-lg;
   }
 }
 
