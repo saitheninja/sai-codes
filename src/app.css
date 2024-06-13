@@ -1,6 +1,69 @@
+/* import tailwind layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* set up fonts */
+@layer base {
+  /* Cascadia Code */
+  @font-face {
+    font-family: "Cascadia Code";
+    src:
+      local("Cascadia Code"),
+      url("/font-cascadia-code/CascadiaCode.woff2") format("woff2"),
+      url("/font-cascadia-code/CascadiaCode.ttf") format("truetype");
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Cascadia Code";
+    src:
+      local("Cascadia Code"),
+      url("/font-cascadia-code/CascadiaCodeItalic.woff2") format("woff2"),
+      url("/font-cascadia-code/CascadiaCodeItalic.ttf") format("truetype");
+    font-style: italic;
+  }
+
+  /* Yrsa */
+  @font-face {
+    font-family: Yrsa;
+    src:
+      local("Yrsa"),
+      url("/font-yrsa/Yrsa-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    size-adjust: 120%;
+  }
+
+  @font-face {
+    font-family: Yrsa;
+    src:
+      local("Yrsa"),
+      url("/font-yrsa/Yrsa-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+    size-adjust: 120%;
+  }
+
+  /* Work Sans */
+  @font-face {
+    font-family: "Work Sans";
+    src:
+      local("Work Sans"),
+      url("/font-work-sans/WorkSans-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Work Sans";
+    src:
+      local("Work Sans"),
+      url("/font-work-sans/WorkSans-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+  }
+
+  :root {
+    @apply font-serif;
+  }
+}
 
 /* scrolling */
 @layer base {
@@ -48,33 +111,38 @@
 
 /* heading classes */
 @layer components {
-  .heading-size-1 {
+  .heading-base {
     @apply font-bold;
+    @apply font-sans;
+  }
+
+  .heading-size-1 {
+    @apply heading-base;
     @apply text-5xl sm:text-6xl;
   }
 
   .heading-size-2 {
-    @apply font-bold;
+    @apply heading-base;
     @apply text-4xl;
   }
 
   .heading-size-3 {
-    @apply font-bold;
+    @apply heading-base;
     @apply text-2xl;
   }
 
   .heading-size-4 {
-    @apply font-bold;
+    @apply heading-base;
     @apply text-xl;
   }
 
   .heading-size-5 {
-    @apply font-bold;
+    @apply heading-base;
     @apply text-lg;
   }
 
   .heading-size-6 {
-    @apply font-bold;
+    @apply heading-base;
     @apply text-lg;
   }
 }
