@@ -26,10 +26,10 @@
 
   <main
     id="main"
-    class="mx-6 mb-16 mt-10 max-w-prose flex-grow scroll-mt-36 sm:mx-auto sm:mt-14 print:mx-auto print:my-0"
+    class="mx-auto mt-8 w-full max-w-prose scroll-mt-36 px-6 sm:mt-14 print:mx-auto print:my-0"
   >
     <slot />
-  </main>
 
-  <Footer />
+    <Footer />
+  </main>
 </div>

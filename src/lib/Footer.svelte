@@ -11,12 +11,12 @@
 
 <footer
   id="footer"
-  class="sticky bottom-5 mx-auto h-6 w-full max-w-prose print:hidden"
+  class="sticky bottom-5 mx-auto pb-12 w-full print:hidden"
 >
   {#if scrollY > offset}
     <a
       href="#top"
-      class="footer-drop-shadow float-right mr-4 md:-mr-16"
+      class="footer-drop-shadow float-right md:-mr-16"
       transition:fly|global={{ duration: 200, y: 50, easing: quintInOut }}
     >
       <svg
