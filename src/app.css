@@ -8,6 +8,10 @@
     @apply scroll-smooth;
     @apply scroll-pt-28;
   }
+
+  pre {
+    @apply overflow-auto;
+  }
 }
 
 /* colours and decorations */
