@@ -1,5 +1,6 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
+	import { quintInOut } from "svelte/easing";
 
   // pixels
   let offset = 120;
@@ -16,7 +17,7 @@
     <a
       href="#top"
       class="footer-drop-shadow float-right mr-4 md:-mr-16"
-      transition:fly|global={{ duration: 200 }}
+      transition:fly|global={{ duration: 200, y: 50, easing: quintInOut }}
     >
       <svg
         width="24"
