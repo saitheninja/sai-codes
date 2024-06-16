@@ -11,7 +11,7 @@
 
 <footer
   id="footer"
-  class="sticky bottom-5 mx-auto pb-12 w-full print:hidden"
+  class="sticky bottom-5 mx-auto mt-12 pb-8 print:hidden"
 >
   {#if scrollY > offset}
     <a

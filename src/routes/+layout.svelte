@@ -24,12 +24,14 @@
 <div class="text-color-main isolate flex min-h-screen flex-col">
   <Header />
 
-  <main
-    id="main"
-    class="mx-auto mt-8 w-full max-w-prose scroll-mt-36 px-6 sm:mt-14 print:mx-auto print:my-0"
-  >
-    <slot />
+  <div class="mt-8 scroll-mt-36 mx-6 sm:mt-14 print:my-0">
+    <main
+      id="main"
+      class="mx-auto w-full max-w-prose"
+    >
+      <slot />
 
-    <Footer />
-  </main>
+      <Footer />
+    </main>
+  </div>
 </div>
