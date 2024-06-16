@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let hLink: {
+  export let subhLink: {
     href: string;
     rel?: string;
     title: string;
@@ -11,39 +11,39 @@
   };
   export let hText: string = "";
   export let subhText: string = "";
-  export let years: string = "";
+  export let yearsStart: string = "";
+  export let yearsEnd: string = "";
   export let tools: string[] = [];
 </script>
 
-<div class="space-y-2">
-  <h3 class="heading-size-3">
-    {#if hLink.href}
-      <a
-        href={hLink.href}
-        title={hLink.title}
-        rel={hLink.rel}
-        target="_blank"
-      >
-        {hLink.text}
-      </a>
-    {/if}
+<div>
+  <hgroup>
+    <h3 class="heading-size-3">
+      {hText}
+    </h3>
 
-    {hText}
-  </h3>
+    <p class="text-minor">
+      {#if subhLink.href}
+        <a
+          href={subhLink.href}
+          title={subhLink.title}
+          rel={subhLink.rel}
+          target="_blank"
+        >
+          {subhLink.text},
+        </a>
+      {/if}
 
-  <div>
-    {#if subhText}
-      <p class="italic">{subhText}</p>
-    {/if}
+      {#if subhText}
+        {subhText},
+      {/if}
 
-    <p class="text-minor">{years}</p>
-  </div>
+      {yearsStart}-{yearsEnd}
+    </p>
+  </hgroup>
 
   {#if tools.length > 0}
-    <ul
-      id="tools"
-      class="-ml-1 flex flex-row flex-wrap text-sm"
-    >
+    <ul class="my-3 flex flex-row flex-wrap text-sm">
       {#each tools as tool}
         <li class="my-1 mr-2">
           <code>{tool}</code>
@@ -52,5 +52,7 @@
     </ul>
   {/if}
 
-  <slot name="description" />
+  <div class="mt-1">
+    <slot name="description" />
+  </div>
 </div>

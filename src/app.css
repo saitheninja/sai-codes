@@ -158,7 +158,7 @@
   }
 
   .text-minor {
-    @apply text-color-secondary text-sm italic;
+    @apply text-color-secondary italic;
   }
 }
 
