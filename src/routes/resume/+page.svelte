@@ -313,17 +313,17 @@
   @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=ArtEducation");
 
   :root {
-    --animDuration: 10s;
+    --anim-duration: 10s;
   }
 
+  /* make animations move around correct point */
   h2 {
-    /* make animations move around correct point */
     @apply max-w-max;
   }
 
   .work {
     animation-name: slide-right;
-    animation-duration: var(--animDuration);
+    animation-duration: var(--anim-duration);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
@@ -333,7 +333,7 @@
     font-weight: 400;
     font-size: 3.5rem;
     animation-name: wiggle;
-    animation-duration: var(--animDuration);
+    animation-duration: var(--anim-duration);
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
@@ -343,90 +343,8 @@
     font-weight: 400;
     font-size: 2.5rem;
     animation-name: pulse;
-    animation-duration: var(--animDuration);
+    animation-duration: var(--anim-duration);
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
-  }
-
-  @keyframes slide-right {
-    0% {
-      opacity: 0;
-      transform: translateX(-10%);
-    }
-
-    10% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
-
-    90% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
-
-    100% {
-      opacity: 0;
-      transform: translateX(10%);
-    }
-  }
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-
-    5% {
-      transform: scale(1.1);
-    }
-
-    10% {
-      transform: scale(1);
-    }
-
-    90% {
-      transform: scale(1);
-    }
-
-    95% {
-      transform: scale(1.1);
-    }
-
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  @keyframes wiggle {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    4% {
-      transform: rotate(-3deg);
-    }
-
-    8% {
-      transform: rotate(3deg);
-    }
-
-    10% {
-      transform: rotate(0deg);
-    }
-
-    90% {
-      transform: rotate(0deg);
-    }
-
-    92% {
-      transform: rotate(-3deg);
-    }
-
-    96% {
-      transform: rotate(3deg);
-    }
-
-    100% {
-      transform: rotate(0deg);
-    }
   }
 </style>
