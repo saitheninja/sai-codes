@@ -159,7 +159,7 @@
   id="work"
   class="mb-12 space-y-6"
 >
-  <h2 class="work font-mono text-5xl font-bold">Work</h2>
+  <h2 class="work heading-size-2 font-mono">Work</h2>
 
   <ResumeEntry {...workDev}>
     <div slot="description">
@@ -238,7 +238,7 @@
     id="art"
     class="space-y-6"
   >
-    <h2 class="heading-size-2 art">Art</h2>
+    <h2 class="heading-size-2 art font-normal">Art</h2>
 
     <ResumeEntry {...artPhoto}>
       <div slot="description">
@@ -285,9 +285,9 @@
 
   <section
     id="education"
-    class="sm:mx-auto max-w-max space-y-6"
+    class="max-w-max space-y-6 sm:mx-auto"
   >
-    <h2 class="heading-size-2 education">Education</h2>
+    <h2 class="heading-size-2 education font-normal">Education</h2>
 
     <ResumeEntry {...educationUni}>
       <div slot="description">
@@ -310,7 +310,40 @@
 <style lang="postcss">
   /* custom fonts & animations */
 
-  @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Playfair+Display:wght@600&display=swap&text=ArtEducation");
+  @font-face {
+    font-display: swap;
+    font-family: "Fleur De Leah";
+    font-style: normal;
+    font-weight: 400;
+    size-adjust: 125%;
+    src:
+      local("Fleur De Leah"),
+      url("/font-fleur-de-leah/fleur-de-leah-latin-400-normal.woff2")
+        format(woff2),
+      url("/font-fleur-de-leah/fleur-de-leah-latin-400-normal.woff")
+        format(woff),
+      url("/font-fleur-de-leah/fleur-de-leah-latin-400-normal.ttf") format(ttf);
+    /* "Art", 41=A, 72=r, 74=t */
+    unicode-range: U+0041, U+0072, U+0074;
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local("Playfair Display"),
+      url("/font-playfair-display/playfair-display-latin-400-normal.woff2")
+        format(woff2),
+      url("/font-playfair-display/playfair-display-latin-400-normal.woff")
+        format(woff),
+      url("/font-playfair-display/playfair-display-latin-400-normal.ttf")
+        format(ttf);
+    /* "Education", 41=E, 64=d, 75=u, 63=c, 61=a, 74=t, 69=i, 6F=o, =n */
+    unicode-range: U+0045, U+0064, U+0075, U+0063, U+0061, U+0074, U+0069,
+      U+006F, U+006E;
+  }
 
   :root {
     --anim-duration: 10s;
@@ -330,8 +363,7 @@
 
   .art {
     font-family: "Fleur De Leah", cursive;
-    font-weight: 400;
-    font-size: 3.5rem;
+
     animation-name: wiggle;
     animation-duration: var(--anim-duration);
     animation-timing-function: ease-in-out;
@@ -340,8 +372,7 @@
 
   .education {
     font-family: "Playfair Display", serif;
-    font-weight: 400;
-    font-size: 2.5rem;
+
     animation-name: pulse;
     animation-duration: var(--anim-duration);
     animation-timing-function: ease-in;
