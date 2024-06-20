@@ -8,56 +8,64 @@
   /* Cascadia Code */
   @font-face {
     font-family: "Cascadia Code";
+    font-style: normal;
     src:
       local("Cascadia Code"),
-      url("/font-cascadia-code/CascadiaCode.woff2") format("woff2"),
-      url("/font-cascadia-code/CascadiaCode.ttf") format("truetype");
-    font-style: normal;
+      url("/font-cascadia-code/CascadiaCode.woff2") format(woff2)
+        tech(variations),
+      url("/font-cascadia-code/CascadiaCode.ttf") format(truetype)
+        tech(variations);
   }
 
   @font-face {
     font-family: "Cascadia Code";
+    font-style: italic;
     src:
       local("Cascadia Code"),
-      url("/font-cascadia-code/CascadiaCodeItalic.woff2") format("woff2"),
-      url("/font-cascadia-code/CascadiaCodeItalic.ttf") format("truetype");
-    font-style: italic;
+      url("/font-cascadia-code/CascadiaCodeItalic.woff2") format(woff2)
+        tech(variations),
+      url("/font-cascadia-code/CascadiaCodeItalic.ttf") format(truetype)
+        tech(variations);
   }
 
   /* Yrsa */
   @font-face {
     font-family: Yrsa;
+    font-style: normal;
+    size-adjust: 110%;
     src:
       local("Yrsa"),
-      url("/font-yrsa/Yrsa-VariableFont_wght.ttf") format("truetype");
-    font-style: normal;
-    size-adjust: 120%;
+      url("/font-yrsa/Yrsa-VariableFont_wght.ttf") format(truetype)
+        tech(variations);
   }
 
   @font-face {
     font-family: Yrsa;
+    font-style: italic;
+    size-adjust: 110%;
     src:
       local("Yrsa"),
-      url("/font-yrsa/Yrsa-Italic-VariableFont_wght.ttf") format("truetype");
-    font-style: italic;
-    size-adjust: 120%;
+      url("/font-yrsa/Yrsa-Italic-VariableFont_wght.ttf") format(truetype)
+        tech(variations);
   }
 
   /* Work Sans */
   @font-face {
     font-family: "Work Sans";
+    font-style: normal;
     src:
       local("Work Sans"),
-      url("/font-work-sans/WorkSans-VariableFont_wght.ttf") format("truetype");
-    font-style: normal;
+      url("/font-work-sans/WorkSans-VariableFont_wght.ttf") format(truetype)
+        tech(variations);
   }
 
   @font-face {
     font-family: "Work Sans";
+    font-style: italic;
     src:
       local("Work Sans"),
-      url("/font-work-sans/WorkSans-Italic-VariableFont_wght.ttf") format("truetype");
-    font-style: italic;
+      url("/font-work-sans/WorkSans-Italic-VariableFont_wght.ttf")
+        format(truetype) tech(variations);
   }
 
   :root {

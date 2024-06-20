@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       mono: [ "Cascadia Code", ...fontFamily.mono ],
-      sans: [ "Work Sans", ...fontFamily.sans ],
+      sans: [ ...fontFamily.sans ],
       serif: [ "Yrsa", ...fontFamily.serif ],
     },
 
