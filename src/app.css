@@ -32,40 +32,61 @@
   @font-face {
     font-family: Yrsa;
     font-style: normal;
+    font-weight: 400;
     size-adjust: 110%;
     src:
       local("Yrsa"),
-      url("/font-yrsa/Yrsa-VariableFont_wght.ttf") format(truetype)
-        tech(variations);
+      url("/font-yrsa/yrsa-latin-400-normal.woff2") format(woff2),
+      url("/font-yrsa/yrsa-latin-400-normal.woff") format(woff),
+      url("/font-yrsa/yrsa-latin-400-normal.ttf") format(truetype);
+  }
+
+  @font-face {
+    font-family: Yrsa;
+    font-style: normal;
+    font-weight: 700;
+    size-adjust: 110%;
+    src:
+      local("Yrsa"),
+      url("/font-yrsa/yrsa-latin-700-normal.woff2") format(woff2),
+      url("/font-yrsa/yrsa-latin-700-normal.woff") format(woff),
+      url("/font-yrsa/yrsa-latin-700-normal.ttf") format(truetype);
   }
 
   @font-face {
     font-family: Yrsa;
     font-style: italic;
+    font-weight: 400;
     size-adjust: 110%;
     src:
       local("Yrsa"),
-      url("/font-yrsa/Yrsa-Italic-VariableFont_wght.ttf") format(truetype)
-        tech(variations);
+      url("/font-yrsa/yrsa-latin-400-italic.woff2") format(woff2),
+      url("/font-yrsa/yrsa-latin-400-italic.woff") format(woff),
+      url("/font-yrsa/yrsa-latin-400-italic.ttf") format(truetype);
+  }
+
+  @font-face {
+    font-family: Yrsa;
+    font-style: italic;
+    font-weight: 700;
+    size-adjust: 110%;
+    src:
+      local("Yrsa"),
+      url("/font-yrsa/yrsa-latin-700-italic.woff2") format(woff2),
+      url("/font-yrsa/yrsa-latin-700-italic.woff") format(woff),
+      url("/font-yrsa/yrsa-latin-700-italic.ttf") format(truetype);
   }
 
   /* Work Sans */
   @font-face {
     font-family: "Work Sans";
     font-style: normal;
+    font-weight: 700;
     src:
       local("Work Sans"),
-      url("/font-work-sans/WorkSans-VariableFont_wght.ttf") format(truetype)
-        tech(variations);
-  }
-
-  @font-face {
-    font-family: "Work Sans";
-    font-style: italic;
-    src:
-      local("Work Sans"),
-      url("/font-work-sans/WorkSans-Italic-VariableFont_wght.ttf")
-        format(truetype) tech(variations);
+      url("/font-work-sans/work-sans-latin-700-normal.woff2") format(woff2),
+      url("/font-work-sans/work-sans-latin-700-normal.woff") format(woff),
+      url("/font-work-sans/work-sans-latin-700-normal.ttf") format(truetype);
   }
 
   :root {
