@@ -98,10 +98,55 @@
     </a>
   </h1>
 
-  <div class="text-minor mt-4 grid max-w-max grid-cols-1 gap-4 sm:grid-cols-2">
+  <div
+    class="text-minor mt-4 grid max-w-max grid-cols-1 gap-3 sm:mt-3 sm:grid-cols-2"
+  >
+    <div
+      id="contact"
+      class="flex flex-col"
+    >
+      <span class="space-x-1">
+        <span class="not-italic">🌍</span>
+        <span>
+          <a
+            href="/"
+            title="I code things"
+          >
+            sai.codes
+          </a>
+        </span>
+      </span>
+
+      <span class="space-x-1">
+        <span class="not-italic">✉️</span>
+        <span>
+          <a
+            href="mailto:sai@saitheninja.com"
+            title="send an email"
+          >
+            sai@saitheninja.com
+          </a>
+        </span>
+      </span>
+
+      <span class="space-x-1">
+        <span class="not-italic">🧑🏾‍💻</span>
+        <span>
+          <a
+            href="https://github.com/saitheninja"
+            title="my github profile"
+            target="_blank"
+            rel="noreferrer external"
+          >
+            github.com/saitheninja
+          </a>
+        </span>
+      </span>
+    </div>
+
     <div
       id="about"
-      class="flex max-w-max flex-col"
+      class="flex flex-col"
     >
       <span class="space-x-1">
         <span class="not-italic">🧔🏾</span>
@@ -111,40 +156,6 @@
       <span class="space-x-1">
         <span class="not-italic">📚</span>
         <span>full-stack web developer</span>
-      </span>
-
-      <span class="space-x-1">
-        <span class="not-italic">🐧</span>
-        <span>open source enthusiast</span>
-      </span>
-    </div>
-
-    <div
-      id="contact"
-      class="flex max-w-max flex-col"
-    >
-      <span class="space-x-1">
-        <span class="not-italic">🌍</span>
-        <span
-          ><a
-            href="/"
-            title="I code things"
-          >
-            sai.codes
-          </a></span
-        >
-      </span>
-
-      <span class="space-x-1">
-        <span class="not-italic">✉️</span>
-        <span
-          ><a
-            href="mailto:sai@saitheninja.com"
-            title="send an email"
-          >
-            sai@saitheninja.com
-          </a></span
-        >
       </span>
 
       <span class="space-x-1">
@@ -180,19 +191,6 @@
           </a>.
         </li>
       </ul>
-
-      <p class="mt-1">
-        Look at my open source contributions on
-        <a
-          href="https://github.com/saitheninja/"
-          title="my GitHub profile"
-          target="_blank"
-          rel="noreferrer external"
-          class="-mr-1"
-        >
-          my GitHub profile
-        </a>.
-      </p>
     </div>
   </ResumeEntry>
 
