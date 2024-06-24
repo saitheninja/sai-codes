@@ -32,9 +32,7 @@
         >
           {subhLink.text},
         </a>
-      {/if}
-
-      {#if subhText}
+      {:else if subhText}
         {subhText},
       {/if}
 
@@ -43,7 +41,7 @@
   </hgroup>
 
   {#if tools.length > 0}
-    <ul class="my-3 flex flex-row flex-wrap text-sm">
+    <ul class="mb-1 mt-2 flex flex-row flex-wrap text-sm">
       {#each tools as tool}
         <li class="my-1 mr-2">
           <code>{tool}</code>
@@ -52,7 +50,7 @@
     </ul>
   {/if}
 
-  <div class="mt-1">
+  <div>
     <slot name="description" />
   </div>
 </div>

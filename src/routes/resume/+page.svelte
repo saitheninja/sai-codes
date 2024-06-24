@@ -86,7 +86,7 @@
 
 <section
   id="name"
-  class="mb-10"
+  class="mb-6 max-w-max"
 >
   <h1 class="heading-size-1 font-sans">
     <a
@@ -168,14 +168,14 @@
 
 <section
   id="work"
-  class="mb-12 space-y-6"
+  class="mb-8 space-y-6"
 >
-  <h2 class="work heading-size-2 font-mono">Work</h2>
+  <h2 class="work heading-size-2 -mb-3 font-mono">Work</h2>
 
   <ResumeEntry {...workDev}>
     <div slot="description">
       <p>
-        Development & management of e-commerce sites. Major projects include:
+        Development & management of e-commerce websites. Major projects include:
       </p>
 
       <ul class="list-disc pl-4">
@@ -231,12 +231,12 @@
   </ResumeEntry>
 </section>
 
-<div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2">
+<div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2">
   <section
     id="art"
     class="space-y-6"
   >
-    <h2 class="heading-size-2 art font-normal">Art</h2>
+    <h2 class="heading-size-2 art -mb-3 font-normal">Art</h2>
 
     <ResumeEntry {...artPhoto}>
       <div slot="description">
@@ -285,7 +285,7 @@
     id="education"
     class="max-w-max space-y-6 sm:mx-auto"
   >
-    <h2 class="heading-size-2 education font-normal">Education</h2>
+    <h2 class="heading-size-2 education -mb-3 font-normal">Education</h2>
 
     <ResumeEntry {...educationUni}>
       <div slot="description">
