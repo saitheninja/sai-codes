@@ -13,6 +13,7 @@
     tools: [
       "SvelteKit",
       "TypeScript",
+      "Node",
 
       "Tailwind",
 
