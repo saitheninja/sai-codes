@@ -59,7 +59,7 @@
     },
     yearsStart: "2015",
     yearsEnd: "2019",
-    tools: ["Adobe Suite", "DaVinci Resolve", "Darktable", "Linux"],
+    tools: ["Adobe Suite", "Darktable", "DaVinci Resolve", "Linux"],
   };
 
   let artPhoto = {
@@ -169,7 +169,7 @@
 
 <section
   id="cover-letter"
-  class="space-y-2"
+  class="hidden space-y-2"
 >
   <p>25 June 2024</p>
 
@@ -298,7 +298,7 @@
   </section>
 </section>
 
-<div class="hidden">
+<div class="">
   <section
     id="work"
     class="mb-8 space-y-6"
@@ -321,7 +321,8 @@
               rel="noreferrer external"
               class="-mr-1"
             >
-              An app for planning traditional weddings
+              A Progressive Web App for planning traditional, multi-day Hindu
+              weddings
             </a>.
           </li>
         </ul>
@@ -334,13 +335,13 @@
 
         <ul class="list-disc pl-5">
           <li>
-            Development & management of online Continuous Professional
-            Development platform for the Health Professions Council of South
-            Africa.
+            Online platform for Continuous Professional Development for the
+            Health Professions Council of South Africa, with 200+ users.
           </li>
 
           <li>
-            Management of on-site workstations, digital assets & networking.
+            Management of 5 on-site workstations, digital assets server &
+            networking.
           </li>
         </ul>
       </div>
@@ -353,14 +354,17 @@
         </p>
 
         <ul class="list-disc pl-5">
+          <li>Photography for PyConZA 2017, with 300+ attendees.</li>
+
           <li>
-            Producing marketing videos for the University of Cape Town
-            International Academic Programmes Office.
+            Teaching classes for the City of Cape Town's Youth Development
+            Programme, with ~20 students a class.
           </li>
 
-          <li>Teaching youth development courses for the City of Cape Town.</li>
-
-          <li>Photography for PyConZA.</li>
+          <!-- <li>
+            Multi-day shoots of marketing photos & videos for the
+            University of Cape Town International Academic Programmes Office.
+          </li> -->
         </ul>
       </div>
     </ResumeEntry>
@@ -418,7 +422,7 @@
 
     <section
       id="education"
-      class="max-w-max space-y-6 sm:mx-auto"
+      class="ml-5 space-y-6"
     >
       <h2 class="heading-size-2 education -mb-3 font-normal">Education</h2>
 
