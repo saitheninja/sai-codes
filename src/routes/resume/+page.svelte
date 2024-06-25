@@ -186,10 +186,10 @@
   <section id="letter-body-1">
     <p>
       I am neurodivergent, so I know what it's like to need some help. Also, I
-      have volunteered at many philanthropic organisations in life, so I know
-      what it means to help people. Blockchain and AI companies aren't helping
-      people. Ubuntu and Canonical are helping people. Specifically they have
-      helped me.
+      have volunteered at many philanthropic organisations, so I have a pretty
+      good idea of what it looks like to help people. Blockchain and AI
+      companies aren't helping people. Canonical, Ubuntu, and Mark Shuttleworth
+      are helping people. Specifically, they have helped me.
     </p>
   </section>
 
@@ -204,91 +204,68 @@
       >
         HIP2B²
       </a>
-      (Hip to be Square), which I used to watch religiously. In 2004 I was 10 years
-      old when I won a subscription to Popular Mechanics Magazine from the show.
-      In high school I couldn't afford Photoshop so I used GIMP for my school projects.
-      In 2015 I started working as a photographer full-time, and using Darktable
-      and DaVinci Resolve meant that I didn't have to get scammed by Adobe's subscription
-      model. In 2018 I started running Ubuntu servers in production, and switched
-      to using Linux full-time on my main machine. Mark Shuttleworth and open source
-      have been helping me out for more than 20 years. Now that I have built up
-      <a
-        href="https://github.com/neovim/neovim.github.io/pull/350#pullrequestreview-2073937577"
-        title="a pull request I recently made"
-        target="_blank"
-        rel="noreferrer external"
-        class="-mr-1"
-      >
-        the skills
-      </a>, I want to contribute back to Ubuntu.
+      (Hip to be Square), which I used to watch religiously (Mondays, 15:45 on SABC2).
+      In 2004 I was 10 years old when I won a subscription to Popular Mechanics Magazine
+      from HIP2B². In 2007, when I started high school, I couldn't afford Photoshop
+      so I used GIMP for my school projects. In 2015 I started working as a photographer
+      full-time, and using Darktable and DaVinci Resolve meant that I didn't get
+      scammed by Adobe's subscription model. In 2018 I started running Ubuntu servers
+      in production, and switched to using Linux full-time on my main machine.
     </p>
   </section>
 
   <section id="letter-body-3">
     <p>
-      I have experience working with most relevant technologies, and I will
-      gladly learn any tech needed for the job. I have at least some familiarity
-      with:
+      I have experience working with lots of web technologies, and I will gladly
+      learn any tech needed for the job. I have at least some familiarity with:
     </p>
     <ul class="list-disc pl-5">
       <li>
-        languages: JavaScript, TypeScript, Python, Ruby, Flutter, Elm, Gleam.
+        <span class="italic">languages:</span> JavaScript, TypeScript, PHP, Python,
+        Ruby, Flutter, Gleam
       </li>
-      <li>frameworks: Svelte, Vue, React, Angular.</li>
-      <li>runtimes: Node, Deno, Bun.</li>
-      <li>formatting and linting tools: Prettier, ESLint, Stylelint, Biome.</li>
-      <li>testing tools: Jest, Vitest, Playwright, Cypress.</li>
-      <li>deployment tools: Docker, Docker Compose, Nix.</li>
-      <li>browsers: Chrome (and Chromium), Firefox, Safari.</li>
-      <li>code editors: (Neo)Vim, VSCode (and VSCodium), Emacs.</li>
-    </ul>
-
-    <p>
-      I also love talking about the intricacies of the Linux desktop. There's so
-      many parts to choose from, like:
-    </p>
-    <ul class="list-disc pl-5">
-      <li>Desktop environments: Plasma, GNOME XFCE, Cosmic.</li>
       <li>
-        Window managers: i3wm, Sway, awesomewm, Hyprland, and so many more.
+        <span class="italic">frameworks:</span> Svelte, Vue, React, Angular
       </li>
-      <li>Windows: floating, tiling, dynamic.</li>
-      <li>Backend systems: ALSA vs Pipewire, X vs Wayland.</li>
-    </ul>
-
-    <p>
-      I also like to mess around with hardware when I can afford it. It's
-      another area with a lot of choices to make. Choices like:
-    </p>
-    <ul class="list-disc pl-5">
-      <li>Form factors: laptop, desktop, NUC, server rack.</li>
-      <li>Hardware vendors: Apple, Framework, Tux.</li>
-      <li>CPU architectures: x86, ARM, RISC-V.</li>
-      <li>Embedded devices: Arduino, Raspberry Pi.</li>
       <li>
-        Peripherals: split keyboards, mechanical switches (that's another
-        rabbithole), horizontal and vertical mice, adaptive controllers, MIDI
-        devices.
+        <span class="italic">runtimes:</span> Node, Deno, Bun
+      </li>
+      <li>
+        <span class="italic">formatting/linting:</span> Prettier, ESLint, Stylelint,
+        Biome
+      </li>
+      <li>
+        <span class="italic">testing:</span> Jest, Vitest, Playwright, Cypress
+      </li>
+      <li>
+        <span class="italic">deployment:</span> Docker, Docker Compose, Nix
+      </li>
+      <li>
+        <span class="italic">browsers:</span> Chrome (and Chromium), Firefox, Safari
+      </li>
+      <li>
+        <span class="italic">code editors:</span> Vim (and Neovim), VSCode (and VSCodium),
+        Emacs
       </li>
     </ul>
+  </section>
 
+  <section id="letter-body-3">
     <p>
-      But I'm not just interested in technology. Technology is made and used by
-      people. Therefore I am interested in the governace and sustainability of
-      projects. There are important questions that must be answered, like:
+      Technology is made and used by people, so I also have <span class="italic"
+        >OPINIONS</span
+      > about their governance. There are many questions I want answers for, like:
     </p>
     <ul class="list-disc pl-5">
       <li>
-        How much transparency should strangers on the internet have into the
-        process?
+        How much transparency do people have into the development process?
       </li>
       <li>
-        Should the project be run by a Benevolent Dictator For Life or a
-        non-profit foundation?
+        Is it run by a Benevolent Dictator For Life or a foundation with
+        directors?
       </li>
       <li>
-        How to balance the classic open source dilemma of doing what you love
-        for free versus needing money to live?
+        How do they balance making things for free with needing money to live?
       </li>
     </ul>
   </section>
@@ -298,10 +275,20 @@
     class="mb-2"
   >
     <p>
-      I hope it is now evident that I am a huge nerd for open source. I would
-      greatly appreciate the opportunity to contribute back to the projects that
-      have helped me, and contribute to the mission of great open source in any
-      way that I can.
+      I hope it is evident that I am a huge open source nerd, and I would
+      love to chat about anything from browser engines to desktop environments
+      to hardware vendors to project sustainability. And now that I have built
+      up
+      <a
+        href="https://github.com/neovim/neovim.github.io/pull/350#pullrequestreview-2073937577"
+        title="a pull request I recently made"
+        target="_blank"
+        rel="noreferrer external"
+        class="-mr-1"
+      >
+        the skills
+      </a>, I would very much appreciate the opportunity to contribute more
+      directly to the mission of great open source.
     </p>
   </section>
 
@@ -311,143 +298,147 @@
   </section>
 </section>
 
-<section
-  id="work"
-  class="mb-8 space-y-6"
->
-  <h2 class="work heading-size-2 -mb-3 font-mono">Work</h2>
-
-  <ResumeEntry {...workDev}>
-    <div slot="description">
-      <p>
-        Development & management of e-commerce websites. Major projects include:
-      </p>
-
-      <ul class="list-disc pl-5">
-        <li>
-          <a
-            href="https://sanskara.co.za/store/build-planner/"
-            title="Sanskara wedding planner"
-            target="_blank"
-            rel="noreferrer external"
-            class="-mr-1"
-          >
-            An app for planning traditional weddings
-          </a>.
-        </li>
-      </ul>
-    </div>
-  </ResumeEntry>
-
-  <ResumeEntry {...workCCrew}>
-    <div slot="description">
-      <p>Whatever was needed at the time. Major projects include:</p>
-
-      <ul class="list-disc pl-5">
-        <li>
-          Development & management of online Continuous Professional Development
-          platform for the Health Professions Council of South Africa.
-        </li>
-
-        <li>
-          Management of on-site workstations, digital assets & networking.
-        </li>
-      </ul>
-    </div>
-  </ResumeEntry>
-
-  <ResumeEntry {...workPhoto}>
-    <div slot="description">
-      <p>
-        Photography, videography & audio production. Major projects include:
-      </p>
-
-      <ul class="list-disc pl-5">
-        <li>
-          Producing marketing videos for the University of Cape Town
-          International Academic Programmes Office.
-        </li>
-
-        <li>Teaching youth development courses for the City of Cape Town.</li>
-
-        <li>Photography for PyConZA.</li>
-      </ul>
-    </div>
-  </ResumeEntry>
-</section>
-
-<div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2">
+<div class="hidden">
   <section
-    id="art"
-    class="space-y-6"
+    id="work"
+    class="mb-8 space-y-6"
   >
-    <h2 class="heading-size-2 art -mb-3 font-normal">Art</h2>
+    <h2 class="work heading-size-2 -mb-3 font-mono">Work</h2>
 
-    <ResumeEntry {...artPhoto}>
+    <ResumeEntry {...workDev}>
       <div slot="description">
         <p>
-          Look at
-          <a
-            href="https://saitheninja.com"
-            title="my photography portfolio site"
-            target="_blank"
-            rel="noreferrer external"
-            class="-mr-1"
-          >
-            my portfolio
-          </a>.
+          Development & management of e-commerce websites. Major projects
+          include:
         </p>
+
+        <ul class="list-disc pl-5">
+          <li>
+            <a
+              href="https://sanskara.co.za/store/build-planner/"
+              title="Sanskara wedding planner"
+              target="_blank"
+              rel="noreferrer external"
+              class="-mr-1"
+            >
+              An app for planning traditional weddings
+            </a>.
+          </li>
+        </ul>
       </div>
     </ResumeEntry>
 
-    <ResumeEntry {...artGames}>
+    <ResumeEntry {...workCCrew}>
+      <div slot="description">
+        <p>Whatever was needed at the time. Major projects include:</p>
+
+        <ul class="list-disc pl-5">
+          <li>
+            Development & management of online Continuous Professional
+            Development platform for the Health Professions Council of South
+            Africa.
+          </li>
+
+          <li>
+            Management of on-site workstations, digital assets & networking.
+          </li>
+        </ul>
+      </div>
+    </ResumeEntry>
+
+    <ResumeEntry {...workPhoto}>
       <div slot="description">
         <p>
-          <a
-            href="https://saitheninja.itch.io/"
-            title="my video games"
-            target="_blank"
-            rel="noreferrer external"
-            class="-mr-1"
-          >
-            Play some games
-          </a>, and browse
-          <a
-            href="https://github.com/saitheninja/Shenanijam-2019"
-            title="GitHub repo for a game"
-            target="_blank"
-            rel="noreferrer external"
-            class="-mr-1"
-          >
-            the code
-          </a>.
+          Photography, videography & audio production. Major projects include:
         </p>
+
+        <ul class="list-disc pl-5">
+          <li>
+            Producing marketing videos for the University of Cape Town
+            International Academic Programmes Office.
+          </li>
+
+          <li>Teaching youth development courses for the City of Cape Town.</li>
+
+          <li>Photography for PyConZA.</li>
+        </ul>
       </div>
     </ResumeEntry>
   </section>
 
-  <section
-    id="education"
-    class="max-w-max space-y-6 sm:mx-auto"
-  >
-    <h2 class="heading-size-2 education -mb-3 font-normal">Education</h2>
+  <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2">
+    <section
+      id="art"
+      class="space-y-6"
+    >
+      <h2 class="heading-size-2 art -mb-3 font-normal">Art</h2>
 
-    <ResumeEntry {...educationUni}>
-      <div slot="description">
-        <p>
-          <a
-            href="https://en.wikipedia.org/wiki/Rhodes_Must_Fall"
-            title="#RhodesMustFall protests"
-            target="_blank"
-            rel="noreferrer external"
-            class="-mr-1"
-          >
-            I dropped out
-          </a>.
-        </p>
-      </div>
-    </ResumeEntry>
-  </section>
+      <ResumeEntry {...artPhoto}>
+        <div slot="description">
+          <p>
+            Look at
+            <a
+              href="https://saitheninja.com"
+              title="my photography portfolio site"
+              target="_blank"
+              rel="noreferrer external"
+              class="-mr-1"
+            >
+              my portfolio
+            </a>.
+          </p>
+        </div>
+      </ResumeEntry>
+
+      <ResumeEntry {...artGames}>
+        <div slot="description">
+          <p>
+            <a
+              href="https://saitheninja.itch.io/"
+              title="my video games"
+              target="_blank"
+              rel="noreferrer external"
+              class="-mr-1"
+            >
+              Play some games
+            </a>, and browse
+            <a
+              href="https://github.com/saitheninja/Shenanijam-2019"
+              title="GitHub repo for a game"
+              target="_blank"
+              rel="noreferrer external"
+              class="-mr-1"
+            >
+              the code
+            </a>.
+          </p>
+        </div>
+      </ResumeEntry>
+    </section>
+
+    <section
+      id="education"
+      class="max-w-max space-y-6 sm:mx-auto"
+    >
+      <h2 class="heading-size-2 education -mb-3 font-normal">Education</h2>
+
+      <ResumeEntry {...educationUni}>
+        <div slot="description">
+          <p>
+            <a
+              href="https://en.wikipedia.org/wiki/Rhodes_Must_Fall"
+              title="#RhodesMustFall protests"
+              target="_blank"
+              rel="noreferrer external"
+              class="-mr-1"
+            >
+              I dropped out
+            </a>.
+          </p>
+        </div>
+      </ResumeEntry>
+    </section>
+  </div>
 </div>
 
 <style lang="postcss">
