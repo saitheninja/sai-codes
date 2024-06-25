@@ -176,11 +176,26 @@
   <p>Dear Hiring Manager,</p>
 
   <section id="letter-intro">
-    <p>I am applying for the Web Developer role at Canonical.</p>
+    <p>
+      I am applying for the Web Developer role at Canonical. I have been
+      developing websites professionally for 5 years, and most importantly, I
+      believe in the mission of great open source.
+    </p>
+  </section>
 
+  <section id="letter-body-1">
+    <p>
+      I am neurodivergent, so I know what it's like to need some help. Also, I
+      have volunteered at many philanthropic organisations in life, so I know
+      what it means to help people. Blockchain and AI companies aren't helping
+      people. Ubuntu and Canonical are helping people. Specifically they have
+      helped me.
+    </p>
+  </section>
+
+  <section id="letter-body-2">
     <p>
       In 2002 the Shuttleworth Foundation launched an educational TV show called
-
       <a
         href="https://www.shuttleworthfoundation.org/projects/hip2b%C2%B2"
         title="HIP2B² Shuttleworth Foundation"
@@ -189,37 +204,93 @@
       >
         HIP2B²
       </a>
-      (Hip to be Square), which I used to watch religiously. In 2005 I was 11 years
+      (Hip to be Square), which I used to watch religiously. In 2004 I was 10 years
       old when I won a subscription to Popular Mechanics Magazine from the show.
-      In 2018 I started running Ubuntu servers in production, and switched to using
-      Linux full-time on my main machine.
-    </p>
-
-    <p>
-      As you can see, Mark Shuttleworth has been helping me out for more than 20
-      years. Now that I have the skills, I would appreciate the opportunity to
-      contribute to the mission of great open-source software that helps people.
+      In high school I couldn't afford Photoshop so I used GIMP for my school projects.
+      In 2015 I started working as a photographer full-time, and using Darktable
+      and DaVinci Resolve meant that I didn't have to get scammed by Adobe's subscription
+      model. In 2018 I started running Ubuntu servers in production, and switched
+      to using Linux full-time on my main machine. Mark Shuttleworth and open source
+      have been helping me out for more than 20 years. Now that I have built up
+      <a
+        href="https://github.com/neovim/neovim.github.io/pull/350#pullrequestreview-2073937577"
+        title="a pull request I recently made"
+        target="_blank"
+        rel="noreferrer external"
+        class="-mr-1"
+      >
+        the skills
+      </a>, I want to contribute back to Ubuntu.
     </p>
   </section>
 
-  <section id="letter-body">
+  <section id="letter-body-3">
     <p>
-      I am neurodivergent, so I know what it's like to need help. Also, I have
-      volunteered at many philanthropic organisations in life, so I know what it
-      means to help people. Blockchain and AI companies aren't helping people.
-      Ubuntu and Canonical are helping people. I know this is true because they
-      have helped me.
+      I have experience working with most relevant technologies, and I will
+      gladly learn any tech needed for the job. I have at least some familiarity
+      with:
     </p>
+    <ul class="list-disc pl-5">
+      <li>
+        languages: JavaScript, TypeScript, Python, Ruby, Flutter, Elm, Gleam.
+      </li>
+      <li>frameworks: Svelte, Vue, React, Angular.</li>
+      <li>runtimes: Node, Deno, Bun.</li>
+      <li>formatting and linting tools: Prettier, ESLint, Stylelint, Biome.</li>
+      <li>testing tools: Jest, Vitest, Playwright, Cypress.</li>
+      <li>deployment tools: Docker, Docker Compose, Nix.</li>
+      <li>browsers: Chrome (and Chromium), Firefox, Safari.</li>
+      <li>code editors: (Neo)Vim, VSCode (and VSCodium), Emacs.</li>
+    </ul>
 
     <p>
-      My neurodivergence means that I need a few accommodations. With those
-      accommodations I can be extremely effective. My family did not believe
-      that I needed any accommodations. My high school refused to make any
-      accommodations. My university lecturers were actively offended by requests
-      for accommodation. Previous work places allowed me accommodations at
-      first, and then took them away. Open source is the space that allows
-      people like me the flexibility they need to be productive.
+      I also love talking about the intricacies of the Linux desktop. There's so
+      many parts to choose from, like:
     </p>
+    <ul class="list-disc pl-5">
+      <li>Desktop environments: Plasma, GNOME XFCE, Cosmic.</li>
+      <li>
+        Window managers: i3wm, Sway, awesomewm, Hyprland, and so many more.
+      </li>
+      <li>Windows: floating, tiling, dynamic.</li>
+      <li>Backend systems: ALSA vs Pipewire, X vs Wayland.</li>
+    </ul>
+
+    <p>
+      I also like to mess around with hardware when I can afford it. It's
+      another area with a lot of choices to make. Choices like:
+    </p>
+    <ul class="list-disc pl-5">
+      <li>Form factors: laptop, desktop, NUC, server rack.</li>
+      <li>Hardware vendors: Apple, Framework, Tux.</li>
+      <li>CPU architectures: x86, ARM, RISC-V.</li>
+      <li>Embedded devices: Arduino, Raspberry Pi.</li>
+      <li>
+        Peripherals: split keyboards, mechanical switches (that's another
+        rabbithole), horizontal and vertical mice, adaptive controllers, MIDI
+        devices.
+      </li>
+    </ul>
+
+    <p>
+      But I'm not just interested in technology. Technology is made and used by
+      people. Therefore I am interested in the governace and sustainability of
+      projects. There are important questions that must be answered, like:
+    </p>
+    <ul class="list-disc pl-5">
+      <li>
+        How much transparency should strangers on the internet have into the
+        process?
+      </li>
+      <li>
+        Should the project be run by a Benevolent Dictator For Life or a
+        non-profit foundation?
+      </li>
+      <li>
+        How to balance the classic open source dilemma of doing what you love
+        for free versus needing money to live?
+      </li>
+    </ul>
   </section>
 
   <section
@@ -227,41 +298,10 @@
     class="mb-2"
   >
     <p>
-      Do you want to talk about web tech? JavaScript or TypeScript or Python or
-      Ruby or Flutter or Elm or Gleam? React or Angular or Vue or Svelte? Node
-      or Deno or Bun? Unit testing or integration testing or end-to-end testing?
-      Jest or Vitest or Cypress or Playwright? Chrome (and Chromium) or Firefox
-      or Safari? Docker or Nix? Emacs or (Neo)Vim or VSCode (and VSCodium)?
-    </p>
-
-    <p>
-      Do you want to talk about desktop environments? GNOME or Plasma or XFCE or
-      Cosmic? Floating windows or tiling? The successes of Pipewire and the
-      failures of Wayland?
-    </p>
-
-    <p>
-      Do you want to talk about lower level programming languages? Functional or
-      imperative? Memory being garbage collected or manually managed? LISP-like
-      or ALGOL-like? C or C++ or Rust or Zig?
-    </p>
-
-    <p>
-      Do you want to talk about hardware? Build a desktop or buy a laptop? Embed
-      an Arduino or a Raspberry Pi? x86 or ARM or RISC-V? Apple or Framework?
-    </p>
-
-    <p>
-      Do you want to talk about governance and sustainability? The importance of
-      transparency? Projects being run by a BDFL (Benevolent Dictator For Life)
-      or a non-profit foundation? The classic open source dilemma of doing what
-      you love versus needing money to live?
-    </p>
-
-    <p>
-      I hope it is evident that I am a huge nerd. I will gladly learn whatever
-      technology is needed for the job, and I could talk for days about the
-      ideas and the execution of technical projects.
+      I hope it is now evident that I am a huge nerd for open source. I would
+      greatly appreciate the opportunity to contribute back to the projects that
+      have helped me, and contribute to the mission of great open source in any
+      way that I can.
     </p>
   </section>
 
@@ -283,7 +323,7 @@
         Development & management of e-commerce websites. Major projects include:
       </p>
 
-      <ul class="list-disc pl-4">
+      <ul class="list-disc pl-5">
         <li>
           <a
             href="https://sanskara.co.za/store/build-planner/"
@@ -303,7 +343,7 @@
     <div slot="description">
       <p>Whatever was needed at the time. Major projects include:</p>
 
-      <ul class="list-disc pl-4">
+      <ul class="list-disc pl-5">
         <li>
           Development & management of online Continuous Professional Development
           platform for the Health Professions Council of South Africa.
@@ -322,7 +362,7 @@
         Photography, videography & audio production. Major projects include:
       </p>
 
-      <ul class="list-disc pl-4">
+      <ul class="list-disc pl-5">
         <li>
           Producing marketing videos for the University of Cape Town
           International Academic Programmes Office.
