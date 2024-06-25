@@ -169,9 +169,9 @@
 
 <section
   id="cover-letter"
-  class="my-8 space-y-2"
+  class="space-y-2"
 >
-  <p>21 June 2024</p>
+  <p>25 June 2024</p>
 
   <p>Dear Hiring Manager,</p>
 
@@ -186,9 +186,8 @@
   <section id="letter-body-1">
     <p>
       I am neurodivergent, so I know what it's like to need some help. Also, I
-      have volunteered at many philanthropic organisations, so I have a pretty
-      good idea of what it looks like to help people. Blockchain and AI
-      companies aren't helping people. Canonical, Ubuntu, and Mark Shuttleworth
+      have volunteered at many philanthropic organisations, so I have some idea
+      of what it means to help people. Canonical, Ubuntu and Mark Shuttleworth
       are helping people. Specifically, they have helped me.
     </p>
   </section>
@@ -205,19 +204,28 @@
         HIP2B²
       </a>
       (Hip to be Square), which I used to watch religiously (Mondays, 15:45 on SABC2).
-      In 2004 I was 10 years old when I won a subscription to Popular Mechanics Magazine
-      from HIP2B². In 2007, when I started high school, I couldn't afford Photoshop
+      In 2004 I was 10 years old when I won a Popular Mechanics Magazine subscription
+      from the show. In 2007, when I started high school, I couldn't afford Photoshop
       so I used GIMP for my school projects. In 2015 I started working as a photographer
-      full-time, and using Darktable and DaVinci Resolve meant that I didn't get
-      scammed by Adobe's subscription model. In 2018 I started running Ubuntu servers
-      in production, and switched to using Linux full-time on my main machine.
+      full-time, and using Darktable meant that I didn't get
+      <a
+        href="https://www.ftc.gov/news-events/news/press-releases/2024/06/ftc-takes-action-against-adobe-executives-hiding-fees-preventing-consumers-easily-cancelling"
+        title="FTC Takes Action Against Adobe"
+        target="_blank"
+        rel="noreferrer external"
+        class="-mr-1"
+      >
+        scammed by an Adobe subscription
+      </a>. In 2018 I switched to using a Linux desktop full-time, and started
+      running Ubuntu servers in production.
     </p>
   </section>
 
   <section id="letter-body-3">
     <p>
-      I have experience working with lots of web technologies, and I will gladly
-      learn any tech needed for the job. I have at least some familiarity with:
+      I have experience working with many web technologies, and I will gladly
+      learn any skill or tech needed for the job. I have at least some
+      familiarity with:
     </p>
     <ul class="list-disc pl-5">
       <li>
@@ -239,13 +247,6 @@
       </li>
       <li>
         <span class="italic">deployment:</span> Docker, Docker Compose, Nix
-      </li>
-      <li>
-        <span class="italic">browsers:</span> Chrome (and Chromium), Firefox, Safari
-      </li>
-      <li>
-        <span class="italic">code editors:</span> Vim (and Neovim), VSCode (and VSCodium),
-        Emacs
       </li>
     </ul>
   </section>
@@ -275,10 +276,9 @@
     class="mb-2"
   >
     <p>
-      I hope it is evident that I am a huge open source nerd, and I would
-      love to chat about anything from browser engines to desktop environments
-      to hardware vendors to project sustainability. And now that I have built
-      up
+      I hope I have made it evident that I am a huge open source nerd. I would
+      love to chat about anything from desktop environments to hardware vendors
+      to project sustainability. And now that
       <a
         href="https://github.com/neovim/neovim.github.io/pull/350#pullrequestreview-2073937577"
         title="a pull request I recently made"
@@ -286,9 +286,9 @@
         rel="noreferrer external"
         class="-mr-1"
       >
-        the skills
-      </a>, I would very much appreciate the opportunity to contribute more
-      directly to the mission of great open source.
+        I have learned the skills
+      </a>, I would very much appreciate the opportunity to contribute directly
+      to great open source.
     </p>
   </section>
 
