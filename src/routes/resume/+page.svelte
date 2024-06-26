@@ -175,122 +175,20 @@
 
   <p>Dear Hiring Manager,</p>
 
-  <section id="letter-intro">
-    <p>
-      I am applying for the Web Developer role at Canonical. I have been
-      developing websites professionally for 5 years, and most importantly, I
-      believe in the mission of great open source.
-    </p>
-  </section>
+  <section id="letter-intro"></section>
 
-  <section id="letter-body-1">
-    <p>
-      I am neurodivergent, so I know what it's like to need some help. Also, I
-      have volunteered at many philanthropic organisations, so I have some idea
-      of what it means to help people. Canonical, Ubuntu and Mark Shuttleworth
-      are helping people. Specifically, they have helped me.
-    </p>
-  </section>
+  <section id="letter-body-1"></section>
 
-  <section id="letter-body-2">
-    <p>
-      In 2002 the Shuttleworth Foundation launched an educational TV show called
-      <a
-        href="https://www.shuttleworthfoundation.org/projects/hip2b%C2%B2"
-        title="HIP2B² Shuttleworth Foundation"
-        target="_blank"
-        rel="noreferrer external"
-      >
-        HIP2B²
-      </a>
-      (Hip to be Square), which I used to watch religiously (Mondays, 15:45 on SABC2).
-      In 2004 I was 10 years old when I won a Popular Mechanics Magazine subscription
-      from the show. In 2007, when I started high school, I couldn't afford Photoshop
-      so I used GIMP for my school projects. In 2015 I started working as a photographer
-      full-time, and using Darktable meant that I didn't get
-      <a
-        href="https://www.ftc.gov/news-events/news/press-releases/2024/06/ftc-takes-action-against-adobe-executives-hiding-fees-preventing-consumers-easily-cancelling"
-        title="FTC Takes Action Against Adobe"
-        target="_blank"
-        rel="noreferrer external"
-        class="-mr-1"
-      >
-        scammed by an Adobe subscription
-      </a>. In 2018 I switched to using a Linux desktop full-time, and started
-      running Ubuntu servers in production.
-    </p>
-  </section>
+  <section id="letter-body-2"></section>
 
-  <section id="letter-body-3">
-    <p>
-      I have experience working with many web technologies, and I will gladly
-      learn any skill or tech needed for the job. I have at least some
-      familiarity with:
-    </p>
-    <ul class="list-disc pl-5">
-      <li>
-        <span class="italic">languages:</span> JavaScript, TypeScript, PHP, Python,
-        Ruby, Flutter, Gleam
-      </li>
-      <li>
-        <span class="italic">frameworks:</span> Svelte, Vue, React, Angular
-      </li>
-      <li>
-        <span class="italic">runtimes:</span> Node, Deno, Bun
-      </li>
-      <li>
-        <span class="italic">formatting/linting:</span> Prettier, ESLint, Stylelint,
-        Biome
-      </li>
-      <li>
-        <span class="italic">testing:</span> Jest, Vitest, Playwright, Cypress
-      </li>
-      <li>
-        <span class="italic">deployment:</span> Docker, Docker Compose, Nix
-      </li>
-    </ul>
-  </section>
+  <section id="letter-body-3"></section>
 
-  <section id="letter-body-3">
-    <p>
-      Technology is made and used by people, so I also have <span class="italic"
-        >OPINIONS</span
-      > about their governance. There are many questions I want answers for, like:
-    </p>
-    <ul class="list-disc pl-5">
-      <li>
-        How much transparency do people have into the development process?
-      </li>
-      <li>
-        Is it run by a Benevolent Dictator For Life or a foundation with
-        directors?
-      </li>
-      <li>
-        How do they balance making things for free with needing money to live?
-      </li>
-    </ul>
-  </section>
+  <section id="letter-body-3"></section>
 
   <section
     id="letter-outro"
     class="mb-2"
-  >
-    <p>
-      I hope I have made it evident that I am a huge open source nerd. I would
-      love to chat about anything from desktop environments to hardware vendors
-      to project sustainability. And now that
-      <a
-        href="https://github.com/neovim/neovim.github.io/pull/350#pullrequestreview-2073937577"
-        title="a pull request I recently made"
-        target="_blank"
-        rel="noreferrer external"
-        class="-mr-1"
-      >
-        I have learned the skills
-      </a>, I would very much appreciate the opportunity to contribute directly
-      to great open source.
-    </p>
-  </section>
+  ></section>
 
   <section id="letter-signoff">
     <p>Sincerely,</p>
