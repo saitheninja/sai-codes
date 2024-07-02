@@ -15,7 +15,7 @@
       rel="noreferrer external"
       class="-mr-1"
     >
-    Welcome to my garden
+      Welcome to my garden
     </a>.
   </p>
 
@@ -26,11 +26,11 @@
   </p>
 </div>
 
-<h2 class="heading-size-2 pt-8 pb-2">Writing</h2>
+<h2 class="heading-size-2 pb-2 pt-8">Writing</h2>
 
 <div
   id="yt-ranting-swede"
-  class="pt-2 pb-4"
+  class="pb-4 pt-2"
 >
   <iframe
     src="https://www.youtube.com/embed/EbPOImtuw2Q"
