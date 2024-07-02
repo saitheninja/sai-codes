@@ -136,6 +136,21 @@
 
     print-color-adjust: exact;
   }
+
+  kbd {
+    @apply text-sm;
+    @apply px-1.5 py-0.5;
+    @apply mr-0.5;
+    @apply border border-white rounded-md;
+    @apply bg-cyan-950 print:bg-gray-200;
+
+    print-color-adjust: exact;
+  }
+
+  kbd:has(kbd) {
+    @apply px-0;
+    @apply space-x-1;
+  }
 }
 
 /* heading classes */
