@@ -41,9 +41,9 @@
   </hgroup>
 
   {#if tools.length > 0}
-    <ul class="mb-1 mt-2 flex flex-row flex-wrap text-sm">
+    <ul class="mb-1 mt-2 flex flex-row flex-wrap gap-x-2 gap-y-1 text-sm">
       {#each tools as tool}
-        <li class="my-1 mr-2">
+        <li>
           <code>{tool}</code>
         </li>
       {/each}
