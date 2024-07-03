@@ -100,10 +100,6 @@
     @apply scroll-smooth;
     @apply scroll-pt-28;
   }
-
-  pre {
-    @apply overflow-auto;
-  }
 }
 
 /* colours and decorations */
@@ -126,34 +122,38 @@
 
 /* monospace elements */
 @layer base {
-  code {
-    @apply px-1 py-0.5;
-    @apply mx-0.5;
+  .darker-bg {
     @apply bg-cyan-950 print:bg-gray-200;
 
     print-color-adjust: exact;
   }
 
-  pre {
-    @apply max-w-max px-3 py-2;
-    @apply bg-cyan-950 print:bg-gray-200;
+  code {
+    @apply text-sm;
+    @apply px-1 py-0.5;
+    @apply darker-bg;
+    @apply whitespace-nowrap;
+  }
 
-    print-color-adjust: exact;
+  pre {
+    @apply text-sm;
+    @apply max-w-max px-2 py-1;
+    @apply overflow-auto;
+    @apply darker-bg;
   }
 
   kbd {
     @apply text-sm;
     @apply px-1.5 py-0.5;
-    @apply mr-0.5;
-    @apply border border-white rounded-md;
-    @apply bg-cyan-950 print:bg-gray-200;
-
-    print-color-adjust: exact;
+    @apply darker-bg;
+    @apply rounded-md border border-white print:border-black;
+    @apply whitespace-nowrap;
   }
 
   kbd:has(kbd) {
     @apply px-0;
     @apply space-x-1;
+    @apply border-none;
   }
 }
 
