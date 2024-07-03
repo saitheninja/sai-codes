@@ -118,6 +118,10 @@
     @apply text-white;
     @apply decoration-double;
   }
+
+  hr {
+    @apply my-8;
+  }
 }
 
 /* monospace elements */

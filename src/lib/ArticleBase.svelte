@@ -12,6 +12,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>{titleHeading}</title>
+</svelte:head>
+
 <hgroup class="mb-10">
   <h1 class="heading-size-1 mb-2 leading-tight">{titleHeading}</h1>
 
@@ -19,6 +23,7 @@
     {titleSubheading}
   </p>
 </hgroup>
+<hr />
 
 <section class="mb-10 space-y-4">
   <h2
@@ -96,6 +101,7 @@
     </ol>
   </div>
 </section>
+<hr />
 
 <article
   bind:this={articleEl}
