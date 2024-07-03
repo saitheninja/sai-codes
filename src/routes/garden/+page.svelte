@@ -62,6 +62,10 @@
   </li>
 
   <li>
+    <a href="/garden/neovim-is-cool">(Neo)Vim is Cool</a>
+  </li>
+
+  <li>
     <a href="/garden/on-visual-composition">On Visual Composition</a>
   </li>
 
