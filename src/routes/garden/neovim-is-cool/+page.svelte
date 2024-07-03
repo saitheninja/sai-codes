@@ -1,9 +1,15 @@
 <script lang="ts">
   import ArticleBase from "$lib/ArticleBase.svelte";
+  // &lt; < less than
+  // &gt; > greater than
+  // &lt; &gt;
+  // &#123; { curly open
+  // &#125; } curly close
+  // &#123; &#125;
 </script>
 
 <ArticleBase
-  titleHeading="(Neo)vim is Cool"
+  titleHeading="(Neo)Vim is Cool"
   titleSubheading="But also complicated."
 >
   <section class="space-y-4">
@@ -23,6 +29,8 @@
           Jumps
         </h3>
       </section>
+      <hr />
+
       <section class="space-y-4">
         <h3
           id="marks"
@@ -31,6 +39,8 @@
           Marks
         </h3>
       </section>
+      <hr />
+
       <section class="space-y-4">
         <h3
           id="registers"
@@ -39,6 +49,8 @@
           Registers
         </h3>
       </section>
+      <hr />
+
       <section class="space-y-4">
         <h3
           id="folds"
@@ -47,6 +59,7 @@
           Folds
         </h3>
       </section>
+      <hr />
 
       <section class="space-y-4">
         <h3
@@ -59,9 +72,9 @@
         <dl>
           <div>
             <dt>
-              <kbd>/</kbd><code>[some text]</code>
+              <kbd>/</kbd><code>&#123;some text&#125;</code><kbd>Enter</kbd>
             </dt>
-            <dd>Search forward for <code>[some text]</code>.</dd>
+            <dd>Search forward for <code>some text</code>.</dd>
           </div>
 
           <div>
@@ -93,6 +106,7 @@
           </div>
         </dl>
       </section>
+      <hr />
 
       <section class="space-y-4">
         <h3
@@ -132,31 +146,27 @@
             Focus
           </h4>
 
-          <dl></dl>
-        </section>
+          <dl>
+            <div>
+              <dt>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>^</kbd></kbd>
+              </dt>
+              <dd>
+                Edit alternate file in current window. Usually last edited file.
+              </dd>
+            </div>
 
-        <section class="space-y-4">
-          <h4
-            id="buffers-move"
-            class="heading-size-4"
-          >
-            Move
-          </h4>
-
-          <dl></dl>
-        </section>
-
-        <section class="space-y-4">
-          <h4
-            id="buffers-resize"
-            class="heading-size-4"
-          >
-            Resize
-          </h4>
-
-          <dl></dl>
+            <div>
+              <dt>
+                <code>&#123;count&#125;</code>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>^</kbd></kbd>
+              </dt>
+              <dd>Edit <code>count</code> buffer in current window.</dd>
+            </div>
+          </dl>
         </section>
       </section>
+      <hr />
 
       <section class="space-y-4">
         <h3
@@ -190,41 +200,80 @@
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>s</kbd></kbd>
+                <kbd>s S</kbd>
               </dt>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>s</kbd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>s</kbd></kbd>
               </dt>
+              <dt>
+                <code>:[N]sp[lit] [++opt] [+cmd] &#123;file&#125;</code>
+              </dt>
+
               <dd>Split horizontally.</dd>
               <dd>
-                Note: C-s does not work on all terminals and might block further
-                input. Use C-q to get going again.
+                Make the new window <code>N</code> rows high.
+              </dd>
+              <dd>Opens same file buffer if not specified.</dd>
+              <dd>
+                Note: <kbd><kbd>Ctrl</kbd><span>+</span><kbd>s</kbd></kbd> does
+                not work on all terminals and might block further input. Use
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>q</kbd></kbd> to get going
+                again.
               </dd>
             </div>
 
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>v</kbd></kbd>
+                <kbd>v</kbd>
               </dt>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>v</kbd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>v</kbd></kbd>
               </dt>
+              <dt><code>:[N]vs[plit] [++opt] [+cmd] &#123;file&#125;</code></dt>
+
               <dd>Split vertically.</dd>
+              <dd>Make the new window <code>N</code> columns wide.</dd>
+              <dd>Opens same file buffer if not specified.</dd>
             </div>
 
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>n</kbd></kbd>
+                <kbd>n</kbd>
               </dt>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>n</kbd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>n</kbd></kbd>
               </dt>
-              <dd>New window.</dd>
+              <dt><code>:[N]new [++opt] [+cmd] &#123;file&#125;</code></dt>
+
+              <dd>New horizontal split window.</dd>
+              <dd>Make new window <code>N</code> rows high.</dd>
+              <dd>New empty buffer or open file.</dd>
+              <dd>
+                <code>:[N]vnew [++opt] [+cmd] &#123;file&#125;</code> for vertical
+                split.
+              </dd>
+            </div>
+            <div>
+              <dt>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+                <kbd>^</kbd>
+              </dt>
+              <dt>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>^</kbd></kbd>
+              </dt>
+
+              <dd>Open alternate file in horizontal split.</dd>
+              <dd>
+                Matches behaviour of
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>^</kbd></kbd>
+                .
+              </dd>
             </div>
           </dl>
         </section>
@@ -243,22 +292,33 @@
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
                 <kbd>c</kbd>
               </dt>
+
               <dd>Close the current window.</dd>
               <dd>
-                Fails if there is only one window. C-w q will close last window
-                and exit, so this is safer.
+                Fails if there is only one window.
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+                <kbd>q</kbd>
+                will close last window and exit, so this is safer.
+              </dd>
+              <dd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>c</kbd></kbd>
+                does not work, because the
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>c</kbd></kbd>
+                cancels the command.
               </dd>
             </div>
 
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>o</kbd></kbd>
+                <kbd>o</kbd>
               </dt>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>o</kbd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>o</kbd></kbd>
               </dt>
+
               <dd>Keep only active window, closing all others.</dd>
             </div>
           </dl>
@@ -278,12 +338,13 @@
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+                <kbd>w</kbd>
               </dt>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>w</kbd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
               </dt>
+
               <dd>Move cursor one window forward (down/right).</dd>
             </div>
 
@@ -292,54 +353,53 @@
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
                 <kbd>W</kbd>
               </dt>
+
               <dd>Move cursor one window backward (up/left).</dd>
             </div>
 
             <div>
               <dt>
-                <code>&#123;N&#125;</code>
+                <code>&#123;count&#125;</code>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+                <kbd>w W</kbd>
               </dt>
               <dt>
-                <code>&#123;N&#125;</code>
+                <code>&#123;count&#125;</code>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>w</kbd>
-              </dt>
-              <dt>
-                <code>&#123;N&#125;</code>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>W</kbd>
               </dt>
+
               <dd>
-                Move cursor to window number <code>N</code>.
+                Move cursor to window number <code>count</code>.
               </dd>
               <dd>
-                If <code>N</code> &gt; number of windows, go to last window.
+                If <code>count</code> &gt; number of windows, go to last window.
               </dd>
             </div>
 
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>hjkl</kbd></kbd>
+                <kbd>h j k l</kbd>
               </dt>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>hjkl</kbd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>h j k l</kbd></kbd>
               </dt>
+
               <dd>Move cursor to window left/right/above/below current one.</dd>
             </div>
 
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>tb</kbd></kbd>
+                <kbd>t b</kbd>
               </dt>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>tb</kbd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>t b</kbd></kbd>
               </dt>
+
               <dd>Move cursor to top-left/bottom-right window.</dd>
             </div>
           </dl>
@@ -357,12 +417,13 @@
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>r</kbd></kbd>
+                <kbd>r</kbd>
               </dt>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>r</kbd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>r</kbd></kbd>
               </dt>
+
               <dd>Rotate windows downwards/rightwards.</dd>
               <dd>The cursor remains in the same window.</dd>
               <dd>
@@ -376,6 +437,7 @@
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
                 <kbd>R</kbd>
               </dt>
+
               <dd>Rotate windows upwards/leftwards.</dd>
               <dd>The cursor remains in the same window.</dd>
               <dd>
@@ -387,12 +449,13 @@
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>x</kbd></kbd>
+                <kbd>x</kbd>
               </dt>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>x</kbd>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>x</kbd></kbd>
               </dt>
+
               <dd>Exchange current window with next one.</dd>
               <dd>
                 If there is no next window, exchange with previous window.
@@ -408,8 +471,9 @@
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>HJKL</kbd>
+                <kbd>H J K L</kbd>
               </dt>
+
               <dd>
                 Move current window to far left/right/top/bottom, and use full
                 height/width.
@@ -421,6 +485,7 @@
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
                 <kbd>T</kbd>
               </dt>
+
               <dd>Move the current window to a new tab page.</dd>
               <dd>
                 Fails if there is only one window in the current tab page.
@@ -465,7 +530,7 @@
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>+-&lt;&gt</kbd>
+                <kbd>+ - &lt; &gt;</kbd>
               </dt>
               <dd>
                 Incrementally increase/decrease active window height/width.
@@ -474,6 +539,7 @@
           </dl>
         </section>
       </section>
+      <hr />
 
       <section class="space-y-4">
         <h3
@@ -542,8 +608,8 @@
             </div>
 
             <div>
-              <dt><code>&#123;N&#125;</code><kbd>g</kbd><kbd>t</kbd></dt>
-              <dd>Switch to tab page number N.</dd>
+              <dt><code>&#123;count&#125;</code><kbd>g</kbd><kbd>t</kbd></dt>
+              <dd>Switch to tab page number <code>count</code>.</dd>
             </div>
           </dl>
         </section>
@@ -569,22 +635,24 @@
 
             <div>
               <dt>
-                <code>:tabmove &#123;N&#125;</code>
+                <code>:tabmove &#123;count&#125;</code>
               </dt>
-              <dd>Move current tab page to position N.</dd>
+              <dd>Move current tab page to position <code>count</code>.</dd>
             </div>
           </dl>
         </section>
       </section>
     </section>
 
+    <hr />
+
     <section class="space-y-2">
-      <h3
+      <h2
         id="terminal-mode"
-        class="heading-size-3"
+        class="heading-size-2"
       >
         Terminal Mode
-      </h3>
+      </h2>
 
       <dl>
         <div>
@@ -603,49 +671,71 @@
         </div>
       </dl>
     </section>
-  </section>
+    <hr />
 
-  <section>
-    <h2
-      id="lua"
-      class="heading-size-2"
-    >
-      Lua
-    </h2>
-  </section>
+    <section>
+      <h2
+        id="lua"
+        class="heading-size-2"
+      >
+        Lua
+      </h2>
+    </section>
+    <hr />
 
-  <section class="space-y-2">
-    <h2
-      id="notes"
-      class="heading-size-2"
-    >
-      Notes
-    </h2>
+    <section>
+      <h2
+        id="lsps"
+        class="heading-size-2"
+      >
+        LSPs
+      </h2>
+    </section>
+    <hr />
 
-    <p>
-      Shortcuts are sometimes written as <code>&lt;C-A&gt;</code> to mean hold
-      <kbd>Ctrl</kbd>, press and release <kbd>a</kbd>, release
-      <kbd>Ctrl</kbd>. Same for other modifiers.
-    </p>
-    <p>
-      Modifiers are not combined with uppercase, only lowercase, so
-      <code>&lt;C-w&gt;</code> and <code>&lt;C-W&gt;</code> both mean
-      <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>.
-    </p>
-    <p>
-      <code>&lt;CR&gt;</code> means "carriage return", i.e.
-      <kbd>Enter</kbd>.
-    </p>
-    <p>
-      <kbd>:</kbd> to switch to command line mode, where commands can be typed, and
-      tab-completion is available.
-    </p>
+    <section>
+      <h2
+        id="diagnostics"
+        class="heading-size-2"
+      >
+        Diagnostics
+      </h2>
+    </section>
+    <hr />
 
-    <div>
-      <p>A buffer is the in-memory text of a file.</p>
-      <p>A window is a viewport on a buffer.</p>
-      <p>A tab page is a collection of windows.</p>
-    </div>
+    <section class="space-y-2">
+      <h2
+        id="notes"
+        class="heading-size-2"
+      >
+        Notes
+      </h2>
+
+      <p>
+        Shortcuts are sometimes written as <code>&lt;C-A&gt;</code> to mean hold
+        <kbd>Ctrl</kbd>, press and release <kbd>a</kbd>, release
+        <kbd>Ctrl</kbd>. Same for other modifiers.
+      </p>
+      <p>
+        Modifiers are not combined with uppercase, only lowercase, so
+        <code>&lt;C-w&gt;</code> and <code>&lt;C-W&gt;</code> both mean
+        <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>.
+      </p>
+      <p>
+        <code>&lt;CR&gt;</code> means "carriage return", i.e.
+        <kbd>Enter</kbd>.
+      </p>
+      <p>
+        <kbd>:</kbd> to switch to command line mode, where commands can be typed,
+        and tab-completion is available.
+      </p>
+
+      <div>
+        <p>A buffer is the in-memory text of a file.</p>
+        <p>A window is a viewport on a buffer.</p>
+        <p>A tab page is a collection of windows.</p>
+      </div>
+    </section>
   </section>
 </ArticleBase>
 
