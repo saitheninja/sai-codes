@@ -149,6 +149,7 @@
   kbd {
     @apply text-sm;
     @apply px-1.5 py-0.5;
+    @apply mr-0.5; /* punctuation marks were too close */
     @apply darker-bg;
     @apply rounded-md border border-white print:border-black;
     @apply whitespace-nowrap;

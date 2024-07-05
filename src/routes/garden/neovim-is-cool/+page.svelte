@@ -58,6 +58,190 @@
         >
           Folds
         </h3>
+
+        <p>
+          Fold level &gt; <code>foldlevel</code> will be closed. Zero (default) will
+          close all folds. Local to window.
+        </p>
+
+        <p>
+          Fold with lines &lt; <code>foldminlines</code> will always be open. Default
+          1.
+        </p>
+
+        <p>
+          Currently using
+          <a
+            href="https://github.com/kevinhwang91/nvim-ufo"
+            title="nvim-ufo GitHub repo"
+            target="_blank"
+          >
+            nvim-ufo
+          </a> to manage folds.
+        </p>
+
+        <section class="space-y-4">
+          <h4
+            id="opening-and-closing-folds"
+            class="heading-size-4"
+          >
+            Opening and Closing Folds
+          </h4>
+
+          <dl>
+            <div>
+              <dt><kbd>z</kbd><kbd>o</kbd></dt>
+              <dt>
+                <code>&#123;count&#125;</code>
+                <kbd>z</kbd><kbd>o</kbd>
+              </dt>
+              <dd>Open one fold under the cursor.</dd>
+              <dd>Open <code>count</code> fold levels under the cursor.</dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>O</kbd></dt>
+              <dd>Open all folds under the cursor.</dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>c</kbd></dt>
+              <dt>
+                <code>&#123;count&#125;</code>
+                <kbd>z</kbd><kbd>c</kbd>
+              </dt>
+              <dd>Close one fold under the cursor.</dd>
+              <dd>Close <code>count</code> folds under the cursor.</dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>C</kbd></dt>
+              <dd>Close all folds under the cursor.</dd>
+            </div>
+          </dl>
+
+          <dl>
+            <div>
+              <dt><kbd>z</kbd><kbd>a</kbd></dt>
+              <dt>
+                <code>&#123;count&#125;</code>
+                <kbd>z</kbd><kbd>a</kbd>
+              </dt>
+              <dd>Toggle one fold under the cursor.</dd>
+              <dd>Toggle <code>count</code> fold levels under the cursor.</dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>A</kbd></dt>
+              <dd>Toggle all folds under the cursor.</dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>v</kbd></dt>
+              <dd>
+                View cursor line. Unfold until the line in which the cursor is
+                located is not folded.
+              </dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>x</kbd></dt>
+              <dd>
+                Update folds. Undo manually opened and closed folds. Re-apply
+                <code>foldlevel</code>, then do <kbd>z</kbd><kbd>v</kbd>. Forces
+                recomputing folds.
+              </dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>X</kbd></dt>
+              <dd>
+                Undo manually opened and closed folds. Re-apply
+                <code>foldlevel</code>. Forces recomputing folds.
+              </dd>
+            </div>
+          </dl>
+
+          <dl>
+            <div>
+              <dt><kbd>z</kbd><kbd>m</kbd></dt>
+              <dd>fold more. Decrease <code>foldlevel</code>.</dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>M</kbd></dt>
+              <dd>
+                Fold most. Set <code>foldlevel</code> to zero, i.e. close all folds.
+              </dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>r</kbd></dt>
+              <dd>Fold reduce. Increase <code>foldlevel</code>.</dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>R</kbd></dt>
+              <dd>
+                Fold reduce to minimum. Set <code>foldlevel</code> to max, i.e. open
+                all folds.
+              </dd>
+            </div>
+          </dl>
+
+          <dl>
+            <div>
+              <dt><kbd>z</kbd><kbd>i</kbd></dt>
+              <dd>Toggle <code>foldenable</code>.</dd>
+            </div>
+
+            <!-- <div>
+              <dt><kbd>z</kbd><kbd>n</kbd></dt>
+              <dd>
+                Fold none. <code>foldenable off</code>. All folds will be open.
+              </dd>
+            </div> -->
+
+            <!-- <div>
+              <dt><kbd>z</kbd><kbd>N</kbd></dt>
+              <dd>
+                fold normal. <code>foldenable on</code>. All folds will be as
+                they were before.
+              </dd>
+            </div> -->
+          </dl>
+        </section>
+
+        <section class="space-y-4">
+          <h4
+            id="moving-over-folds"
+            class="heading-size-4"
+          >
+            Moving Over Folds
+          </h4>
+
+          <dl>
+            <div>
+              <dt><kbd>[</kbd><kbd>z</kbd></dt>
+              <dd>Move to the start of containing open fold.</dd>
+            </div>
+
+            <div>
+              <dt><kbd>]</kbd><kbd>z</kbd></dt>
+              <dd>Move to the end of containing open fold.</dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>k</kbd></dt>
+              <dd>Move upwards to the end of the previous fold.</dd>
+            </div>
+
+            <div>
+              <dt><kbd>z</kbd><kbd>j</kbd></dt>
+              <dd>Move downwards to the start of the next fold.</dd>
+            </div>
+          </dl>
+        </section>
       </section>
       <hr />
 
@@ -200,7 +384,11 @@
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>s S</kbd>
+                <kbd>s</kbd>
+              </dt>
+              <dt>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+                <kbd>S</kbd>
               </dt>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
@@ -239,7 +427,7 @@
               <dd>Opens same file buffer if not specified.</dd>
             </div>
 
-            <div>
+            <!-- <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
                 <kbd>n</kbd>
@@ -257,7 +445,8 @@
                 <code>:[N]vnew [++opt] [+cmd] &#123;file&#125;</code> for vertical
                 split.
               </dd>
-            </div>
+            </div> -->
+
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
@@ -361,12 +550,17 @@
               <dt>
                 <code>&#123;count&#125;</code>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>w W</kbd>
+                <kbd>w</kbd>
               </dt>
               <dt>
                 <code>&#123;count&#125;</code>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+              </dt>
+              <dt>
+                <code>&#123;count&#125;</code>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+                <kbd>W</kbd>
               </dt>
 
               <dd>
@@ -530,10 +724,20 @@
             <div>
               <dt>
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
-                <kbd>+ - &lt; &gt;</kbd>
+                <kbd>- +</kbd>
               </dt>
               <dd>
-                Incrementally increase/decrease active window height/width.
+                Incrementally decrease/increase active window height.
+              </dd>
+            </div>
+
+            <div>
+              <dt>
+                <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+                <kbd>&lt; &gt;</kbd>
+              </dt>
+              <dd>
+                Incrementally decrease/increase active window width.
               </dd>
             </div>
           </dl>
@@ -646,7 +850,7 @@
 
     <hr />
 
-    <section class="space-y-2">
+    <section class="space-y-4">
       <h2
         id="terminal-mode"
         class="heading-size-2"
@@ -673,7 +877,7 @@
     </section>
     <hr />
 
-    <section>
+    <section class="space-y-4">
       <h2
         id="lua"
         class="heading-size-2"
@@ -683,27 +887,61 @@
     </section>
     <hr />
 
-    <section>
+    <section class="space-y-4">
       <h2
         id="lsps"
         class="heading-size-2"
       >
         LSPs
       </h2>
+      <dl>
+        <div>
+          <dt><kbd>K</kbd></dt>
+
+          <dd><code>vim.lsp.buf.hover()</code></dd>
+        </div>
+      </dl>
     </section>
     <hr />
 
-    <section>
+    <section class="space-y-4">
       <h2
         id="diagnostics"
         class="heading-size-2"
       >
         Diagnostics
       </h2>
+
+      <dl>
+        <div>
+          <dt><kbd>[</kbd><kbd>d</kbd></dt>
+
+          <dd><code>vim.diagnostic.goto_prev()</code></dd>
+        </div>
+
+        <div>
+          <dt><kbd>]</kbd><kbd>d</kbd></dt>
+
+          <dd><code>vim.diagnostic.goto_next()</code></dd>
+        </div>
+
+        <div>
+          <dt>
+            <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+            <kbd>d</kbd>
+          </dt>
+          <dt>
+            <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
+            <kbd><kbd>Ctrl</kbd><span>+</span><kbd>d</kbd></kbd>
+          </dt>
+
+          <dd><code>vim.diagnostic.open_float()</code></dd>
+        </div>
+      </dl>
     </section>
     <hr />
 
-    <section class="space-y-2">
+    <section class="space-y-4">
       <h2
         id="notes"
         class="heading-size-2"
@@ -712,7 +950,7 @@
       </h2>
 
       <p>
-        Shortcuts are sometimes written as <code>&lt;C-A&gt;</code> to mean hold
+        Shortcuts are sometimes written as <code>&lt;C-A&gt;</code> to mean: hold
         <kbd>Ctrl</kbd>, press and release <kbd>a</kbd>, release
         <kbd>Ctrl</kbd>. Same for other modifiers.
       </p>

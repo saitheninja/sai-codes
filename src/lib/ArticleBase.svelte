@@ -26,6 +26,7 @@
 <hr />
 
 <section class="mb-10 space-y-4">
+  <!-- all headings need ids so they can be linked to -->
   <h2
     id="table-of-contents"
     class="heading-size-2"
