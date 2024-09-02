@@ -4,7 +4,7 @@
   let workDev = {
     hText: "Web Developer",
     subhLink: {
-      href: "/garden",
+      href: "https://github.com/saitheninja/sai.codes/tree/main/src/routes/garden",
       title: "my code garden",
       text: "SaiTheNinja Studio",
     },
@@ -91,7 +91,7 @@
 >
   <h1 class="heading-size-1 font-sans">
     <a
-      href="/resume"
+      href="https://github.com/saitheninja/sai.codes/tree/main/src/routes/resume"
       title="my resume"
       class="underline-offset-8"
     >
@@ -110,7 +110,7 @@
         <span class="not-italic">🌍</span>
         <span>
           <a
-            href="/"
+            href="https://github.com/saitheninja/sai.codes"
             title="I code things"
           >
             sai.codes
