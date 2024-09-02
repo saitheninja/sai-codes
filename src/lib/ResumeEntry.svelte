@@ -17,7 +17,7 @@
 </script>
 
 <div>
-  <hgroup>
+  <hgroup class="mb-1">
     <h3 class="heading-size-3">
       {hText}
     </h3>
@@ -41,7 +41,7 @@
   </hgroup>
 
   {#if tools.length > 0}
-    <ul class="mb-1 mt-2 flex flex-row flex-wrap gap-x-2 gap-y-1 text-sm">
+    <ul class="mb-1 mt-3 flex flex-row flex-wrap gap-x-2 gap-y-1 text-sm">
       {#each tools as tool}
         <li>
           <code>{tool}</code>

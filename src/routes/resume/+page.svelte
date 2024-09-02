@@ -87,7 +87,7 @@
 
 <section
   id="name"
-  class="mb-6 max-w-max"
+  class="mb-8 max-w-max"
 >
   <h1 class="heading-size-1 font-sans">
     <a
