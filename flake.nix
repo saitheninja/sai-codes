@@ -23,9 +23,13 @@
             nodejs_20
           ];
 
-          shellHook = ''
-            exec zsh
-          '';
+          shellHook = # sh
+            ''
+              echo "Node version:"
+              node --version
+
+              exec $SHELL
+            '';
         };
     };
 }
