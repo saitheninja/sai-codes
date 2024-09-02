@@ -11,9 +11,9 @@
     yearsStart: "2020",
     yearsEnd: "present",
     tools: [
-      "SvelteKit",
       "TypeScript",
       "Node",
+      "SvelteKit",
 
       "Tailwind",
 
@@ -219,8 +219,7 @@
               rel="noreferrer external"
               class="-mr-1"
             >
-              A Progressive Web App for planning traditional, multi-day Hindu
-              weddings
+              An app for planning traditional weddings
             </a>.
           </li>
         </ul>
@@ -233,12 +232,13 @@
 
         <ul class="list-disc pl-5">
           <li>
-            Online platform for Continuous Professional Development for the
-            Health Professions Council of South Africa, with 200+ users.
+            Developing an online platform for Continuous Professional
+            Development for the Health Professions Council of South Africa, with
+            200+ users.
           </li>
 
           <li>
-            Management of 5 on-site workstations, digital assets server &
+            Management of on-site workstations, a digital assets server &
             networking.
           </li>
         </ul>
