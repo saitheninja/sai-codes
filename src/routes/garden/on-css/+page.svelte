@@ -18,7 +18,7 @@
     on top of it. I like to build things directly in the browser so I can
     immediately see where ideas don't work. (Especially fancy layering things,
     like the <a
-      href="https://github.com/saitheninja/sai.codes/blob/main/src/lib/Header.svelte"
+      href="https://github.com/saitheninja/sai-codes/blob/main/src/lib/Header.svelte"
       >header</a
     > of this site.)
   </p>

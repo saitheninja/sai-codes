@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { base } from "$app/paths";
+</script>
+
 <svelte:head>
   <title>sai.codes some rants</title>
 </svelte:head>
@@ -49,27 +53,27 @@
   class="list-disc pl-6"
 >
   <!-- <li>
-    <a href="/garden/discord-is-better">
+    <a href="{base}/garden/discord-is-better">
       Discord is Better Than What We Had Before
     </a>
   </li> -->
   <li>
-    <a href="/garden/catchphrases">Catchphrases</a>
+    <a href="{base}/garden/catchphrases">Catchphrases</a>
   </li>
 
   <li>
-    <a href="/garden/music-theory-notes">Music Theory Notes</a>
+    <a href="{base}/garden/music-theory-notes">Music Theory Notes</a>
   </li>
 
   <li>
-    <a href="/garden/neovim-is-cool">(Neo)Vim is Cool</a>
+    <a href="{base}/garden/neovim-is-cool">(Neo)Vim is Cool</a>
   </li>
 
   <li>
-    <a href="/garden/on-visual-composition">On Visual Composition</a>
+    <a href="{base}/garden/on-visual-composition">On Visual Composition</a>
   </li>
 
   <li>
-    <a href="/garden/on-css">On CSS</a>
+    <a href="{base}/garden/on-css">On CSS</a>
   </li>
 </ul>

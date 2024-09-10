@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { base } from "$app/paths";
+</script>
+
 <header class="sticky top-0 z-10 grid grid-cols-1 print:hidden">
   <div class="waves-mask col-span-full row-span-full" />
 
@@ -10,16 +14,16 @@
 
   <nav class="header-text-shadow z-20 col-span-full row-span-full p-4">
     <a
-      href="/"
+      href="{base}/"
       class="font-mono text-4xl font-bold underline-offset-4"
     >
       sai.codes
     </a>
 
     <div class="text-color-secondary space-x-2">
-      <a href="/resume">resume</a>
-      <a href="/garden">garden</a>
-      <a href="/contact">contact</a>
+      <a href="{base}/resume">resume</a>
+      <a href="{base}/garden">garden</a>
+      <a href="{base}/contact">contact</a>
     </div>
   </nav>
 </header>

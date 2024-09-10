@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { base } from "$app/paths";
+</script>
+
 <svelte:head>
   <title>sai.codes</title>
 </svelte:head>
@@ -10,7 +14,7 @@
 >
   <p class="pb-2 pt-4">
     <a
-      href="/resume"
+      href="{base}/resume"
       class="-mr-1 italic"
     >
       I need a job
@@ -41,5 +45,5 @@
 
 <p>
   Or wander the
-  <a href="/garden">garden</a>.
+  <a href="{base}/garden">garden</a>.
 </p>

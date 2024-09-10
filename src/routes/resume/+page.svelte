@@ -1,11 +1,13 @@
 <script lang="ts">
+  import { base } from "$app/paths";
+
   import ResumeEntry from "$lib/ResumeEntry.svelte";
 
   let workDev = {
     hText: "Web Developer",
     subhLink: {
-      href: "https://github.com/saitheninja/sai.codes/tree/main/src/routes/garden",
-      title: "my code garden",
+      href: "https://github.com/saitheninja/sai-codes",
+      title: "my code playground",
       text: "SaiTheNinja Studio",
     },
     yearsStart: "2020",
@@ -91,7 +93,7 @@
 >
   <h1 class="heading-size-1 font-sans">
     <a
-      href="https://github.com/saitheninja/sai.codes/tree/main/src/routes/resume"
+      href="{base}/resume"
       title="my resume"
       class="underline-offset-8"
     >
@@ -110,7 +112,7 @@
         <span class="not-italic">🌍</span>
         <span>
           <a
-            href="https://github.com/saitheninja/sai.codes"
+            href="{base}/"
             title="I code things"
           >
             sai.codes
