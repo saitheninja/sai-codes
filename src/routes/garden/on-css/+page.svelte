@@ -1,8 +1,18 @@
 <script lang="ts">
   import ArticleBase from "$lib/ArticleBase.svelte";
+
+  const titleHeading = "On CSS";
+  const titleSubheading = "I have *opinions*.";
+  const datePublished = "2022-02-21";
+  const dateUpdated = "2024-09-20";
 </script>
 
-<ArticleBase titleHeading="On CSS" titleSubheading="I have *opinions*.">
+<ArticleBase
+  {titleHeading}
+  {titleSubheading}
+  {datePublished}
+  {dateUpdated}
+>
   <section class="space-y-4">
     <h2
       id="in-general"

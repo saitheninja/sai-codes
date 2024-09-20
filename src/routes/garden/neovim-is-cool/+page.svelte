@@ -1,5 +1,11 @@
 <script lang="ts">
   import ArticleBase from "$lib/ArticleBase.svelte";
+
+  const titleHeading="(Neo)Vim is Cool"
+  const titleSubheading="But also complicated."
+  const datePublished = "2024-07-03";
+  const dateUpdated = "2024-07-05";
+
   // &lt; < less than
   // &gt; > greater than
   // &lt; &gt;
@@ -9,8 +15,10 @@
 </script>
 
 <ArticleBase
-  titleHeading="(Neo)Vim is Cool"
-  titleSubheading="But also complicated."
+  {titleHeading}
+  {titleSubheading}
+  {datePublished}
+  {dateUpdated}
 >
   <section class="space-y-4">
     <section class="space-y-4">

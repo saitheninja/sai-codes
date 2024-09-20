@@ -1,8 +1,18 @@
 <script lang="ts">
   import ArticleBase from "$lib/ArticleBase.svelte";
+
+  const titleHeading = "Music Theory Notes";
+  const titleSubheading = "Why is it this complicated?";
+  const datePublished = "2024-06-03";
+  const dateUpdated = "2024-06-05";
 </script>
 
-<ArticleBase titleHeading="Music Theory Notes">
+<ArticleBase
+  {titleHeading}
+  {titleSubheading}
+  {datePublished}
+  {dateUpdated}
+>
   <section class="space-y-4">
     <h2
       id="scales"
