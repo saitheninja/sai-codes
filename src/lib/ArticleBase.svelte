@@ -23,6 +23,7 @@
     {titleSubheading}
   </p>
 </hgroup>
+
 <hr />
 
 <section class="mb-10 space-y-4">
@@ -102,6 +103,7 @@
     </ol>
   </div>
 </section>
+
 <hr />
 
 <article
