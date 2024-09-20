@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fly } from "svelte/transition";
-	import { quintInOut } from "svelte/easing";
+  import { quintInOut } from "svelte/easing";
 
   // pixels
   let offset = 120;
@@ -11,12 +11,12 @@
 
 <footer
   id="footer"
-  class="sticky bottom-5 mx-auto mt-12 pb-8 print:hidden"
+  class="sticky bottom-0 -mr-2 ml-auto max-w-max py-8 md:-mr-16 print:hidden"
 >
   {#if scrollY > offset}
     <a
       href="#top"
-      class="footer-drop-shadow float-right md:-mr-16"
+      class="footer-drop-shadow"
       transition:fly|global={{ duration: 200, y: 50, easing: quintInOut }}
     >
       <svg
