@@ -376,6 +376,8 @@ E, F, F#, G, G#, A, A#, B, C, C#, D, D#, E
     </section>
   </section>
 
+  <hr />
+
   <section class="space-y-4">
     <h2
       id="modes"
@@ -401,6 +403,8 @@ I--II--III-IV--V--VI--VII-I
 
     <p>mode: which note to start from in the loop.</p>
   </section>
+
+  <hr />
 
   <section class="space-y-4">
     <h2
@@ -564,6 +568,8 @@ IV-I-IV-V (5-0-5-7)</pre>
       </div>
     </section>
   </section>
+
+  <hr />
 
   <section class="space-y-4">
     <h2
