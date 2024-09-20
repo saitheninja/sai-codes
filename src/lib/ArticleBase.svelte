@@ -3,6 +3,8 @@
 
   export let titleHeading = "";
   export let titleSubheading = "";
+  export let datePublished = ""; // yyyy-mm-dd
+  export let dateUpdated = ""; // yyyy-mm-dd
 
   let articleEl: HTMLElement;
   let headings2: Element[] = [];
@@ -16,12 +18,22 @@
   <title>{titleHeading}</title>
 </svelte:head>
 
-<hgroup class="mb-10">
-  <h1 class="heading-size-1 mb-2 leading-tight">{titleHeading}</h1>
+<hgroup class="mb-10 space-y-2">
+  <h1 class="heading-size-1 leading-tight">{titleHeading}</h1>
 
   <p class="italic">
     {titleSubheading}
   </p>
+
+  <section class="text-minor text-sm text-right">
+    {#if datePublished}
+      <p>Published {new Date(datePublished).toLocaleDateString()}</p>
+    {/if}
+
+    {#if dateUpdated}
+      <p>Updated {new Date(dateUpdated).toLocaleDateString()}</p>
+    {/if}
+  </section>
 </hgroup>
 
 <hr />
