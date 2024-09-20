@@ -24,7 +24,7 @@
 <div class="text-color-main isolate flex min-h-screen flex-col">
   <Header />
 
-  <div class="mt-8 scroll-mt-36 mx-6 sm:mt-14 print:my-0">
+  <div class="mx-4 mt-8 scroll-mt-36 sm:mt-14 print:my-0">
     <main
       id="main"
       class="mx-auto w-full max-w-prose"
