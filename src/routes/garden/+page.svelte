@@ -13,14 +13,12 @@
   class="space-y-4 pb-4"
 >
   <p>
+    Welcome to my
     <a
       href="https://maggieappleton.com/garden-history"
       target="_blank"
-      rel="noreferrer external"
-      class="-mr-1"
-    >
-      Welcome to my garden
-    </a>.
+      rel="noreferrer external">garden</a
+    >.
   </p>
 
   <p class="italic">
