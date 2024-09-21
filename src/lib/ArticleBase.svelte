@@ -25,7 +25,7 @@
     {titleSubheading}
   </p>
 
-  <section class="text-minor text-sm text-right">
+  <section class="text-minor text-right text-sm">
     {#if datePublished}
       <p>Published {new Date(datePublished).toLocaleDateString()}</p>
     {/if}
@@ -48,7 +48,7 @@
   </h2>
 
   <div class="space-y-1">
-    <ol class="list-disc pl-6">
+    <ol class="toc-layer">
       {#each headings2 as heading2}
         <li>
           <a href="#{heading2.id}">{heading2.textContent}</a>
@@ -59,7 +59,7 @@
           : []}
 
         {#if headings3.length > 0}
-          <ol class="list-disc pl-6">
+          <ol class="toc-layer">
             {#each headings3 as heading3}
               <li>
                 <a href="#{heading3.id}">{heading3.textContent}</a>
@@ -70,7 +70,7 @@
                 : []}
 
               {#if headings4.length > 0}
-                <ol class="list-disc pl-6">
+                <ol class="toc-layer">
                   {#each headings4 as heading4}
                     <li>
                       <a href="#{heading4.id}">{heading4.textContent}</a>
@@ -81,7 +81,7 @@
                       : []}
 
                     {#if headings5.length > 0}
-                      <ol class="list-disc pl-6">
+                      <ol class="toc-layer">
                         {#each headings5 as heading5}
                           <li>
                             <a href="#{heading5.id}">{heading5.textContent}</a>
@@ -92,11 +92,11 @@
                             : []}
 
                           {#if headings6.length > 0}
-                            <ol class="list-disc pl-6">
+                            <ol class="toc-layer">
                               {#each headings6 as heading6}
                                 <li>
-                                  <a href="#{heading6.id}">
-                                    {heading6.textContent}</a
+                                  <a href="#{heading6.id}"
+                                    >{heading6.textContent}</a
                                   >
                                 </li>
                               {/each}
@@ -124,3 +124,11 @@
 >
   <slot />
 </article>
+
+<style lang="postcss">
+  .toc-layer {
+    @apply list-disc;
+    @apply my-1 pl-7;
+    @apply border-l border-gray-300;
+  }
+</style>
