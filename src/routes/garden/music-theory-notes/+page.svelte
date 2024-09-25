@@ -2,7 +2,7 @@
   import ArticleBase from "$lib/ArticleBase.svelte";
 
   const titleHeading = "Music Theory Notes";
-  const titleSubheading = "Why is it this complicated?";
+  const titleSubheading = "Make sound good.";
   const datePublished = "2024-06-03";
   const dateUpdated = "2024-06-05";
 </script>
