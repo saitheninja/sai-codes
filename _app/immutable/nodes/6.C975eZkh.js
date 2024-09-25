@@ -1,4 +1,4 @@
-import{s as p,n as i}from"../chunks/scheduler.Ck6cZafl.js";import{S as g,i as v,e as m,s as y,a as c,g as d,c as b,b as u,f as o,d as l}from"../chunks/index.C0dgLUhg.js";function w(f){let e,r="Discord is Better Than What We Had Before",a,s,h=`<p>I don&#39;t want to look like
+import{s as p,n as i}from"../chunks/scheduler.DH-3YF6l.js";import{S as g,i as v,e as m,s as y,a as c,g as d,c as b,b as u,f as o,d as l}from"../chunks/index.PMhZ4iWS.js";function w(f){let e,r="Discord is Better Than What We Had Before",a,s,h=`<p>I don&#39;t want to look like
     <a href="https://www.youtube.com/watch?v=3nhQmUuPbBs&amp;t=222s" target="_blank" rel="noreferrer external" class="-mr-1">a asshole
     </a>. Knowing my messages eventually get deleted relieves some of my posting
     anxiety. Especially when I ask something obvious or dumb - that stuff is
