@@ -11,21 +11,21 @@
       content="width=device-width"
     />
     
-		<link href="../../_app/immutable/assets/0.DW03OdLP.css" rel="stylesheet">
-		<link href="../../_app/immutable/assets/ArticleBase.BQd9-MX8.css" rel="stylesheet">
-		<link rel="modulepreload" href="../../_app/immutable/entry/start.ChftGbAN.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/entry.C9AG8uKe.js">
+		<link href="../../_app/immutable/assets/0.BW5-ICis.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/ArticleBase.Dzv3c3--.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.DzBp_-Za.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/entry.GKvPZkQY.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/scheduler.DH-3YF6l.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/paths.D2Wi8a73.js">
-		<link rel="modulepreload" href="../../_app/immutable/entry/app.Bn_Hqk65.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/index.PMhZ4iWS.js">
-		<link rel="modulepreload" href="../../_app/immutable/nodes/0.ReNeFdDF.js">
-		<link rel="modulepreload" href="../../_app/immutable/nodes/9.B1chAX5C.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/ArticleBase.C_l_Q1Pq.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/paths.BzRXyzU5.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.DSxLIUJz.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/index.B-IKItFU.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.DMPTRKTi.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/9.DHeqoRUT.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/ArticleBase.4IrAx31w.js">
 		<link rel="modulepreload" href="../../_app/immutable/chunks/each.D6YF6ztN.js"><title>On CSS</title><!-- HEAD_svelte-62fdnv_START --><link rel="icon" href="https://fav.farm/🐧"><meta name="description" content="Miscellaneous experiments and rants."><meta name="keywords" content="Svelte, HTML, CSS, JavaScript, TypeScript"><!-- HEAD_svelte-62fdnv_END --><!-- HEAD_svelte-j1k8nl_START --><!-- HEAD_svelte-j1k8nl_END -->
   </head>
   <body data-sveltekit-preload-data="hover">
-    <div style="display: contents">   <div class="text-color-main isolate flex min-h-screen flex-col"><header class="sticky top-0 z-10 grid grid-cols-1 print:hidden" data-svelte-h="svelte-ho0ax2"><div class="waves-mask col-span-full row-span-full"></div> <a class="skip-to-content-link" href="#main">skip to main content</a> <nav class="header-text-shadow z-20 col-span-full row-span-full p-4"><a href="../../" class="font-mono text-4xl font-bold underline-offset-4">sai.codes</a> <div class="text-color-secondary space-x-2"><a href="../../resume">resume</a> <a href="../../garden">garden</a> <a href="../../contact">contact</a></div></nav></header> <svg xmlns="http://www.w3.org/2000/svg" class="h-0 w-0"><filter id="wavesFilter"><feTurbulence id="wavesTurbulence" stitchTiles="noStitch" type="turbulence" seed="200" numOctaves="2" baseFrequency="0.02 0.06"></feTurbulence><animate xlink:href="#wavesTurbulence" attributeName="baseFrequency" dur="60s" keyTimes="0; 0.5; 1" values="0.04 0.18; 0.02 0.06; 0.04 0.18" repeatCount="indefinite"></animate><feDisplacementMap in2="wavesTurbulence" in="SourceGraphic" scale="20"></feDisplacementMap></filter></svg> <div class="mx-4 mt-8 scroll-mt-36 sm:mt-14 print:my-0"><main id="main" class="mx-auto w-full max-w-prose"> <hgroup class="mb-10 space-y-2"><h1 class="heading-size-1 leading-tight">On CSS</h1> <p class="italic">I have *opinions*.</p> <section class="text-minor text-right text-sm"><p>Published 2022/02/21</p> <p>Updated 2024/09/20</p></section></hgroup> <hr> <section class="mb-10 space-y-4"> <h2 id="table-of-contents" class="heading-size-2" data-svelte-h="svelte-1sx1f3g">Table of Contents</h2> <div class="space-y-1"><ol class="toc-layer svelte-1ih4b9o"></ol></div></section> <hr> <article class="space-y-10"><section class="space-y-4" data-svelte-h="svelte-knjqus"><h2 id="in-general" class="heading-size-2">In General</h2> <p>&quot;pixel perfect&quot; is dumb. Web pages are stretchy. Set the min and max, and
+    <div style="display: contents">   <div class="text-color-main isolate flex min-h-screen flex-col"><header class="sticky top-0 z-10 grid grid-cols-1 print:hidden" data-svelte-h="svelte-ho0ax2"><div class="waves-mask col-span-full row-span-full"></div> <a class="skip-to-content-link" href="#main">skip to main content</a> <nav class="header-text-shadow z-20 col-span-full row-span-full p-4"><a href="../../" class="font-mono text-4xl font-bold underline-offset-4">sai.codes</a> <div class="text-color-secondary space-x-2"><a href="../../resume">resume</a> <a href="../../garden">garden</a> <a href="../../contact">contact</a></div></nav></header> <svg xmlns="http://www.w3.org/2000/svg" class="h-0 w-0"><filter id="wavesFilter"><feTurbulence id="wavesTurbulence" stitchTiles="noStitch" type="turbulence" seed="200" numOctaves="2" baseFrequency="0.02 0.06"></feTurbulence><animate xlink:href="#wavesTurbulence" attributeName="baseFrequency" dur="60s" keyTimes="0; 0.5; 1" values="0.04 0.18; 0.02 0.06; 0.04 0.18" repeatCount="indefinite"></animate><feDisplacementMap in2="wavesTurbulence" in="SourceGraphic" scale="20"></feDisplacementMap></filter></svg> <div class="mx-4 mt-8 scroll-mt-36 sm:mt-14 print:my-0"><main id="main" class="mx-auto w-full max-w-prose"> <hgroup class="mb-10 space-y-2"><h1 class="heading-size-1 leading-tight">On CSS</h1> <p class="italic">I have *opinions*.</p> <section class="text-minor text-right text-sm"><p>Published 2022/02/21</p> <p>Updated 2024/09/20</p></section></hgroup> <hr> <section class="mb-10 space-y-4">  <h2 id="table-of-contents" class="heading-size-2"><a href="#table-of-contents">Table of Contents</a></h2> <ol class="toc-layer svelte-1b77dma"></ol></section> <hr> <article class="space-y-10"><section class="space-y-4" data-svelte-h="svelte-knjqus"><h2 id="in-general" class="heading-size-2">In General</h2> <p>&quot;pixel perfect&quot; is dumb. Web pages are stretchy. Set the min and max, and
       let the browser work it out.</p> <p>Margins collapse. Padding adds.</p> <p>Design layouts from smallest screen to biggest screen.</p> <p>Get feedback as fast as possible, so you can fix bugs before things are
       built on top of it. I like to build things directly in the browser so I
       can immediately see where ideas don&#39;t work. (Especially fancy layering
@@ -37,7 +37,7 @@
 			
 			<script>
 				{
-					__sveltekit_1b0mjrs = {
+					__sveltekit_1hbjye1 = {
 						base: new URL("../..", location).pathname.slice(0, -1),
 						assets: "/sai-codes"
 					};
@@ -47,8 +47,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../../_app/immutable/entry/start.ChftGbAN.js"),
-						import("../../_app/immutable/entry/app.Bn_Hqk65.js")
+						import("../../_app/immutable/entry/start.DzBp_-Za.js"),
+						import("../../_app/immutable/entry/app.DSxLIUJz.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 9],

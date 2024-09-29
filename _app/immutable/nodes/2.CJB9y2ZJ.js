@@ -1,4 +1,4 @@
-import{s as w,n as _}from"../chunks/scheduler.DH-3YF6l.js";import{S as L,i as P,s as d,e as h,h as g,d as s,c as f,a as u,g as v,b,f as n}from"../chunks/index.PMhZ4iWS.js";import{b as C}from"../chunks/paths.D2Wi8a73.js";function j(T){let o,l,x="Hello!",p,t,y=`<p class="pb-2 pt-4"><a href="${C}/resume" class="-mr-1 italic">I need a job
+import{s as w,n as _}from"../chunks/scheduler.DH-3YF6l.js";import{S as L,i as P,s as d,e as h,h as g,d as s,c as f,a as u,g as v,b,f as n}from"../chunks/index.B-IKItFU.js";import{b as C}from"../chunks/paths.BzRXyzU5.js";function j(T){let o,l,x="Hello!",p,t,y=`<p class="pb-2 pt-4"><a href="${C}/resume" class="-mr-1 italic">I need a job
     </a>.</p> <iframe src="https://www.youtube.com/embed/NGvWbsTDPHU" title="Money please" frameborder="0" allowfullscreen="" class="aspect-video w-full"></iframe> <p class="text-minor pt-1 text-center">Money please.</p>`,c,i,H=`Also, play some games I&#39;ve made on
   <a href="https://saitheninja.itch.io/" target="_blank" rel="noreferrer external" class="-mr-1">my itch.io page
   </a>.`,m,r,M=`Or wander the
