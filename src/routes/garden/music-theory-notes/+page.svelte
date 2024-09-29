@@ -5,7 +5,7 @@
   const titleHeading = "Music Theory Notes";
   const titleSubheading = "Make sound good.";
   const datePublished = "2024-06-03";
-  const dateUpdated = "2024-06-05";
+  const dateUpdated = "2024-09-29";
 </script>
 
 <ArticleBase
@@ -412,7 +412,7 @@ I--II--III-IV--V--VI--VII-I
 
         <pre>
 1, 3, 5 (scale degree of major scale)
--4-3- (steps in semitones)
+ -4-3- (steps in semitones)
 0, 4, 7 (total semitones)</pre>
       </section>
 
@@ -424,7 +424,7 @@ I--II--III-IV--V--VI--VII-I
 
         <pre>
 1, b3, 5
--3-4-
+ -3-4-
 0, 3, 7</pre>
       </section>
 
@@ -436,7 +436,7 @@ I--II--III-IV--V--VI--VII-I
 
         <pre>
 1, 3, 5#
--4-4-
+ -4-4-
 0, 4, 8</pre>
       </section>
 
@@ -448,7 +448,7 @@ I--II--III-IV--V--VI--VII-I
 
         <pre>
 1, b3, b5
--3-3-
+ -3-3-
 0, 3, 6</pre>
       </section>
 
@@ -460,7 +460,7 @@ I--II--III-IV--V--VI--VII-I
 
         <pre>
 1, 3, 5, b7
--4-3-3-
+ -4-3-3-
 0, 4, 7, 10</pre>
       </section>
 
@@ -472,7 +472,7 @@ I--II--III-IV--V--VI--VII-I
 
         <pre>
 1, 2, 5
--2-5-
+ -2-5-
 0, 2, 7</pre>
       </section>
 
@@ -484,7 +484,7 @@ I--II--III-IV--V--VI--VII-I
 
         <pre>
 1, 4, 5
--5-2-
+ -5-2-
 0, 5, 7</pre>
       </section>
 
@@ -496,7 +496,7 @@ I--II--III-IV--V--VI--VII-I
 
         <pre>
 1, 2, 5, 7
--2-5-2-
+ -2-5-2-
 0, 2, 7, 11</pre>
 
         <p>(Dmaj7sus2 sounds good)</p>
@@ -511,25 +511,77 @@ I--II--III-IV--V--VI--VII-I
 
       <p>These are some common chord progressions.</p>
 
-      <pre>I-V-vi-IV (0-7-9m-5)</pre>
-      <pre>I-IV-V-IV (0-5-7-5)</pre>
-      <pre>ii-V-I (2m-7-0)</pre>
-      <pre>I-vi-IV-V (0-9m-5-7)</pre>
-      <pre>I-bVII-I (0-10-0)</pre>
-      <div>
-        <p>12 Bar Blues</p>
-        <pre>
-I-I-I-I (0-0-0-0)
-IV-IV-I-I (5-5-0-0)
-V-IV-I-I (7-5-0-0)</pre>
-      </div>
+      <pre>
+I-V-vi-IV (scale degree)
+0 7 9  5 (total semitones)</pre>
 
-      <div>
-        <p>Canon</p>
+      <pre>
+I-IV-V-IV
+0 5  7 5</pre>
+
+      <pre>
+ii-V-I
+2  7 0</pre>
+
+      <pre>
+I-vi-IV-V
+0 9  5  7</pre>
+
+      <pre>
+I-bVII-I
+0 10   0</pre>
+
+      <section class="space-y-2">
+        <ArticleSectionHeading
+          level={4}
+          title="12 Bar Blues"
+        />
+
         <pre>
-I-V-vi-iii (0-7-9m-4m)
-IV-I-IV-V (5-0-5-7)</pre>
-      </div>
+I-I-I-I
+0 0 0 0
+
+IV-IV-I-I
+5  5  0 0
+
+V-IV-I-I
+7 5  0 0</pre>
+      </section>
+
+      <section class="space-y-2">
+        <ArticleSectionHeading
+          level={4}
+          title="Canon"
+        />
+
+        <pre>
+I-V-vi-iii
+0 7 9  4
+
+IV-I-IV-V
+5  0 5  7</pre>
+      </section>
+
+      <section class="space-y-2">
+        <ArticleSectionHeading
+          level={4}
+          title="Royal Road"
+        />
+
+        <pre>
+IV-V-iii-vi
+5-0-5-7</pre>
+
+        <div>
+          <p>
+            <a href="https://youtu.be/6aezSL_GvZA"
+              >David Bennett Piano video about Royal Road progression.</a
+            >
+          </p>
+          <p>Popular in Japanese music.</p>
+          <p>Variations: all 7th chords.</p>
+        </div>
+      </section>
     </section>
   </section>
 
@@ -563,10 +615,10 @@ IV-I-IV-V (5-0-5-7)</pre>
     </div>
 
     <section class="space-y-4">
-        <ArticleSectionHeading
-          level={3}
-          title="Make the C Major Scale"
-        />
+      <ArticleSectionHeading
+        level={3}
+        title="Make the C Major Scale"
+      />
 
       <p>Barre on fret 1 for 1st and 2nd string.</p>
 
