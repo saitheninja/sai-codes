@@ -47,73 +47,71 @@
     <a href="#table-of-contents">Table of Contents</a>
   </h2>
 
-  <div class="space-y-1">
-    <ol class="toc-layer">
-      {#each headings2 as heading2}
-        <li>
-          <a href="#{heading2.id}">{heading2.textContent}</a>
-        </li>
+  <ol class="toc-layer">
+    {#each headings2 as heading2}
+      <li>
+        <a href="#{heading2.id}">{heading2.textContent}</a>
+      </li>
 
-        {@const headings3 = heading2.parentElement
-          ? heading2.parentElement.querySelectorAll("h3")
-          : []}
+      {@const headings3 = heading2.parentElement
+        ? heading2.parentElement.querySelectorAll("h3")
+        : []}
 
-        {#if headings3.length > 0}
-          <ol class="toc-layer">
-            {#each headings3 as heading3}
-              <li>
-                <a href="#{heading3.id}">{heading3.textContent}</a>
-              </li>
+      {#if headings3.length > 0}
+        <ol class="toc-layer">
+          {#each headings3 as heading3}
+            <li>
+              <a href="#{heading3.id}">{heading3.textContent}</a>
+            </li>
 
-              {@const headings4 = heading3.parentElement
-                ? heading3.parentElement.querySelectorAll("h4")
-                : []}
+            {@const headings4 = heading3.parentElement
+              ? heading3.parentElement.querySelectorAll("h4")
+              : []}
 
-              {#if headings4.length > 0}
-                <ol class="toc-layer">
-                  {#each headings4 as heading4}
-                    <li>
-                      <a href="#{heading4.id}">{heading4.textContent}</a>
-                    </li>
+            {#if headings4.length > 0}
+              <ol class="toc-layer">
+                {#each headings4 as heading4}
+                  <li>
+                    <a href="#{heading4.id}">{heading4.textContent}</a>
+                  </li>
 
-                    {@const headings5 = heading4.parentElement
-                      ? heading4.parentElement.querySelectorAll("h5")
-                      : []}
+                  {@const headings5 = heading4.parentElement
+                    ? heading4.parentElement.querySelectorAll("h5")
+                    : []}
 
-                    {#if headings5.length > 0}
-                      <ol class="toc-layer">
-                        {#each headings5 as heading5}
-                          <li>
-                            <a href="#{heading5.id}">{heading5.textContent}</a>
-                          </li>
+                  {#if headings5.length > 0}
+                    <ol class="toc-layer">
+                      {#each headings5 as heading5}
+                        <li>
+                          <a href="#{heading5.id}">{heading5.textContent}</a>
+                        </li>
 
-                          {@const headings6 = heading5.parentElement
-                            ? heading5.parentElement.querySelectorAll("h6")
-                            : []}
+                        {@const headings6 = heading5.parentElement
+                          ? heading5.parentElement.querySelectorAll("h6")
+                          : []}
 
-                          {#if headings6.length > 0}
-                            <ol class="toc-layer">
-                              {#each headings6 as heading6}
-                                <li>
-                                  <a href="#{heading6.id}"
-                                    >{heading6.textContent}</a
-                                  >
-                                </li>
-                              {/each}
-                            </ol>
-                          {/if}
-                        {/each}
-                      </ol>
-                    {/if}
-                  {/each}
-                </ol>
-              {/if}
-            {/each}
-          </ol>
-        {/if}
-      {/each}
-    </ol>
-  </div>
+                        {#if headings6.length > 0}
+                          <ol class="toc-layer">
+                            {#each headings6 as heading6}
+                              <li>
+                                <a href="#{heading6.id}"
+                                  >{heading6.textContent}</a
+                                >
+                              </li>
+                            {/each}
+                          </ol>
+                        {/if}
+                      {/each}
+                    </ol>
+                  {/if}
+                {/each}
+              </ol>
+            {/if}
+          {/each}
+        </ol>
+      {/if}
+    {/each}
+  </ol>
 </section>
 
 <hr />
@@ -128,7 +126,7 @@
 <style lang="postcss">
   .toc-layer {
     @apply list-disc;
-    @apply my-1 pl-7;
+    @apply space-y-1 pl-7;
     @apply border-l border-gray-300;
   }
 </style>
