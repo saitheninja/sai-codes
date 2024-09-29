@@ -1,4 +1,6 @@
 <script lang="ts">
+  import ArticleSectionHeading from "$lib/ArticleSectionHeading.svelte";
+
   import { onMount } from "svelte";
 
   export let titleHeading = "";
@@ -40,12 +42,10 @@
 
 <section class="mb-10 space-y-4">
   <!-- all headings need an id so it can be linked to -->
-  <h2
-    id="table-of-contents"
-    class="heading-size-2"
-  >
-    <a href="#table-of-contents">Table of Contents</a>
-  </h2>
+  <ArticleSectionHeading
+    level={2}
+    title="Table of Contents"
+  />
 
   <ol class="toc-layer">
     {#each headings2 as heading2}
