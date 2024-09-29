@@ -39,12 +39,12 @@
 <hr />
 
 <section class="mb-10 space-y-4">
-  <!-- all headings need ids so they can be linked to -->
+  <!-- all headings need an id so it can be linked to -->
   <h2
     id="table-of-contents"
     class="heading-size-2"
   >
-    Table of Contents
+    <a href="#table-of-contents">Table of Contents</a>
   </h2>
 
   <div class="space-y-1">
