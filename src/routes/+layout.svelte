@@ -5,11 +5,6 @@
 </script>
 
 <svelte:head>
-  <link
-    rel="icon"
-    href="https://fav.farm/🐧"
-  />
-
   <meta
     name="description"
     content="Miscellaneous experiments and rants."
