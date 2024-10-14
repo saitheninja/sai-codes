@@ -1,4 +1,4 @@
-import{s as cl,n as dl}from"../chunks/scheduler.DH-3YF6l.js";import{S as hl,i as fl,j as o,k as p,m as c,t as d,l as h,n as f,e as t,s as a,a as n,o as v,c as s,g as r,d as i,b as m,f as D,p as e}from"../chunks/index.B-IKItFU.js";import{A as vl,a as $}from"../chunks/ArticleBase.4IrAx31w.js";function ml(gn){let u,j,H,C,W,xn,Ne,es=`<p>Each note letter is only used once in a scale.</p> <p>(This convention sometimes leads to notes being described with
+import{s as cl,n as dl}from"../chunks/scheduler.CWtayKFw.js";import{S as hl,i as fl,j as o,k as p,m as c,t as d,l as h,n as f,e as t,s as a,a as n,o as v,c as s,g as r,d as i,b as m,f as D,p as e}from"../chunks/index.Da0Ug-Ox.js";import{A as vl,a as $}from"../chunks/ArticleBase.RLuz8xFO.js";function ml(gn){let u,j,H,C,W,xn,Ne,es=`<p>Each note letter is only used once in a scale.</p> <p>(This convention sometimes leads to notes being described with
           unexpected sharps and flats, e.g. C Minor Scale has a Bb instead of
           A.)</p>`,_n,Re,ts=`a diatonic scale is any heptatonic scale (scale with 7 notes per octave)
         that includes five whole steps and two half steps in each octave, in
