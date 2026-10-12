@@ -6,15 +6,15 @@
   <div class="waves-mask col-span-full row-span-full"></div>
   <a
     class="skip-to-content-link"
-    href="#main">skip to main content</a
+    href="#main">Skip to main content</a
   >
 
-  <nav class="header-text-shadow z-20 col-span-full row-span-full p-4">
+  <nav class="header-text-shadow z-20 col-span-full row-span-full px-3 py-2">
     <a
       href={resolve("/")}
-      class="font-mono text-4xl font-bold underline-offset-4"
+      class="font-mono text-4xl font-bold no-underline"
     >
-      sai.codes
+      sai_codes
     </a>
 
     <div class="text-color-secondary space-x-2">
