@@ -14,7 +14,7 @@
 >
   <p class="pb-2 pt-4">
     <a
-      href="{resolve('')}/resume"
+      href={resolve("/resume")}
       class="-mr-1 italic">I need a job</a
     >
     .
@@ -44,6 +44,6 @@
 
 <p>
   Or wander the
-  <a href="{resolve('')}/garden">garden</a>
+  <a href={resolve("/garden")}>garden</a>
   .
 </p>

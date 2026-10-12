@@ -93,7 +93,7 @@
 >
   <h1 class="heading-size-1 font-sans">
     <a
-      href="{resolve('')}/resume"
+      href={resolve("/resume")}
       title="my resume"
       class="underline-offset-8"
     >
@@ -112,7 +112,7 @@
         <span class="not-italic">🌍</span>
         <span
           ><a
-            href="{resolve('')}/"
+            href={resolve("/")}
             title="I code things">sai.codes</a
           ></span
         >

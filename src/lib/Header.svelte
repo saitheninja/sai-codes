@@ -11,16 +11,16 @@
 
   <nav class="header-text-shadow z-20 col-span-full row-span-full p-4">
     <a
-      href="{resolve('')}/"
+      href={resolve("/")}
       class="font-mono text-4xl font-bold underline-offset-4"
     >
       sai.codes
     </a>
 
     <div class="text-color-secondary space-x-2">
-      <a href="{resolve('')}/resume">resume</a>
-      <a href="{resolve('')}/garden">garden</a>
-      <a href="{resolve('')}/contact">contact</a>
+      <a href={resolve("/resume")}>resume</a>
+      <a href={resolve("/garden")}>garden</a>
+      <a href={resolve("/contact")}>contact</a>
     </div>
   </nav>
 </header>

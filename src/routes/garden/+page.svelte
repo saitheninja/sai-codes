@@ -55,15 +55,13 @@
       Discord is Better Than What We Had Before
     </a>
   </li> -->
-  <li><a href="{resolve('')}/garden/catchphrases">Catchphrases</a></li>
+  <li><a href={resolve("/garden/catchphrases")}>Catchphrases</a></li>
   <li>
-    <a href="{resolve('')}/garden/music-theory-notes">Music Theory Notes</a>
+    <a href={resolve("/garden/music-theory-notes")}>Music Theory Notes</a>
   </li>
-  <li><a href="{resolve('')}/garden/neovim-is-cool">(Neo)Vim is Cool</a></li>
+  <li><a href={resolve("/garden/neovim-is-cool")}>(Neo)Vim is Cool</a></li>
   <li>
-    <a href="{resolve('')}/garden/on-visual-composition"
-      >On Visual Composition</a
-    >
+    <a href={resolve("/garden/on-visual-composition")}>On Visual Composition</a>
   </li>
-  <li><a href="{resolve('')}/garden/on-css">On CSS</a></li>
+  <li><a href={resolve("/garden/on-css")}>On CSS</a></li>
 </ul>
