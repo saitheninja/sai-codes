@@ -4,7 +4,7 @@
 
   // pixels
   let offset = 120;
-  let scrollY = 0;
+  let scrollY = $state(0);
 </script>
 
 <svelte:window bind:scrollY />

@@ -206,67 +206,73 @@
     <h2 class="work heading-size-2 -mb-3 font-mono">Work</h2>
 
     <ResumeEntry {...workDev}>
-      <div slot="description">
-        <p>
-          Development & management of e-commerce websites. Major projects
-          include:
-        </p>
+      {#snippet description()}
+            <div >
+          <p>
+            Development & management of e-commerce websites. Major projects
+            include:
+          </p>
 
-        <ul class="list-disc pl-5">
-          <li>
-            <a
-              href="https://sanskara.co.za/store/build-planner/"
-              title="Sanskara wedding planner"
-              target="_blank"
-              rel="noreferrer external"
-              class="-mr-1"
-            >
-              An app for planning traditional weddings
-            </a>.
-          </li>
-        </ul>
-      </div>
+          <ul class="list-disc pl-5">
+            <li>
+              <a
+                href="https://sanskara.co.za/store/build-planner/"
+                title="Sanskara wedding planner"
+                target="_blank"
+                rel="noreferrer external"
+                class="-mr-1"
+              >
+                An app for planning traditional weddings
+              </a>.
+            </li>
+          </ul>
+        </div>
+          {/snippet}
     </ResumeEntry>
 
     <ResumeEntry {...workCCrew}>
-      <div slot="description">
-        <p>Whatever was needed at the time. Major projects include:</p>
+      {#snippet description()}
+            <div >
+          <p>Whatever was needed at the time. Major projects include:</p>
 
-        <ul class="list-disc pl-5">
-          <li>
-            Developing an online platform for Continuous Professional
-            Development for the Health Professions Council of South Africa, with
-            200+ users.
-          </li>
+          <ul class="list-disc pl-5">
+            <li>
+              Developing an online platform for Continuous Professional
+              Development for the Health Professions Council of South Africa, with
+              200+ users.
+            </li>
 
-          <li>
-            Management of on-site workstations, a digital assets server &
-            networking.
-          </li>
-        </ul>
-      </div>
+            <li>
+              Management of on-site workstations, a digital assets server &
+              networking.
+            </li>
+          </ul>
+        </div>
+          {/snippet}
     </ResumeEntry>
 
     <ResumeEntry {...workPhoto}>
-      <div slot="description">
-        <p>
-          Photography, videography & audio production. Major projects include:
-        </p>
+      {#snippet description()}
+            <div >
+          <p>
+            Photography, videography & audio production. Major projects include:
+          </p>
 
-        <ul class="list-disc pl-5">
-          <li>Photography for PyConZA 2017, with 300+ attendees.</li>
+          <ul class="list-disc pl-5">
+            <li>Photography for PyConZA 2017, with 300+ attendees.</li>
 
-          <li>
-            Teaching classes for the City of Cape Town's Youth Development
-            Programme, with ~20 students a class.
-          </li>
+            <li>
+              Teaching classes for the City of Cape Town's Youth Development
+              Programme, with ~20 students a class.
+            </li>
 
-          <!-- <li>
-            Multi-day shoots of marketing photos & videos for the
-            University of Cape Town International Academic Programmes Office.
-          </li> -->
-        </ul>
-      </div>
+            <!-- <li>
+              Multi-day shoots of marketing photos & videos for the
+              University of Cape Town International Academic Programmes Office.
+            </li> -->
+          </ul>
+        </div>
+          {/snippet}
     </ResumeEntry>
   </section>
 
@@ -278,45 +284,49 @@
       <h2 class="heading-size-2 art -mb-3 font-normal">Art</h2>
 
       <ResumeEntry {...artPhoto}>
-        <div slot="description">
-          <p>
-            Look at
-            <a
-              href="https://saitheninja.com"
-              title="my photography portfolio site"
-              target="_blank"
-              rel="noreferrer external"
-              class="-mr-1"
-            >
-              my portfolio
-            </a>.
-          </p>
-        </div>
+        {#snippet description()}
+                <div >
+            <p>
+              Look at
+              <a
+                href="https://saitheninja.com"
+                title="my photography portfolio site"
+                target="_blank"
+                rel="noreferrer external"
+                class="-mr-1"
+              >
+                my portfolio
+              </a>.
+            </p>
+          </div>
+              {/snippet}
       </ResumeEntry>
 
       <ResumeEntry {...artGames}>
-        <div slot="description">
-          <p>
-            <a
-              href="https://saitheninja.itch.io/"
-              title="my video games"
-              target="_blank"
-              rel="noreferrer external"
-              class="-mr-1"
-            >
-              Play some games
-            </a>, and browse
-            <a
-              href="https://github.com/saitheninja/Shenanijam-2019"
-              title="GitHub repo for a game"
-              target="_blank"
-              rel="noreferrer external"
-              class="-mr-1"
-            >
-              the code
-            </a>.
-          </p>
-        </div>
+        {#snippet description()}
+                <div >
+            <p>
+              <a
+                href="https://saitheninja.itch.io/"
+                title="my video games"
+                target="_blank"
+                rel="noreferrer external"
+                class="-mr-1"
+              >
+                Play some games
+              </a>, and browse
+              <a
+                href="https://github.com/saitheninja/Shenanijam-2019"
+                title="GitHub repo for a game"
+                target="_blank"
+                rel="noreferrer external"
+                class="-mr-1"
+              >
+                the code
+              </a>.
+            </p>
+          </div>
+              {/snippet}
       </ResumeEntry>
     </section>
 
@@ -327,19 +337,21 @@
       <h2 class="heading-size-2 education -mb-3 font-normal">Education</h2>
 
       <ResumeEntry {...educationUni}>
-        <div slot="description">
-          <p>
-            <a
-              href="https://en.wikipedia.org/wiki/Rhodes_Must_Fall"
-              title="#RhodesMustFall protests"
-              target="_blank"
-              rel="noreferrer external"
-              class="-mr-1"
-            >
-              I dropped out
-            </a>.
-          </p>
-        </div>
+        {#snippet description()}
+                <div >
+            <p>
+              <a
+                href="https://en.wikipedia.org/wiki/Rhodes_Must_Fall"
+                title="#RhodesMustFall protests"
+                target="_blank"
+                rel="noreferrer external"
+                class="-mr-1"
+              >
+                I dropped out
+              </a>.
+            </p>
+          </div>
+              {/snippet}
       </ResumeEntry>
     </section>
   </div>

@@ -40,7 +40,7 @@
     frameborder="0"
     allowfullscreen
     class="aspect-video w-full"
-  />
+></iframe>
   <p class="text-minor pt-1 text-center">
     This is what you should picture in your head while reading a post.
   </p>

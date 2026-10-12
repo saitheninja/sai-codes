@@ -27,7 +27,7 @@
     frameborder="0"
     allowfullscreen
     class="aspect-video w-full"
-  />
+></iframe>
   <p class="text-minor pt-1 text-center">Money please.</p>
 </div>
 

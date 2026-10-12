@@ -1,19 +1,32 @@
 <script lang="ts">
-  export let subhLink: {
+  interface Props {
+    subhLink?: {
     href: string;
     rel?: string;
     title: string;
     text: string;
-  } = {
+  };
+    hText?: string;
+    subhText?: string;
+    yearsStart?: string;
+    yearsEnd?: string;
+    tools?: string[];
+    description?: import('svelte').Snippet;
+  }
+
+  let {
+    subhLink = {
     href: "",
     title: "",
     text: "",
-  };
-  export let hText: string = "";
-  export let subhText: string = "";
-  export let yearsStart: string = "";
-  export let yearsEnd: string = "";
-  export let tools: string[] = [];
+  },
+    hText = "",
+    subhText = "",
+    yearsStart = "",
+    yearsEnd = "",
+    tools = [],
+    description
+  }: Props = $props();
 </script>
 
 <div>
@@ -51,6 +64,6 @@
   {/if}
 
   <div>
-    <slot name="description" />
+    {@render description?.()}
   </div>
 </div>

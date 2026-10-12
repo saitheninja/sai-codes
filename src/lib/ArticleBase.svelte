@@ -3,13 +3,24 @@
 
   import { onMount } from "svelte";
 
-  export let titleHeading = "";
-  export let titleSubheading = "";
-  export let datePublished = ""; // yyyy-mm-dd
-  export let dateUpdated = ""; // yyyy-mm-dd
+  interface Props {
+    titleHeading?: string;
+    titleSubheading?: string;
+    datePublished?: string; // yyyy-mm-dd
+    dateUpdated?: string; // yyyy-mm-dd
+    children?: import('svelte').Snippet;
+  }
 
-  let articleEl: HTMLElement;
-  let headings2: Element[] = [];
+  let {
+    titleHeading = "",
+    titleSubheading = "",
+    datePublished = "",
+    dateUpdated = "",
+    children
+  }: Props = $props();
+
+  let articleEl: HTMLElement = $state();
+  let headings2: Element[] = $state([]);
 
   onMount(() => {
     headings2 = Array.from(articleEl.querySelectorAll("h2"));
@@ -120,7 +131,7 @@
   bind:this={articleEl}
   class="space-y-10"
 >
-  <slot />
+  {@render children?.()}
 </article>
 
 <style lang="postcss">

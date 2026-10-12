@@ -3,7 +3,7 @@
 </script>
 
 <header class="sticky top-0 z-10 grid grid-cols-1 print:hidden">
-  <div class="waves-mask col-span-full row-span-full" />
+  <div class="waves-mask col-span-full row-span-full"></div>
 
   <a
     class="skip-to-content-link"

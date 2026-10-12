@@ -1,6 +1,10 @@
 <script lang="ts">
-  export let level: number;
-  export let title: string;
+  interface Props {
+    level: number;
+    title: string;
+  }
+
+  let { level, title }: Props = $props();
 
   function titleToID(title: string): string {
     const removedWhitespace = title.trim();
