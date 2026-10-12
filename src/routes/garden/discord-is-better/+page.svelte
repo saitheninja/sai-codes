@@ -1,4 +1,6 @@
-<h1 class="heading-size-1 mb-10 leading-tight">Discord is Better Than What We Had Before</h1>
+<h1 class="heading-size-1 mb-10 leading-tight">
+  Discord is Better Than What We Had Before
+</h1>
 
 <div class="space-y-4">
   <p>

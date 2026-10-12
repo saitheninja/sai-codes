@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { resolve } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -40,7 +40,7 @@
     frameborder="0"
     allowfullscreen
     class="aspect-video w-full"
-></iframe>
+  ></iframe>
   <p class="text-minor pt-1 text-center">
     This is what you should picture in your head while reading a post.
   </p>
@@ -55,23 +55,15 @@
       Discord is Better Than What We Had Before
     </a>
   </li> -->
+  <li><a href="{resolve('')}/garden/catchphrases">Catchphrases</a></li>
   <li>
-    <a href="{base}/garden/catchphrases">Catchphrases</a>
+    <a href="{resolve('')}/garden/music-theory-notes">Music Theory Notes</a>
   </li>
-
+  <li><a href="{resolve('')}/garden/neovim-is-cool">(Neo)Vim is Cool</a></li>
   <li>
-    <a href="{base}/garden/music-theory-notes">Music Theory Notes</a>
+    <a href="{resolve('')}/garden/on-visual-composition"
+      >On Visual Composition</a
+    >
   </li>
-
-  <li>
-    <a href="{base}/garden/neovim-is-cool">(Neo)Vim is Cool</a>
-  </li>
-
-  <li>
-    <a href="{base}/garden/on-visual-composition">On Visual Composition</a>
-  </li>
-
-  <li>
-    <a href="{base}/garden/on-css">On CSS</a>
-  </li>
+  <li><a href="{resolve('')}/garden/on-css">On CSS</a></li>
 </ul>

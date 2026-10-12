@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ArticleBase from "$lib/ArticleBase.svelte";
+  import ArticleBase from "#lib/ArticleBase.svelte";
 
   const titleHeading = "On CSS";
   const titleSubheading = "I have *opinions*.";

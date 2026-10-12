@@ -7,9 +7,9 @@ module.exports = {
 
   theme: {
     fontFamily: {
-      mono: [ "Cascadia Code", ...fontFamily.mono ],
-      sans: [ "Work Sans", ...fontFamily.sans ],
-      serif: [ "Yrsa", ...fontFamily.serif ],
+      mono: ["Cascadia Code", ...fontFamily.mono],
+      sans: ["Work Sans", ...fontFamily.sans],
+      serif: ["Yrsa", ...fontFamily.serif],
     },
 
     extend: {},
@@ -17,4 +17,3 @@ module.exports = {
 
   plugins: [],
 };
-

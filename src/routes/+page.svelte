@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { resolve } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -14,11 +14,10 @@
 >
   <p class="pb-2 pt-4">
     <a
-      href="{base}/resume"
-      class="-mr-1 italic"
+      href="{resolve('')}/resume"
+      class="-mr-1 italic">I need a job</a
     >
-      I need a job
-    </a>.
+    .
   </p>
 
   <iframe
@@ -27,7 +26,7 @@
     frameborder="0"
     allowfullscreen
     class="aspect-video w-full"
-></iframe>
+  ></iframe>
   <p class="text-minor pt-1 text-center">Money please.</p>
 </div>
 
@@ -45,5 +44,6 @@
 
 <p>
   Or wander the
-  <a href="{base}/garden">garden</a>.
+  <a href="{resolve('')}/garden">garden</a>
+  .
 </p>

@@ -1,31 +1,31 @@
 <script lang="ts">
   interface Props {
     subhLink?: {
-    href: string;
-    rel?: string;
-    title: string;
-    text: string;
-  };
+      href: string;
+      rel?: string;
+      title: string;
+      text: string;
+    };
     hText?: string;
     subhText?: string;
     yearsStart?: string;
     yearsEnd?: string;
     tools?: string[];
-    description?: import('svelte').Snippet;
+    description?: import("svelte").Snippet;
   }
 
   let {
     subhLink = {
-    href: "",
-    title: "",
-    text: "",
-  },
+      href: "",
+      title: "",
+      text: "",
+    },
     hText = "",
     subhText = "",
     yearsStart = "",
     yearsEnd = "",
     tools = [],
-    description
+    description,
   }: Props = $props();
 </script>
 

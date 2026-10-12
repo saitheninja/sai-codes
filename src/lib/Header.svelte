@@ -1,29 +1,26 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { resolve } from "$app/paths";
 </script>
 
 <header class="sticky top-0 z-10 grid grid-cols-1 print:hidden">
   <div class="waves-mask col-span-full row-span-full"></div>
-
   <a
     class="skip-to-content-link"
-    href="#main"
+    href="#main">skip to main content</a
   >
-    skip to main content
-  </a>
 
   <nav class="header-text-shadow z-20 col-span-full row-span-full p-4">
     <a
-      href="{base}/"
+      href="{resolve('')}/"
       class="font-mono text-4xl font-bold underline-offset-4"
     >
       sai.codes
     </a>
 
     <div class="text-color-secondary space-x-2">
-      <a href="{base}/resume">resume</a>
-      <a href="{base}/garden">garden</a>
-      <a href="{base}/contact">contact</a>
+      <a href="{resolve('')}/resume">resume</a>
+      <a href="{resolve('')}/garden">garden</a>
+      <a href="{resolve('')}/contact">contact</a>
     </div>
   </nav>
 </header>
@@ -41,7 +38,7 @@
       seed="200"
       numOctaves="2"
       baseFrequency="0.02 0.06"
-    />
+    ></feTurbulence>
 
     <animate
       xlink:href="#wavesTurbulence"
@@ -50,12 +47,12 @@
       keyTimes="0; 0.5; 1"
       values="0.04 0.18; 0.02 0.06; 0.04 0.18"
       repeatCount="indefinite"
-    />
+    ></animate>
 
     <feDisplacementMap
       in2="wavesTurbulence"
       in="SourceGraphic"
       scale="20"
-    />
+    ></feDisplacementMap>
   </filter>
 </svg>

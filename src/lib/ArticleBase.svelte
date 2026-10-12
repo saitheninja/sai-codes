@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ArticleSectionHeading from "$lib/ArticleSectionHeading.svelte";
+  import ArticleSectionHeading from "#lib/ArticleSectionHeading.svelte";
 
   import { onMount } from "svelte";
 
@@ -8,7 +8,7 @@
     titleSubheading?: string;
     datePublished?: string; // yyyy-mm-dd
     dateUpdated?: string; // yyyy-mm-dd
-    children?: import('svelte').Snippet;
+    children?: import("svelte").Snippet;
   }
 
   let {
@@ -16,7 +16,7 @@
     titleSubheading = "",
     datePublished = "",
     dateUpdated = "",
-    children
+    children,
   }: Props = $props();
 
   let articleEl: HTMLElement = $state();

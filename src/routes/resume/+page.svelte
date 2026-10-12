@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { base } from "$app/paths";
+  import { resolve } from "$app/paths";
 
-  import ResumeEntry from "$lib/ResumeEntry.svelte";
+  import ResumeEntry from "#lib/ResumeEntry.svelte";
 
   let workDev = {
     hText: "Web Developer",
@@ -93,7 +93,7 @@
 >
   <h1 class="heading-size-1 font-sans">
     <a
-      href="{base}/resume"
+      href="{resolve('')}/resume"
       title="my resume"
       class="underline-offset-8"
     >
@@ -110,14 +110,12 @@
     >
       <span class="space-x-1">
         <span class="not-italic">🌍</span>
-        <span>
-          <a
-            href="{base}/"
-            title="I code things"
-          >
-            sai.codes
-          </a>
-        </span>
+        <span
+          ><a
+            href="{resolve('')}/"
+            title="I code things">sai.codes</a
+          ></span
+        >
       </span>
 
       <span class="space-x-1">
@@ -207,7 +205,7 @@
 
     <ResumeEntry {...workDev}>
       {#snippet description()}
-            <div >
+        <div>
           <p>
             Development & management of e-commerce websites. Major projects
             include:
@@ -227,19 +225,19 @@
             </li>
           </ul>
         </div>
-          {/snippet}
+      {/snippet}
     </ResumeEntry>
 
     <ResumeEntry {...workCCrew}>
       {#snippet description()}
-            <div >
+        <div>
           <p>Whatever was needed at the time. Major projects include:</p>
 
           <ul class="list-disc pl-5">
             <li>
               Developing an online platform for Continuous Professional
-              Development for the Health Professions Council of South Africa, with
-              200+ users.
+              Development for the Health Professions Council of South Africa,
+              with 200+ users.
             </li>
 
             <li>
@@ -248,12 +246,12 @@
             </li>
           </ul>
         </div>
-          {/snippet}
+      {/snippet}
     </ResumeEntry>
 
     <ResumeEntry {...workPhoto}>
       {#snippet description()}
-            <div >
+        <div>
           <p>
             Photography, videography & audio production. Major projects include:
           </p>
@@ -272,7 +270,7 @@
             </li> -->
           </ul>
         </div>
-          {/snippet}
+      {/snippet}
     </ResumeEntry>
   </section>
 
@@ -285,7 +283,7 @@
 
       <ResumeEntry {...artPhoto}>
         {#snippet description()}
-                <div >
+          <div>
             <p>
               Look at
               <a
@@ -299,12 +297,12 @@
               </a>.
             </p>
           </div>
-              {/snippet}
+        {/snippet}
       </ResumeEntry>
 
       <ResumeEntry {...artGames}>
         {#snippet description()}
-                <div >
+          <div>
             <p>
               <a
                 href="https://saitheninja.itch.io/"
@@ -326,7 +324,7 @@
               </a>.
             </p>
           </div>
-              {/snippet}
+        {/snippet}
       </ResumeEntry>
     </section>
 
@@ -338,7 +336,7 @@
 
       <ResumeEntry {...educationUni}>
         {#snippet description()}
-                <div >
+          <div>
             <p>
               <a
                 href="https://en.wikipedia.org/wiki/Rhodes_Must_Fall"
@@ -351,7 +349,7 @@
               </a>.
             </p>
           </div>
-              {/snippet}
+        {/snippet}
       </ResumeEntry>
     </section>
   </div>
@@ -391,8 +389,8 @@
       url("/font-playfair-display/playfair-display-latin-400-normal.ttf")
         format(ttf);
     /* "Education", 41=E, 64=d, 75=u, 63=c, 61=a, 74=t, 69=i, 6F=o, =n */
-    unicode-range: U+0045, U+0064, U+0075, U+0063, U+0061, U+0074, U+0069,
-      U+006F, U+006E;
+    unicode-range:
+      U+0045, U+0064, U+0075, U+0063, U+0061, U+0074, U+0069, U+006F, U+006E;
   }
 
   :root {

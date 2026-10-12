@@ -3,7 +3,7 @@
 <div class="space-y-4">
   <div
     id="guidelines"
-    class="pt-2 pb-4"
+    class="pb-4 pt-2"
   >
     <p class="pb-2">
       They are not composition rules, they are composition examples.
@@ -16,7 +16,7 @@
       frameborder="0"
       allowfullscreen
       class="aspect-video w-full"
-></iframe>
+    ></iframe>
     <p class="text-minor pt-1 text-center">Or guidelines.</p>
   </div>
 

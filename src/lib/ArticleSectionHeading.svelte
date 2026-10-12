@@ -24,7 +24,11 @@
 {:else}
   {@const id = titleToID(title)}
 
-  <svelte:element {id} this={"h" + level} class={"heading-size-" + level}>
-      <a href="#{id}">{title}</a>
+  <svelte:element
+    this={"h" + level}
+    {id}
+    class={"heading-size-" + level}
+  >
+    <a href="#{id}">{title}</a>
   </svelte:element>
 {/if}

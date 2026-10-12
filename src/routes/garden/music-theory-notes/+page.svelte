@@ -1,6 +1,6 @@
 <script lang="ts">
-  import ArticleBase from "$lib/ArticleBase.svelte";
-  import ArticleSectionHeading from "$lib/ArticleSectionHeading.svelte";
+  import ArticleBase from "#lib/ArticleBase.svelte";
+  import ArticleSectionHeading from "#lib/ArticleSectionHeading.svelte";
 
   const titleHeading = "Music Theory Notes";
   const titleSubheading = "Make sound good.";

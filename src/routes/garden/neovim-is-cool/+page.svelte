@@ -1,8 +1,8 @@
 <script lang="ts">
-  import ArticleBase from "$lib/ArticleBase.svelte";
+  import ArticleBase from "#lib/ArticleBase.svelte";
 
-  const titleHeading="(Neo)Vim is Cool"
-  const titleSubheading="But also complicated."
+  const titleHeading = "(Neo)Vim is Cool";
+  const titleSubheading = "But also complicated.";
   const datePublished = "2024-07-03";
   const dateUpdated = "2024-07-05";
 
@@ -734,9 +734,7 @@
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
                 <kbd>- +</kbd>
               </dt>
-              <dd>
-                Incrementally decrease/increase active window height.
-              </dd>
+              <dd>Incrementally decrease/increase active window height.</dd>
             </div>
 
             <div>
@@ -744,9 +742,7 @@
                 <kbd><kbd>Ctrl</kbd><span>+</span><kbd>w</kbd></kbd>
                 <kbd>&lt; &gt;</kbd>
               </dt>
-              <dd>
-                Incrementally decrease/increase active window width.
-              </dd>
+              <dd>Incrementally decrease/increase active window width.</dd>
             </div>
           </dl>
         </section>
@@ -958,7 +954,8 @@
       </h2>
 
       <p>
-        Shortcuts are sometimes written as <code>&lt;C-A&gt;</code> to mean: hold
+        Shortcuts are sometimes written as <code>&lt;C-A&gt;</code> to mean:
+        hold
         <kbd>Ctrl</kbd>, press and release <kbd>a</kbd>, release
         <kbd>Ctrl</kbd>. Same for other modifiers.
       </p>
