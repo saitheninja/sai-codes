@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>sai.codes, and also other things</title>
+  <title>sai_codes, and also does other things</title>
 </svelte:head>
 
 <h1 class="heading-size-1 pb-8">Contact</h1>

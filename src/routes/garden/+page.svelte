@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>sai.codes some rants</title>
+  <title>sai_codes some rants</title>
 </svelte:head>
 
 <h1 class="heading-size-1 pb-8">The Garden</h1>

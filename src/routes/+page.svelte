@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>sai.codes</title>
+  <title>sai_codes</title>
 </svelte:head>
 
 <h1 class="heading-size-1">Hello!</h1>

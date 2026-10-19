@@ -84,7 +84,7 @@
 </script>
 
 <svelte:head>
-  <title>sai.codes a resume</title>
+  <title>sai_codes a resume</title>
 </svelte:head>
 
 <section
