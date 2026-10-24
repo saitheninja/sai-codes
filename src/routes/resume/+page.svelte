@@ -2,31 +2,74 @@
   import { resolve } from "$app/paths";
 
   import ResumeEntry from "#lib/ResumeEntry.svelte";
+  import type { ResumeEntryData } from "#lib/ResumeEntry.svelte";
 
-  let workDev = {
-    hText: "Web Developer",
+  let workBullTech: ResumeEntryData = {
+    hText: "Full-Stack Developer",
+    subhLink: {
+      href: "https://github.com/saitheninja/sai-codes",
+      rel: "noreferrer external",
+      title: "ExAhTech website",
+      text: "ExAhTech (formerly BullTech)",
+    },
+    dateStart: "Jan 2025",
+    dateEnd: "present",
+    tools: [
+      "TypeScript",
+      "Node.js",
+
+      "React",
+      "NextJS",
+
+      "Angular",
+
+      "PHP",
+
+      "Tailwind",
+
+      "Express",
+      "WebSocket",
+
+      "MySQL",
+      "MongoDB",
+
+      "Git",
+
+      "Linux",
+    ],
+  };
+  let workDev: ResumeEntryData = {
+    hText: "Full-Stack Developer",
     subhLink: {
       href: "https://github.com/saitheninja/sai-codes",
       title: "my code playground",
       text: "SaiTheNinja Studio",
     },
-    yearsStart: "2020",
-    yearsEnd: "present",
+    dateStart: "Nov 2020",
+    dateEnd: "Dec 2024",
     tools: [
       "TypeScript",
-      "Node",
+      "Node.js",
+
       "SvelteKit",
 
       "Tailwind",
 
-      "Postgres",
+      "PostgreSQL",
+
+      "Playwright",
 
       "Docker",
       "Nix",
+
+      "Git",
+
       "Linux",
+
+      "Adobe Suite",
     ],
   };
-  let workCCrew = {
+  let workCCrew: ResumeEntryData = {
     hText: "Marketing Manager",
     subhLink: {
       href: "https://creativecrew.co.za/",
@@ -34,11 +77,9 @@
       title: "Creative Crew website",
       text: "Creative Crew",
     },
-    yearsStart: "2019",
-    yearsEnd: "2020",
+    dateStart: "Jul 2019",
+    dateEnd: " Oct 2020",
     tools: [
-      "Adobe Suite",
-
       "HTML",
       "CSS",
       "JavaScript",
@@ -48,38 +89,44 @@
 
       "MySQL",
 
+      "Docker",
+
+      "Git",
+
       "Linux",
+
+      "Adobe Suite",
     ],
   };
-  let workPhoto = {
-    hText: "Photographer & Videographer",
-    subhLink: {
-      href: "https://saitheninja.com",
-      rel: "noreferrer external",
-      title: "my photography portfolio site",
-      text: "SaiTheNinja Photography",
-    },
-    yearsStart: "2015",
-    yearsEnd: "2019",
-    tools: ["Adobe Suite", "Darktable", "DaVinci Resolve", "Linux"],
-  };
+  // let workPhoto: ResumeEntryData = {
+  //   hText: "Photographer & Videographer",
+  //   subhLink: {
+  //     href: "https://saitheninja.com",
+  //     rel: "noreferrer external",
+  //     title: "my photography portfolio site",
+  //     text: "SaiTheNinja Photography",
+  //   },
+  //   dateStart: "2015",
+  //   dateEnd: "2019",
+  //   tools: ["Adobe Suite", "Darktable", "DaVinci Resolve", "Linux"],
+  // };
 
-  let artPhoto = {
+  let artPhoto: ResumeEntryData = {
     hText: "Photography",
-    yearsStart: "2013",
-    yearsEnd: "present",
+    dateStart: "2013",
+    dateEnd: "present",
   };
-  let artGames = {
+  let artGames: ResumeEntryData = {
     hText: "Video Games",
-    yearsStart: "2019",
-    yearsEnd: "present",
+    dateStart: "2019",
+    dateEnd: "present",
   };
 
-  let educationUni = {
+  let educationUni: ResumeEntryData = {
     hText: "BSc (Eng) Mech Eng",
     subhText: "University of Cape Town",
-    yearsStart: "2012",
-    yearsEnd: "2015",
+    dateStart: "2012",
+    dateEnd: "2015",
   };
 </script>
 
@@ -89,36 +136,44 @@
 
 <section
   id="name"
-  class="mb-8 max-w-max"
+  class="mb-7 max-w-max"
 >
-  <h1 class="heading-size-1 font-sans">
+  <h1 class="heading-size-1 font-mono decoration-double">
     <a
       href={resolve("/resume")}
-      title="my resume"
+      title="Sai's resume"
       class="underline-offset-8"
     >
       Saien Govender
     </a>
   </h1>
 
-  <div
-    class="text-minor mt-4 grid max-w-max grid-cols-1 gap-3 sm:mt-3 sm:grid-cols-2"
-  >
+  <div class="text-minor mt-4 flex flex-col justify-between gap-3 sm:flex-row">
+    <div
+      id="about"
+      class="max-w-max"
+    >
+      <p class="space-x-1">
+        <span class="not-italic">📚</span>
+        <span>Full-Stack Developer</span>
+      </p>
+
+      <p class="space-x-1">
+        <span class="not-italic">🇿🇦</span>
+        <span>Johannesburg, South Africa</span>
+      </p>
+
+      <p class="space-x-1">
+        <span class="not-italic">🧔🏾</span>
+        <span>he/him</span>
+      </p>
+    </div>
+
     <div
       id="contact"
-      class="flex flex-col"
+      class="max-w-max"
     >
-      <span class="space-x-1">
-        <span class="not-italic">🌍</span>
-        <span
-          ><a
-            href={resolve("/")}
-            title="I code things">sai.codes</a
-          ></span
-        >
-      </span>
-
-      <span class="space-x-1">
+      <p class="space-x-1">
         <span class="not-italic">✉️</span>
         <span>
           <a
@@ -128,9 +183,9 @@
             sai@saitheninja.com
           </a>
         </span>
-      </span>
+      </p>
 
-      <span class="space-x-1">
+      <p class="space-x-1">
         <span class="not-italic">🧑🏾‍💻</span>
         <span>
           <a
@@ -142,217 +197,202 @@
             github.com/saitheninja
           </a>
         </span>
-      </span>
-    </div>
-
-    <div
-      id="about"
-      class="flex flex-col"
-    >
-      <span class="space-x-1">
-        <span class="not-italic">🧔🏾</span>
-        <span>he/him</span>
-      </span>
-
-      <span class="space-x-1">
-        <span class="not-italic">📚</span>
-        <span>full-stack web developer</span>
-      </span>
-
-      <span class="space-x-1">
-        <span class="not-italic">🇿🇦</span>
-        <span>Johannesburg, South Africa</span>
-      </span>
+      </p>
     </div>
   </div>
 </section>
+
+<!-- <section -->
+<!--   id="cover-letter" -->
+<!--   class="hidden space-y-2" -->
+<!-- > -->
+<!--   <p>25 June 2024</p> -->
+<!---->
+<!--   <p>Dear Hiring Manager,</p> -->
+<!---->
+<!--   <section id="letter-intro"></section> -->
+<!---->
+<!--   <section id="letter-body-1"></section> -->
+<!---->
+<!--   <section id="letter-body-2"></section> -->
+<!---->
+<!--   <section id="letter-body-3"></section> -->
+<!---->
+<!--   <section id="letter-body-4"></section> -->
+<!---->
+<!--   <section -->
+<!--     id="letter-outro" -->
+<!--     class="mb-2" -->
+<!--   ></section> -->
+<!---->
+<!--   <section id="letter-signoff"> -->
+<!--     <p>Sincerely,</p> -->
+<!--     <p>Sai</p> -->
+<!--   </section> -->
+<!-- </section> -->
 
 <section
-  id="cover-letter"
-  class="hidden space-y-2"
+  id="work"
+  class="space-y-6"
 >
-  <p>25 June 2024</p>
+  <h2 class="work-heading heading-size-2 -mb-3 font-mono">Work</h2>
 
-  <p>Dear Hiring Manager,</p>
+  <ResumeEntry {...workBullTech}>
+    {#snippet description()}
+      <div>
+        <p>Development for the telephony industry.</p>
 
-  <section id="letter-intro"></section>
+        <ul class="list-disc pl-5">
+          <li>
+            Development on platforms used in 27 countries across 5 continents.
+          </li>
+          <li>Manage databases that handle 1 million+ new records per day.</li>
+        </ul>
+      </div>
+    {/snippet}
+  </ResumeEntry>
 
-  <section id="letter-body-1"></section>
+  <ResumeEntry {...workDev}>
+    {#snippet description()}
+      <div>
+        <p>Development & management of e-commerce websites.</p>
 
-  <section id="letter-body-2"></section>
+        <ul class="list-disc pl-5">
+          <li>Integrated local payment providers.</li>
 
-  <section id="letter-body-3"></section>
+          <li>
+            <a
+              href="https://sanskara.co.za/store/build-planner/"
+              title="Sanskara wedding planner."
+              target="_blank"
+              rel="noreferrer external"
+            >
+              Developed an app for planning traditional weddings
+            </a>.
+          </li>
+        </ul>
+      </div>
+    {/snippet}
+  </ResumeEntry>
 
-  <section id="letter-body-3"></section>
+  <ResumeEntry {...workCCrew}>
+    {#snippet description()}
+      <div>
+        <p>Learn any new technology needed to handle customer requests.</p>
 
-  <section
-    id="letter-outro"
-    class="mb-2"
-  ></section>
+        <ul class="list-disc pl-5">
+          <li>
+            Developed an online education platform for the Health Professions
+            Council of South Africa. 200+ doctors earned 600+ Continuing
+            Education Units.
+          </li>
+        </ul>
+      </div>
+    {/snippet}
+  </ResumeEntry>
 
-  <section id="letter-signoff">
-    <p>Sincerely,</p>
-    <p>Sai</p>
-  </section>
+  <!-- <ResumeEntry {...workPhoto}> -->
+  <!--   {#snippet description()} -->
+  <!--     <div> -->
+  <!--       <p> -->
+  <!--         Photography, videography & audio production. Major projects include: -->
+  <!--       </p> -->
+  <!---->
+  <!--       <ul class="list-disc pl-5"> -->
+  <!--         <li>Photography for PyConZA 2017, with 300+ attendees.</li> -->
+  <!---->
+  <!--         <li> -->
+  <!--           Teaching classes for the City of Cape Town's Youth Development -->
+  <!--           Programme, with ~20 students a class. -->
+  <!--         </li> -->
+  <!---->
+  <!--         <li> -->
+  <!--           Multi-day shoots of marketing photos & videos for the University -->
+  <!--           of Cape Town International Academic Programmes Office. -->
+  <!--         </li> -->
+  <!--       </ul> -->
+  <!--     </div> -->
+  <!--   {/snippet} -->
+  <!-- </ResumeEntry> -->
 </section>
 
-<div class="">
+<div class="mt-8 grid grid-cols-1 gap-y-8 sm:grid-cols-2">
   <section
-    id="work"
-    class="mb-8 space-y-6"
+    id="art"
+    class="space-y-6"
   >
-    <h2 class="work heading-size-2 -mb-3 font-mono">Work</h2>
+    <h2 class="heading-size-2 art-heading -mb-3 font-normal">Art</h2>
 
-    <ResumeEntry {...workDev}>
+    <ResumeEntry {...artGames}>
       {#snippet description()}
         <div>
           <p>
-            Development & management of e-commerce websites. Major projects
-            include:
+            <a
+              href="https://saitheninja.itch.io/"
+              title="My video games."
+              target="_blank"
+              rel="noreferrer external"
+            >
+              Play games
+            </a>, and browse
+            <a
+              href="https://github.com/saitheninja/Shenanijam-2019"
+              title="GitHub repo for Space Janitor game."
+              target="_blank"
+              rel="noreferrer external"
+            >
+              the code
+            </a>.
           </p>
-
-          <ul class="list-disc pl-5">
-            <li>
-              <a
-                href="https://sanskara.co.za/store/build-planner/"
-                title="Sanskara wedding planner"
-                target="_blank"
-                rel="noreferrer external"
-                class="-mr-1"
-              >
-                An app for planning traditional weddings
-              </a>.
-            </li>
-          </ul>
         </div>
       {/snippet}
     </ResumeEntry>
 
-    <ResumeEntry {...workCCrew}>
-      {#snippet description()}
-        <div>
-          <p>Whatever was needed at the time. Major projects include:</p>
-
-          <ul class="list-disc pl-5">
-            <li>
-              Developing an online platform for Continuous Professional
-              Development for the Health Professions Council of South Africa,
-              with 200+ users.
-            </li>
-
-            <li>
-              Management of on-site workstations, a digital assets server &
-              networking.
-            </li>
-          </ul>
-        </div>
-      {/snippet}
-    </ResumeEntry>
-
-    <ResumeEntry {...workPhoto}>
+    <ResumeEntry {...artPhoto}>
       {#snippet description()}
         <div>
           <p>
-            Photography, videography & audio production. Major projects include:
+            Look at
+            <a
+              href="https://saitheninja.com"
+              title="My photography portfolio site."
+              target="_blank"
+              rel="noreferrer external"
+            >
+              my portfolio
+            </a>.
           </p>
-
-          <ul class="list-disc pl-5">
-            <li>Photography for PyConZA 2017, with 300+ attendees.</li>
-
-            <li>
-              Teaching classes for the City of Cape Town's Youth Development
-              Programme, with ~20 students a class.
-            </li>
-
-            <!-- <li>
-              Multi-day shoots of marketing photos & videos for the
-              University of Cape Town International Academic Programmes Office.
-            </li> -->
-          </ul>
         </div>
       {/snippet}
     </ResumeEntry>
   </section>
 
-  <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2">
-    <section
-      id="art"
-      class="space-y-6"
-    >
-      <h2 class="heading-size-2 art -mb-3 font-normal">Art</h2>
+  <section
+    id="education"
+    class="space-y-6"
+  >
+    <h2 class="heading-size-2 education-heading -mb-3 font-normal">
+      Education
+    </h2>
 
-      <ResumeEntry {...artPhoto}>
-        {#snippet description()}
-          <div>
-            <p>
-              Look at
-              <a
-                href="https://saitheninja.com"
-                title="my photography portfolio site"
-                target="_blank"
-                rel="noreferrer external"
-                class="-mr-1"
-              >
-                my portfolio
-              </a>.
-            </p>
-          </div>
-        {/snippet}
-      </ResumeEntry>
-
-      <ResumeEntry {...artGames}>
-        {#snippet description()}
-          <div>
-            <p>
-              <a
-                href="https://saitheninja.itch.io/"
-                title="my video games"
-                target="_blank"
-                rel="noreferrer external"
-                class="-mr-1"
-              >
-                Play some games
-              </a>, and browse
-              <a
-                href="https://github.com/saitheninja/Shenanijam-2019"
-                title="GitHub repo for a game"
-                target="_blank"
-                rel="noreferrer external"
-                class="-mr-1"
-              >
-                the code
-              </a>.
-            </p>
-          </div>
-        {/snippet}
-      </ResumeEntry>
-    </section>
-
-    <section
-      id="education"
-      class="ml-5 space-y-6"
-    >
-      <h2 class="heading-size-2 education -mb-3 font-normal">Education</h2>
-
-      <ResumeEntry {...educationUni}>
-        {#snippet description()}
-          <div>
-            <p>
-              <a
-                href="https://en.wikipedia.org/wiki/Rhodes_Must_Fall"
-                title="#RhodesMustFall protests"
-                target="_blank"
-                rel="noreferrer external"
-                class="-mr-1"
-              >
-                I dropped out
-              </a>.
-            </p>
-          </div>
-        {/snippet}
-      </ResumeEntry>
-    </section>
-  </div>
+    <ResumeEntry {...educationUni}>
+      {#snippet description()}
+        <div>
+          <p>
+            <a
+              href="https://en.wikipedia.org/wiki/Rhodes_Must_Fall"
+              title="#RhodesMustFall protests."
+              target="_blank"
+              rel="noreferrer external"
+              class="no-underline"
+            >
+              I dropped out
+            </a>.
+          </p>
+        </div>
+      {/snippet}
+    </ResumeEntry>
+  </section>
 </div>
 
 <style lang="postcss">
@@ -402,14 +442,14 @@
     @apply max-w-max;
   }
 
-  .work {
+  .work-heading {
     animation-name: slide-right;
     animation-duration: var(--anim-duration);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
 
-  .art {
+  .art-heading {
     font-family: "Fleur De Leah", cursive;
 
     animation-name: wiggle;
@@ -418,7 +458,7 @@
     animation-iteration-count: infinite;
   }
 
-  .education {
+  .education-heading {
     font-family: "Playfair Display", serif;
 
     animation-name: pulse;
