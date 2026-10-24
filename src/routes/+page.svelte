@@ -15,7 +15,7 @@
   <p class="pb-2 pt-4">
     <a
       href={resolve("/resume")}
-      class="-mr-1 italic">I need a job</a
+      class="italic">I want a job</a
     >
     .
   </p>
@@ -36,7 +36,6 @@
     href="https://saitheninja.itch.io/"
     target="_blank"
     rel="noreferrer external"
-    class="-mr-1"
   >
     my itch.io page
   </a>.

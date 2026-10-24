@@ -9,7 +9,6 @@
       href="https://www.youtube.com/watch?v=3nhQmUuPbBs&t=222s"
       target="_blank"
       rel="noreferrer external"
-      class="-mr-1"
     >
       a asshole
     </a>. Knowing my messages eventually get deleted relieves some of my posting
