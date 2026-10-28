@@ -1,16 +1,15 @@
 <script lang="ts">
   export interface ResumeEntryData {
-    hText: string;
-    subhLink?: {
+    jobTitle?: string;
+    companyLink?: {
       href: string;
       rel?: string;
       title: string;
       text: string;
     };
-    subhText?: string;
+    companyText?: string;
     dateStart: string;
     dateEnd: string;
-    tools?: string[];
   }
 
   interface Props extends ResumeEntryData {
@@ -18,63 +17,49 @@
   }
 
   let {
-    hText = "",
-    subhLink = {
+    jobTitle = "",
+    companyLink = {
       href: "",
       title: "",
       text: "",
     },
-    subhText = "",
+    companyText = "",
     dateStart = "",
     dateEnd = "",
-    tools = [],
     description,
   }: Props = $props();
 </script>
 
 <div>
-  <div
-    class={[
-      "mb-0.5 grid grid-cols-1 sm:gap-1",
-      tools.length > 0 ? "sm:grid-cols-2" : "",
-    ]}
-  >
-    <hgroup class="mb-1">
+  <div>
+    <hgroup class="mb-1 flex flex-col sm:flex-row sm:justify-between">
       <h3 class="heading-size-3">
-        {hText}
-      </h3>
-
-      <p class="text-minor">
-        {#if subhLink.href}
+        {#if companyLink.href}
           <a
-            href={subhLink.href}
-            title={subhLink.title}
-            rel={subhLink.rel}
+            href={companyLink.href}
+            title={companyLink.title}
+            rel={companyLink.rel}
             target="_blank"
           >
-            {subhLink.text}
+            {companyLink.text}
           </a>
-        {:else if subhText}
-          {subhText}
+        {:else if companyText}
+          {companyText}
         {/if}
-      </p>
+      </h3>
 
-      <p class="text-minor">
-        {dateStart} - {dateEnd}
-      </p>
+      <div class="text-minor mt-auto max-h-max">
+        {#if jobTitle}
+          <span>
+            {jobTitle},
+          </span>
+        {/if}
+
+        <span>
+          {dateStart} - {dateEnd}
+        </span>
+      </div>
     </hgroup>
-
-    {#if tools.length > 0}
-      <ul
-        class="flex max-h-max flex-row flex-wrap justify-end gap-x-2 pt-1.5 sm:my-0"
-      >
-        {#each tools as tool}
-          <li class="max-h-max">
-            <code class="text-xs">{tool}</code>
-          </li>
-        {/each}
-      </ul>
-    {/if}
   </div>
 
   <div>

@@ -27,7 +27,7 @@
   <div class="mx-4 mt-8 scroll-mt-36 sm:mt-14 print:my-0">
     <main
       id="main"
-      class="mx-auto w-full max-w-prose"
+      class="mx-auto w-full max-w-[75ch]"
     >
       {@render children?.()}
 

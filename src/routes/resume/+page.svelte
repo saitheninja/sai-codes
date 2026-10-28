@@ -4,9 +4,50 @@
   import ResumeEntry from "#lib/ResumeEntry.svelte";
   import type { ResumeEntryData } from "#lib/ResumeEntry.svelte";
 
-  let workBullTech: ResumeEntryData = {
-    hText: "Full-Stack Developer",
-    subhLink: {
+  const toolsFrontEnd = [
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Angular",
+    "SvelteKit",
+    "PHP",
+    "WordPress",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "SCSS",
+    "Playwright",
+    "Adobe Suite",
+    "Figma",
+  ];
+  const toolsBackEnd = [
+    "Node.js",
+    "Express",
+    "RESTful APIs",
+    "WebSockets",
+    "Postman",
+    "MySQL",
+    "Redis",
+    "MongoDB",
+  ];
+  const toolsDevOps = [
+    "ESLint",
+    "Prettier",
+    "Biome",
+    "PM2",
+    "Docker",
+    "Nix",
+    "Git",
+    "CI/CD (GitHub Actions)",
+    "Bitbucket",
+    "Jira",
+    "DigitalOcean",
+    "Linux",
+  ];
+
+  const workBullTech: ResumeEntryData = {
+    jobTitle: "Full-Stack Developer",
+    companyLink: {
       href: "https://github.com/saitheninja/sai-codes",
       rel: "noreferrer external",
       title: "ExAhTech website",
@@ -14,64 +55,20 @@
     },
     dateStart: "Jan 2025",
     dateEnd: "present",
-    tools: [
-      "TypeScript",
-      "Node.js",
-
-      "React",
-      "NextJS",
-
-      "Angular",
-
-      "PHP",
-
-      "Tailwind",
-
-      "Express",
-      "WebSocket",
-
-      "MySQL",
-      "MongoDB",
-
-      "Git",
-
-      "Linux",
-    ],
   };
-  let workDev: ResumeEntryData = {
-    hText: "Full-Stack Developer",
-    subhLink: {
+  const workDev: ResumeEntryData = {
+    jobTitle: "Full-Stack Developer",
+    companyLink: {
       href: "https://github.com/saitheninja/sai-codes",
       title: "my code playground",
       text: "SaiTheNinja Studio",
     },
     dateStart: "Nov 2020",
     dateEnd: "Dec 2024",
-    tools: [
-      "TypeScript",
-      "Node.js",
-
-      "SvelteKit",
-
-      "Tailwind",
-
-      "PostgreSQL",
-
-      "Playwright",
-
-      "Docker",
-      "Nix",
-
-      "Git",
-
-      "Linux",
-
-      "Adobe Suite",
-    ],
   };
-  let workCCrew: ResumeEntryData = {
-    hText: "Marketing Manager",
-    subhLink: {
+  const workCCrew: ResumeEntryData = {
+    jobTitle: "Marketing Manager",
+    companyLink: {
       href: "https://creativecrew.co.za/",
       rel: "noreferrer external",
       title: "Creative Crew website",
@@ -79,52 +76,22 @@
     },
     dateStart: "Jul 2019",
     dateEnd: " Oct 2020",
-    tools: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-
-      "PHP",
-      "WordPress",
-
-      "MySQL",
-
-      "Docker",
-
-      "Git",
-
-      "Linux",
-
-      "Adobe Suite",
-    ],
   };
-  // let workPhoto: ResumeEntryData = {
-  //   hText: "Photographer & Videographer",
-  //   subhLink: {
-  //     href: "https://saitheninja.com",
-  //     rel: "noreferrer external",
-  //     title: "my photography portfolio site",
-  //     text: "SaiTheNinja Photography",
-  //   },
-  //   dateStart: "2015",
-  //   dateEnd: "2019",
-  //   tools: ["Adobe Suite", "Darktable", "DaVinci Resolve", "Linux"],
-  // };
 
-  let artPhoto: ResumeEntryData = {
-    hText: "Photography",
+  const artPhoto: ResumeEntryData = {
+    companyText: "Photography",
     dateStart: "2013",
     dateEnd: "present",
   };
-  let artGames: ResumeEntryData = {
-    hText: "Video Games",
+  const artGames: ResumeEntryData = {
+    companyText: "Video Games",
     dateStart: "2019",
     dateEnd: "present",
   };
 
-  let educationUni: ResumeEntryData = {
-    hText: "BSc (Eng) Mech Eng",
-    subhText: "University of Cape Town",
+  const educationUni: ResumeEntryData = {
+    jobTitle: "BSc (Eng) Mech Eng",
+    companyText: "University of Cape Town",
     dateStart: "2012",
     dateEnd: "2015",
   };
@@ -134,47 +101,31 @@
   <title>sai_codes a resume</title>
 </svelte:head>
 
-<section
-  id="name"
-  class="mb-7 max-w-max"
->
-  <h1 class="heading-size-1 font-mono decoration-double">
+<section id="intro">
+  <h1 class="heading-size-1">
     <a
       href={resolve("/resume")}
-      title="Sai's resume"
+      title="Sai's resume."
       class="underline-offset-8"
     >
       Saien Govender
     </a>
   </h1>
 
-  <div class="text-minor mt-4 flex flex-col justify-between gap-3 sm:flex-row">
-    <div
-      id="about"
-      class="max-w-max"
-    >
-      <p class="space-x-1">
-        <span class="not-italic">📚</span>
-        <span>Full-Stack Developer</span>
-      </p>
-
-      <p class="space-x-1">
-        <span class="not-italic">🇿🇦</span>
-        <span>Johannesburg, South Africa</span>
-      </p>
-
-      <p class="space-x-1">
-        <span class="not-italic">🧔🏾</span>
-        <span>he/him</span>
-      </p>
-    </div>
+  <div class="mt-4 space-y-2">
+    <p class="heading-size-3 space-x-1">Full-Stack Developer</p>
 
     <div
       id="contact"
-      class="max-w-max"
+      class="flex flex-col gap-x-4 sm:flex-row"
     >
-      <p class="space-x-1">
-        <span class="not-italic">✉️</span>
+      <span class="space-x-0.5">
+        <span>🇿🇦</span>
+        <span>Johannesburg, South Africa</span>
+      </span>
+
+      <span class="space-x-0.5">
+        <span>✉️</span>
         <span>
           <a
             href="mailto:sai@saitheninja.com"
@@ -183,22 +134,43 @@
             sai@saitheninja.com
           </a>
         </span>
-      </p>
+      </span>
 
-      <p class="space-x-1">
-        <span class="not-italic">🧑🏾‍💻</span>
+      <span class="space-x-0.5">
+        <span>🧑🏾‍💻</span>
         <span>
           <a
             href="https://github.com/saitheninja"
-            title="my github profile"
+            title="Sai's GitHub profile."
             target="_blank"
             rel="noreferrer external"
           >
-            github.com/saitheninja
+            GitHub
           </a>
         </span>
-      </p>
+      </span>
+
+      <span class="space-x-0.5">
+        <span>🖇️</span>
+        <span>
+          <a
+            href="https://github.com/saitheninja"
+            title="Sai's LinkedIn profile."
+            target="_blank"
+            rel="noreferrer external"
+          >
+            LinkedIn
+          </a>
+        </span>
+      </span>
     </div>
+
+    <p>
+      Adaptable and dependable Full-Stack Developer with over 6 years of
+      experience, specialising in the Node.js ecosystem. Proven track record of
+      owning projects from initial requirements to production deployment.
+      Considerate of wholistic business impact.
+    </p>
   </div>
 </section>
 
@@ -231,9 +203,55 @@
 <!--   </section> -->
 <!-- </section> -->
 
+<section class="mt-6">
+  <h2 class="heading-size-2 mb-2">Core Tech</h2>
+
+  <div class="space-y-2">
+    <div>
+      <h3 class="heading-size-4">Front-End</h3>
+
+      <ul class="mt-1 flex flex-row flex-wrap gap-x-2 gap-y-0.5">
+        {#each toolsFrontEnd as tool}
+          <li>
+            <code>{tool}</code>
+          </li>
+        {/each}
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="heading-size-4">Back-End & Databases</h3>
+
+      <span>
+        <ul class="mt-1 flex flex-row flex-wrap gap-x-2 gap-y-0.5">
+          {#each toolsBackEnd as tool}
+            <li>
+              <code>{tool}</code>
+            </li>
+          {/each}
+        </ul>
+      </span>
+    </div>
+
+    <div>
+      <h3 class="heading-size-4">DevOps & Tools</h3>
+
+      <span>
+        <ul class="mt-1 flex flex-row flex-wrap gap-x-2 gap-y-0.5">
+          {#each toolsDevOps as tool}
+            <li>
+              <code>{tool}</code>
+            </li>
+          {/each}
+        </ul>
+      </span>
+    </div>
+  </div>
+</section>
+
 <section
   id="work"
-  class="space-y-6"
+  class="mt-8 space-y-6"
 >
   <h2 class="work-heading heading-size-2 -mb-3 font-mono">Work</h2>
 
@@ -244,9 +262,15 @@
 
         <ul class="list-disc pl-5">
           <li>
-            Development on platforms used in 27 countries across 5 continents.
+            Implemented file-sharing by AI bot. The AI can determine if it has
+            any files relevant to a customer's conversation and share the file
+            automatically.
           </li>
-          <li>Manage databases that handle 1 million+ new records per day.</li>
+
+          <li>Implemented AI integration for Speech-To-Text.</li>
+
+          <!-- <li>Develop platforms used in 27 countries across 5 continents.</li> -->
+          <!-- <li>Manage databases that handle 1 million+ new records per day.</li> -->
         </ul>
       </div>
     {/snippet}
@@ -258,7 +282,9 @@
         <p>Development & management of e-commerce websites.</p>
 
         <ul class="list-disc pl-5">
-          <li>Integrated local payment providers.</li>
+          <li>
+            Integrated local payment providers to accept credit card payments.
+          </li>
 
           <li>
             <a
@@ -267,8 +293,10 @@
               target="_blank"
               rel="noreferrer external"
             >
-              Developed an app for planning traditional weddings
-            </a>.
+              Developed an app to plan traditional Indian weddings
+            </a>. Full mobile support. Installable as a Progressive Web App, for
+            push notifications. Free-form whiteboard with image upload. Cloud
+            sync across desktop and mobile. 10+ weddings successfully planned.
           </li>
         </ul>
       </div>
@@ -284,45 +312,44 @@
           <li>
             Developed an online education platform for the Health Professions
             Council of South Africa. 200+ doctors earned 600+ Continuing
-            Education Units.
+            Education Units in the first 3 months.
           </li>
         </ul>
       </div>
     {/snippet}
   </ResumeEntry>
-
-  <!-- <ResumeEntry {...workPhoto}> -->
-  <!--   {#snippet description()} -->
-  <!--     <div> -->
-  <!--       <p> -->
-  <!--         Photography, videography & audio production. Major projects include: -->
-  <!--       </p> -->
-  <!---->
-  <!--       <ul class="list-disc pl-5"> -->
-  <!--         <li>Photography for PyConZA 2017, with 300+ attendees.</li> -->
-  <!---->
-  <!--         <li> -->
-  <!--           Teaching classes for the City of Cape Town's Youth Development -->
-  <!--           Programme, with ~20 students a class. -->
-  <!--         </li> -->
-  <!---->
-  <!--         <li> -->
-  <!--           Multi-day shoots of marketing photos & videos for the University -->
-  <!--           of Cape Town International Academic Programmes Office. -->
-  <!--         </li> -->
-  <!--       </ul> -->
-  <!--     </div> -->
-  <!--   {/snippet} -->
-  <!-- </ResumeEntry> -->
 </section>
 
-<div class="mt-8 grid grid-cols-1 gap-y-8 sm:grid-cols-2">
-  <section
-    id="art"
-    class="space-y-6"
-  >
-    <h2 class="heading-size-2 art-heading -mb-3 font-normal">Art</h2>
+<section
+  id="key-projects"
+  class="mt-8 space-y-4"
+>
+  <h2 class="heading-size-2">Key Projects</h2>
 
+  <div>
+    <h3 class="heading-size-3">Refactor BullTech Development Practices</h3>
+
+    <ul class="mt-2 list-disc pl-5">
+      <li>Introduced TypeScript to the other devs.</li>
+      <li>Added linting and formatting to all active projects.</li>
+      <li>
+        Created Git repositories and documentation for multiple older codebases.
+      </li>
+      <li>
+        Found and fixed 100s of bugs, increased stability and accelerated
+        development speed.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section
+  id="art"
+  class="mt-8 space-y-4"
+>
+  <h2 class="heading-size-2 art-heading font-normal">Art</h2>
+
+  <div class="grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
     <ResumeEntry {...artGames}>
       {#snippet description()}
         <div>
@@ -333,7 +360,7 @@
               target="_blank"
               rel="noreferrer external"
             >
-              Play games
+              Play some games
             </a>, and browse
             <a
               href="https://github.com/saitheninja/Shenanijam-2019"
@@ -365,35 +392,33 @@
         </div>
       {/snippet}
     </ResumeEntry>
-  </section>
+  </div>
+</section>
 
-  <section
-    id="education"
-    class="space-y-6"
-  >
-    <h2 class="heading-size-2 education-heading -mb-3 font-normal">
-      Education
-    </h2>
+<section
+  id="education"
+  class="mt-8 space-y-6"
+>
+  <h2 class="heading-size-2 education-heading -mb-3 font-normal">Education</h2>
 
-    <ResumeEntry {...educationUni}>
-      {#snippet description()}
-        <div>
-          <p>
-            <a
-              href="https://en.wikipedia.org/wiki/Rhodes_Must_Fall"
-              title="#RhodesMustFall protests."
-              target="_blank"
-              rel="noreferrer external"
-              class="no-underline"
-            >
-              I dropped out
-            </a>.
-          </p>
-        </div>
-      {/snippet}
-    </ResumeEntry>
-  </section>
-</div>
+  <ResumeEntry {...educationUni}>
+    {#snippet description()}
+      <div>
+        <p>
+          <a
+            href="https://en.wikipedia.org/wiki/Rhodes_Must_Fall"
+            title="#RhodesMustFall protests."
+            target="_blank"
+            rel="noreferrer external"
+            class="no-underline"
+          >
+            I dropped out
+          </a>.
+        </p>
+      </div>
+    {/snippet}
+  </ResumeEntry>
+</section>
 
 <style lang="postcss">
   /* custom fonts & animations */
